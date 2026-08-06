@@ -1,0 +1,83 @@
+import type { Haber, Message } from "../types";
+
+const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:4101";
+
+async function request<T>(path: string, options?: RequestInit): Promise<T> {
+  const isFormData = options?.body instanceof FormData;
+  const headers = new Headers(options?.headers);
+  if (!isFormData && !headers.has("Content-Type")) {
+    headers.set("Content-Type", "application/json");
+  }
+
+  const res = await fetch(`${API_BASE}${path}`, {
+    credentials: "include",
+    headers,
+    ...options,
+  });
+
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ message: res.statusText }));
+    throw new Error(err.message ?? "İstek başarısız");
+  }
+
+  if (res.status === 204 || res.headers.get("content-length") === "0") {
+    return undefined as T;
+  }
+
+  const text = await res.text();
+  if (!text || text === "OK") return undefined as T;
+  try {
+    return JSON.parse(text);
+  } catch {
+    return undefined as T;
+  }
+}
+
+export const api = {
+  auth: {
+    login: (data: { username: string; password: string }) =>
+      request<void>("/v1/auth/login", {
+        method: "POST",
+        body: JSON.stringify(data),
+      }),
+    logout: () => request<void>("/v1/auth/logout", { method: "POST" }),
+    changePassword: (data: { currentPassword: string; newPassword: string }) =>
+      request<void>("/v1/auth/change-password", {
+        method: "POST",
+        body: JSON.stringify(data),
+      }),
+    verify: () => request<{ username: string }>("/v1/auth/verify", { method: "GET" }),
+  },
+
+  haberler: {
+    list: () => request<Haber[]>("/v1/news/our-news"),
+    get: (id: string) => request<Haber>(`/v1/news/find/${id}`),
+    create: (data: Partial<Haber>) =>
+      request<void>("/v1/news/create", {
+        method: "POST",
+        body: JSON.stringify(data),
+      }),
+    update: (id: string, data: Partial<Haber>) =>
+      request<void>(`/v1/news/update/${id}`, {
+        method: "PATCH",
+        body: JSON.stringify(data),
+      }),
+    delete: (id: string) =>
+      request<void>(`/v1/news/delete/${id}`, { method: "DELETE" }),
+  },
+  messages: {
+    list: () => request<Message[]>("/v1/messages"),
+    delete: (id: string) =>
+      request<void>(`/v1/messages/${id}`, { method: "DELETE" }),
+  },
+  uploads: {
+    upload: (file: File) => {
+      const formData = new FormData();
+      formData.append("image", file);
+      return request<{ url: string }>("/v1/uploads", {
+        method: "POST",
+        body: formData,
+      });
+    },
+  },
+};

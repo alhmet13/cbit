@@ -1,0 +1,49 @@
+services:
+  cbit-app-api:
+    build:
+      context: ./cbit/cbit-app-api
+      dockerfile: Dockerfile
+    container_name: cbit-app-api
+    restart: unless-stopped
+    ports:
+      - "2000:2000"
+    env_file:
+      - ./cbit/cbit-app-api/.env
+    volumes:
+      - cbit_uploads:/app/uploads
+    networks:
+      - cbit-network
+
+  cbit-app-admin:
+    build:
+      context: ./cbit/cbit-app-admin
+      dockerfile: Dockerfile
+    container_name: cbit-app-admin
+    restart: unless-stopped
+    ports:
+      - "500:80"
+    depends_on:
+      - cbit-app-api
+    networks:
+      - cbit-network
+
+  cbit-app-web:
+    build:
+      context: ./cbit/cbit-app-web
+      dockerfile: Dockerfile
+    container_name: cbit-app-web
+    restart: unless-stopped
+    ports:
+      - "1000:80"
+    depends_on:
+      - cbit-app-api
+    networks:
+      - cbit-network
+
+volumes:
+  cbit_uploads:
+    driver: local
+
+networks:
+  cbit-network:
+    driver: bridge
