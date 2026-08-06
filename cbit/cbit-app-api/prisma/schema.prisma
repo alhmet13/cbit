@@ -40,3 +40,23 @@ model Message {
   @@index([createdAt(sort: Desc)])
 }
 
+model Proje {
+  id                String   @id @default(uuid()) @db.Uuid
+  projeAdi          String
+  projeAdiEn        String?
+  projeDetayi       String?
+  projeDetayiEn     String?
+  projeResmi        String?
+  beyazAlan         String?
+  sertifikasyon     String?
+  itGucu            String?
+  toplamKuruluGuc   String?
+  projeSuresi       String?
+  toplamInsaatAlani String?
+  durum             String?
+  durumEn           String?
+  createdAt         DateTime @default(now())
+
+  // Liste isteklerindeki azalan sıralamaları (createdAt DESC) hızlandırmak için indeks
+  @@index([createdAt(sort: Desc)])
+}
