@@ -63,7 +63,7 @@ export default function ChangePassword() {
     <div className="login-wrapper">
       <div className="login-card">
         <div className="login-logo">
-          <img src="/image102.jpg" alt="CDC Logo" />
+          <img src="/image102.jpg" alt="CBIT Logo" />
         </div>
         <h1 className="login-title">Şifre Değiştir</h1>
         <p className="login-subtitle">

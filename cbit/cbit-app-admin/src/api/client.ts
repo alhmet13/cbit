@@ -1,4 +1,4 @@
-import type { Haber, Message } from "../types";
+import type { Proje, Haber, Message } from "../types";
 
 const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:4101";
 
@@ -46,7 +46,25 @@ export const api = {
         method: "POST",
         body: JSON.stringify(data),
       }),
-    verify: () => request<{ username: string }>("/v1/auth/verify", { method: "GET" }),
+    verify: () =>
+      request<{ username: string }>("/v1/auth/verify", { method: "GET" }),
+  },
+
+  projeler: {
+    list: () => request<Proje[]>("/v1/projects/our-projects"),
+    get: (id: string) => request<Proje>(`/v1/projects/find/${id}`),
+    create: (data: Partial<Proje>) =>
+      request<void>("/v1/projects/create", {
+        method: "POST",
+        body: JSON.stringify(data),
+      }),
+    update: (id: string, data: Partial<Proje>) =>
+      request<void>(`/v1/projects/update/${id}`, {
+        method: "PATCH",
+        body: JSON.stringify(data),
+      }),
+    delete: (id: string) =>
+      request<void>(`/v1/projects/delete/${id}`, { method: "DELETE" }),
   },
 
   haberler: {

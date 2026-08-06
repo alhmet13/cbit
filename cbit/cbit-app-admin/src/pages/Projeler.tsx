@@ -1,17 +1,25 @@
 import { useEffect, useState, useRef, type FormEvent } from "react";
 import { api } from "../api/client";
-import type { Haber } from "../types";
+import type { Proje } from "../types";
 
 const emptyForm = {
-  haberAdi: "",
-  haberAdiEn: "",
-  haberDetayi: "",
-  haberDetayiEn: "",
-  haberResmi: "",
+  projeAdi: "",
+  projeAdiEn: "",
+  projeDetayi: "",
+  projeDetayiEn: "",
+  projeResmi: "",
+  beyazAlan: "",
+  sertifikasyon: "",
+  itGucu: "",
+  toplamKuruluGuc: "",
+  projeSuresi: "",
+  toplamInsaatAlani: "",
+  durum: "",
+  durumEn: "",
 };
 
-export default function News() {
-  const [news, setNews] = useState<Haber[]>([]);
+export default function Projeler() {
+  const [projeler, setProjeler] = useState<Proje[]>([]);
   const [form, setForm] = useState(emptyForm);
   const [editingId, setEditingId] = useState<string | null>(null);
   const [message, setMessage] = useState<{
@@ -28,7 +36,7 @@ export default function News() {
     setMessage(null);
     try {
       const res = await api.uploads.upload(file);
-      setForm((prev) => ({ ...prev, haberResmi: res.url }));
+      setForm((prev) => ({ ...prev, projeResmi: res.url }));
       setMessage({ type: "success", text: "Görsel başarıyla yüklendi." });
     } catch (err) {
       setMessage({
@@ -43,9 +51,9 @@ export default function News() {
 
   const load = () => {
     setLoading(true);
-    api.haberler
+    api.projeler
       .list()
-      .then(setNews)
+      .then(setProjeler)
       .catch((e) => setMessage({ type: "error", text: e.message }))
       .finally(() => setLoading(false));
   };
@@ -56,9 +64,7 @@ export default function News() {
 
   useEffect(() => {
     if (message) {
-      const timer = setTimeout(() => {
-        setMessage(null);
-      }, 5000);
+      const timer = setTimeout(() => setMessage(null), 5000);
       return () => clearTimeout(timer);
     }
   }, [message]);
@@ -69,16 +75,14 @@ export default function News() {
 
     try {
       if (editingId) {
-        // Düzenleme modunda filtreleme yapma, tüm alanları gönder
-        await api.haberler.update(editingId, form);
-        setMessage({ type: "success", text: "Haber başarıyla güncellendi." });
+        await api.projeler.update(editingId, form);
+        setMessage({ type: "success", text: "Proje başarıyla güncellendi." });
       } else {
-        // Sadece yeni eklerken boşları çıkar
         const payload = Object.fromEntries(
           Object.entries(form).filter(([, v]) => v.trim() !== ""),
         );
-        await api.haberler.create(payload);
-        setMessage({ type: "success", text: "Haber başarıyla eklendi." });
+        await api.projeler.create(payload);
+        setMessage({ type: "success", text: "Proje başarıyla eklendi." });
       }
       setForm(emptyForm);
       setEditingId(null);
@@ -92,23 +96,31 @@ export default function News() {
     }
   };
 
-  const handleEdit = (haber: Haber) => {
-    setEditingId(haber.id);
+  const handleEdit = (proje: Proje) => {
+    setEditingId(proje.id);
     setForm({
-      haberAdi: haber.haberAdi ?? "",
-      haberAdiEn: haber.haberAdiEn ?? "",
-      haberDetayi: haber.haberDetayi ?? "",
-      haberDetayiEn: haber.haberDetayiEn ?? "",
-      haberResmi: haber.haberResmi ?? "",
+      projeAdi: proje.projeAdi ?? "",
+      projeAdiEn: proje.projeAdiEn ?? "",
+      projeDetayi: proje.projeDetayi ?? "",
+      projeDetayiEn: proje.projeDetayiEn ?? "",
+      projeResmi: proje.projeResmi ?? "",
+      beyazAlan: proje.beyazAlan ?? "",
+      sertifikasyon: proje.sertifikasyon ?? "",
+      itGucu: proje.itGucu ?? "",
+      toplamKuruluGuc: proje.toplamKuruluGuc ?? "",
+      projeSuresi: proje.projeSuresi ?? "",
+      toplamInsaatAlani: proje.toplamInsaatAlani ?? "",
+      durum: proje.durum ?? "",
+      durumEn: proje.durumEn ?? "",
     });
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleDelete = async (id: string) => {
-    if (!confirm("Bu haberi silmek istediğinize emin misiniz?")) return;
+    if (!confirm("Bu projeyi silmek istediğinize emin misiniz?")) return;
     try {
-      await api.haberler.delete(id);
-      setMessage({ type: "success", text: "Haber başarıyla silindi." });
+      await api.projeler.delete(id);
+      setMessage({ type: "success", text: "Proje başarıyla silindi." });
       if (editingId === id) {
         setEditingId(null);
         setForm(emptyForm);
@@ -126,9 +138,9 @@ export default function News() {
     <div>
       <div className="page-header">
         <div>
-          <h1 className="page-title">Haberler</h1>
+          <h1 className="page-title">Projeler</h1>
           <p className="page-subtitle">
-            CBIT haber ve duyurularını buradan yönetebilirsiniz.
+            Proje kayıtlarını buradan yönetebilirsiniz.
           </p>
         </div>
       </div>
@@ -139,36 +151,37 @@ export default function News() {
 
       <div className="form-card">
         <h3 style={{ marginBottom: "20px", fontFamily: "var(--font-display)" }}>
-          {editingId ? "Haberi Düzenle" : "Yeni Haber Ekle"}
+          {editingId ? "Projeyi Düzenle" : "Yeni Proje Ekle"}
         </h3>
         <form onSubmit={handleSubmit}>
           <div className="form-grid">
             <div className="form-group form-full-width">
-              <label className="form-label">Haber Başlığı *</label>
+              <label className="form-label">Proje Adı *</label>
               <input
                 className="form-control"
-                value={form.haberAdi}
-                onChange={(e) => setForm({ ...form, haberAdi: e.target.value })}
+                value={form.projeAdi}
+                onChange={(e) => setForm({ ...form, projeAdi: e.target.value })}
                 required
-                placeholder="Ör: Sürdürülebilir Gelecek İçin Yeni Yatırımlar"
+                placeholder="Ör: GES Santral Projesi"
               />
             </div>
             <div className="form-group form-full-width">
-              <label className="form-label">Haber Başlığı (EN)</label>
+              <label className="form-label">Proje Adı (EN)</label>
               <input
                 className="form-control"
-                value={form.haberAdiEn}
+                value={form.projeAdiEn}
                 onChange={(e) =>
-                  setForm({ ...form, haberAdiEn: e.target.value })
+                  setForm({ ...form, projeAdiEn: e.target.value })
                 }
-                placeholder="Ör: New Investments for a Sustainable Future"
+                placeholder="Ör: Solar Power Plant Project"
               />
             </div>
+
             <div className="form-group form-full-width">
-              <label className="form-label">Haber Görseli *</label>
+              <label className="form-label">Proje Görseli</label>
               <div
                 className={`dropzone ${isDragging ? "dragging" : ""} ${
-                  form.haberResmi ? "has-file" : ""
+                  form.projeResmi ? "has-file" : ""
                 }`}
                 onDragOver={(e) => {
                   e.preventDefault();
@@ -213,7 +226,7 @@ export default function News() {
                   <div style={{ color: "var(--text-secondary)" }}>
                     Görsel yükleniyor...
                   </div>
-                ) : form.haberResmi ? (
+                ) : form.projeResmi ? (
                   <div
                     style={{
                       position: "relative",
@@ -222,8 +235,8 @@ export default function News() {
                     }}
                   >
                     <img
-                      src={form.haberResmi}
-                      alt="Haber önizleme"
+                      src={form.projeResmi}
+                      alt="Proje önizleme"
                       style={{
                         width: "100%",
                         maxHeight: "150px",
@@ -236,7 +249,7 @@ export default function News() {
                       className="btn btn-secondary"
                       onClick={(e) => {
                         e.stopPropagation();
-                        setForm({ ...form, haberResmi: "" });
+                        setForm({ ...form, projeResmi: "" });
                       }}
                       style={{
                         position: "absolute",
@@ -264,27 +277,104 @@ export default function News() {
                 )}
               </div>
             </div>
+
             <div className="form-group form-full-width">
-              <label className="form-label">Haber Detayı / İçerik *</label>
+              <label className="form-label">Proje Detayı</label>
               <textarea
                 className="form-control"
-                value={form.haberDetayi}
+                value={form.projeDetayi}
                 onChange={(e) =>
-                  setForm({ ...form, haberDetayi: e.target.value })
+                  setForm({ ...form, projeDetayi: e.target.value })
                 }
-                required
-                placeholder="Haber içeriğini giriniz..."
+                placeholder="Proje içeriğini giriniz..."
               />
             </div>
             <div className="form-group form-full-width">
-              <label className="form-label">Haber Detayı / İçerik (EN)</label>
+              <label className="form-label">Proje Detayı (EN)</label>
               <textarea
                 className="form-control"
-                value={form.haberDetayiEn}
+                value={form.projeDetayiEn}
                 onChange={(e) =>
-                  setForm({ ...form, haberDetayiEn: e.target.value })
+                  setForm({ ...form, projeDetayiEn: e.target.value })
                 }
-                placeholder="Enter news content in English..."
+                placeholder="Enter project content in English..."
+              />
+            </div>
+
+            <div className="form-group">
+              <label className="form-label">Beyaz Alan</label>
+              <input
+                className="form-control"
+                value={form.beyazAlan}
+                onChange={(e) =>
+                  setForm({ ...form, beyazAlan: e.target.value })
+                }
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Sertifikasyon</label>
+              <input
+                className="form-control"
+                value={form.sertifikasyon}
+                onChange={(e) =>
+                  setForm({ ...form, sertifikasyon: e.target.value })
+                }
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label">IT Gücü</label>
+              <input
+                className="form-control"
+                value={form.itGucu}
+                onChange={(e) => setForm({ ...form, itGucu: e.target.value })}
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Toplam Kurulu Güç</label>
+              <input
+                className="form-control"
+                value={form.toplamKuruluGuc}
+                onChange={(e) =>
+                  setForm({ ...form, toplamKuruluGuc: e.target.value })
+                }
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Proje Süresi</label>
+              <input
+                className="form-control"
+                value={form.projeSuresi}
+                onChange={(e) =>
+                  setForm({ ...form, projeSuresi: e.target.value })
+                }
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Toplam İnşaat Alanı</label>
+              <input
+                className="form-control"
+                value={form.toplamInsaatAlani}
+                onChange={(e) =>
+                  setForm({ ...form, toplamInsaatAlani: e.target.value })
+                }
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Durum</label>
+              <input
+                className="form-control"
+                value={form.durum}
+                onChange={(e) => setForm({ ...form, durum: e.target.value })}
+                placeholder="Ör: Devam Ediyor"
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Durum (EN)</label>
+              <input
+                className="form-control"
+                value={form.durumEn}
+                onChange={(e) => setForm({ ...form, durumEn: e.target.value })}
+                placeholder="Ex: In Progress"
               />
             </div>
           </div>
@@ -311,7 +401,7 @@ export default function News() {
 
       <div className="card-table-wrap">
         <div className="table-header">
-          <span className="table-header-title">Mevcut Haberler</span>
+          <span className="table-header-title">Mevcut Projeler</span>
         </div>
         <div className="table-container">
           {loading ? (
@@ -324,7 +414,7 @@ export default function News() {
             >
               Yükleniyor...
             </div>
-          ) : news.length === 0 ? (
+          ) : projeler.length === 0 ? (
             <div
               style={{
                 padding: "30px",
@@ -332,27 +422,28 @@ export default function News() {
                 color: "var(--text-secondary)",
               }}
             >
-              Kayıtlı haber bulunamadı.
+              Kayıtlı proje bulunamadı.
             </div>
           ) : (
             <table className="admin-table">
               <thead>
                 <tr>
                   <th>Görsel</th>
-                  <th>Haber Başlığı</th>
+                  <th>Proje Adı</th>
+                  <th>Durum</th>
                   <th>Eklenme Tarihi</th>
                   <th style={{ width: "150px" }}>İşlemler</th>
                 </tr>
               </thead>
               <tbody>
-                {news.map((h) => (
-                  <tr key={h.id}>
+                {projeler.map((p) => (
+                  <tr key={p.id}>
                     <td>
-                      {h.haberResmi ? (
+                      {p.projeResmi ? (
                         <img
                           className="cell-image"
-                          src={h.haberResmi}
-                          alt={h.haberAdi}
+                          src={p.projeResmi}
+                          alt={p.projeAdi}
                         />
                       ) : (
                         <div
@@ -369,19 +460,20 @@ export default function News() {
                         </div>
                       )}
                     </td>
-                    <td style={{ fontWeight: 600 }}>{h.haberAdi}</td>
-                    <td>{new Date(h.createdAt).toLocaleDateString("tr-TR")}</td>
+                    <td style={{ fontWeight: 600 }}>{p.projeAdi}</td>
+                    <td>{p.durum || "-"}</td>
+                    <td>{new Date(p.createdAt).toLocaleDateString("tr-TR")}</td>
                     <td>
                       <div className="table-actions">
                         <button
                           className="btn btn-secondary btn-sm"
-                          onClick={() => handleEdit(h)}
+                          onClick={() => handleEdit(p)}
                         >
                           Düzenle
                         </button>
                         <button
                           className="btn btn-danger btn-sm"
-                          onClick={() => handleDelete(h.id)}
+                          onClick={() => handleDelete(p.id)}
                         >
                           Sil
                         </button>

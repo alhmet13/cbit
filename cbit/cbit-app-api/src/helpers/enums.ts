@@ -2,6 +2,7 @@ const enum API_ROUTES {
   AUTH = '/auth',
   HABER = '/news',
   MESSAGE = '/messages',
+  PROJE = '/projects',
 }
 
 const enum API_VERSION {

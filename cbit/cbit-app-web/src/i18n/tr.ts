@@ -2,7 +2,7 @@ export const tr = {
   nav: {
     anasayfa: "Ana Sayfa",
     hakkimizda: "Hakkımızda",
-    cozumler: "Neden CDC?",
+    cozumler: "Neden CBIT?",
     yetkinlikler: "Çözümler",
     projeler: "Referanslar",
     haberler: "Haberler",
@@ -13,7 +13,7 @@ export const tr = {
       "Rüzgarlıbahçe Mah. Çam Pınarı Sk. No:1 34805 Kavacık Ticaret Merkezi Beykoz/İstanbul",
     aydinlatmaMetni: "Aydınlatma Metni",
     cerezPolitikasi: "Çerez Politikası",
-    eposta: "mail: info@cdcteknoloji.com.tr",
+    eposta: "mail: info@cbit.com.tr",
     telefon: "T: +90 216 333 6161",
   },
   anasayfa: {
@@ -39,7 +39,8 @@ export const tr = {
     },
     bizKimiz: {
       eyebrow: "BİZ KİMİZ",
-      baslik: "20 Yılı Aşkın Tecrübeyle, Teknolojiyi İş Hedeflerinize Bağlıyoruz",
+      baslik:
+        "20 Yılı Aşkın Tecrübeyle, Teknolojiyi İş Hedeflerinize Bağlıyoruz",
       lead: "CBIT, kurumların teknoloji altyapısını iş hedefleriyle buluşturan bağımsız bir sistem entegratörüdür.",
       aciklama:
         "Üretici bağımsız yaklaşımımızla, ihtiyaca en uygun global veya yerli teknolojileri bir araya getiriyor; tasarımdan işletmeye, kurulumdan bakıma kadar tüm süreci uçtan uca üstleniyoruz. 20+ yıllık sektör tecrübemizi Cevahir Grubu'nun mühendislik gücüyle birleştirerek, müşterilerimize sadece teknoloji değil, ölçülebilir iş değeri sunuyoruz.",
@@ -200,17 +201,24 @@ export const tr = {
   hakkimizda: {
     hero: {
       eyebrow: "HAKKIMIZDA",
-      baslik: "Karmaşık Mühendislikten Kritik Altyapılara, Zamanında ve Güvenilir Çözümler",
+      baslik:
+        "Karmaşık Mühendislikten Kritik Altyapılara, Zamanında ve Güvenilir Çözümler",
       lead: "CBIT; Cevahir Grubu'nun 65 yıllık mühendislik mirasını, bilgi teknolojileri alanındaki uzmanlığıyla birleştiren üretici bağımsız bir sistem entegratörüdür.",
     },
     bizKimiz: {
       eyebrow: "BİZ KİMİZ",
-      baslik: "20 Yılı Aşkın Sektör Tecrübesiyle Kurulan Bağımsız Bir Sistem Entegratörü",
-      aciklama: "20+ yıl sektör tecrübeli ekibimizle, kurumların teknoloji altyapısını iş hedefleriyle buluşturan bağımsız bir sistem entegratörüyüz. Üretici bağımsız yaklaşımımızla en uygun global veya yerli teknolojiler ile çözüm sunmaktayız. Tasarımdan işletme dahil bakıma kadar tüm süreci üstleniriz.",
+      baslik:
+        "20 Yılı Aşkın Sektör Tecrübesiyle Kurulan Bağımsız Bir Sistem Entegratörü",
+      aciklama:
+        "20+ yıl sektör tecrübeli ekibimizle, kurumların teknoloji altyapısını iş hedefleriyle buluşturan bağımsız bir sistem entegratörüyüz. Üretici bağımsız yaklaşımımızla en uygun global veya yerli teknolojiler ile çözüm sunmaktayız. Tasarımdan işletme dahil bakıma kadar tüm süreci üstleniriz.",
       stats: [
         { deger: "20+", baslik: "Yıllık Sektör Tecrübesi", isRed: false },
         { deger: "%100", baslik: "Üretici Bağımsız Çözümler", isRed: true },
-        { deger: "5", baslik: "Aşamalı Uçtan Uca Proje Yönetimi", isRed: false },
+        {
+          deger: "5",
+          baslik: "Aşamalı Uçtan Uca Proje Yönetimi",
+          isRed: false,
+        },
       ],
     },
     vizyonMisyon: {
@@ -218,11 +226,13 @@ export const tr = {
       baslik: "Bizi Biz Yapan İlkeler",
       vizyon: {
         baslik: "Vizyonumuz",
-        aciklama: "Ulusal ve uluslararası pazarlarda dünya standartlarında projeler üreten; güven, kalıcılık ve geleceğe güçlenerek taşınan bir marka olmak. Sürdürülebilir performansı kurumsal temele oturtmak.",
+        aciklama:
+          "Ulusal ve uluslararası pazarlarda dünya standartlarında projeler üreten; güven, kalıcılık ve geleceğe güçlenerek taşınan bir marka olmak. Sürdürülebilir performansı kurumsal temele oturtmak.",
       },
       misyon: {
         baslik: "Misyonumuz",
-        aciklama: "Üstlendiğimiz her sorumlulukla Türkiye'nin gelişmesine ve büyümesine katkıda bulunmak; çalışanlarımız, paydaşlarımız ve tüm toplum için sürdürülebilir katma değer yaratmak.",
+        aciklama:
+          "Üstlendiğimiz her sorumlulukla Türkiye'nin gelişmesine ve büyümesine katkıda bulunmak; çalışanlarımız, paydaşlarımız ve tüm toplum için sürdürülebilir katma değer yaratmak.",
       },
       degerler: {
         baslik: "Değerlerimiz",
@@ -241,14 +251,16 @@ export const tr = {
     cevahirGrup: {
       eyebrow: "CEVAHİR GRUBU HAKKINDA",
       baslik: "Karmaşık Mühendislikten Kritik Altyapılara",
-      aciklama: "1959'dan bu yana kesintisiz operasyonla büyüyen Cevahir Grubu, CBIT'in de içinde yer aldığı çok sektörlü bir kuruluştur.",
+      aciklama:
+        "1959'dan bu yana kesintisiz operasyonla büyüyen Cevahir Grubu, CBIT'in de içinde yer aldığı çok sektörlü bir kuruluştur.",
       stats: [
         { deger: "1959", baslik: "Kuruluş Yılı" },
         { deger: "65+", baslik: "Yıllık Kesintisiz Operasyon" },
         { deger: "4+", baslik: "Ülkede Uluslararası Varlık" },
         { deger: "~15.000", baslik: "Çalışan (900+'ü Uzman Teknik Personel)" },
       ],
-      ulkelerNotu: "Türkiye, Libya, Suudi Arabistan ve Kuzey Makedonya'da faaliyet gösteriyoruz.",
+      ulkelerNotu:
+        "Türkiye, Libya, Suudi Arabistan ve Kuzey Makedonya'da faaliyet gösteriyoruz.",
       sektorler: [
         { baslik: "Baraj" },
         { baslik: "Veri Merkezi" },
@@ -262,25 +274,77 @@ export const tr = {
       eyebrow: "TARİHÇEMİZ",
       baslik: "Cevahir Grubu Tarihçesi",
       liste: [
-        { yil: "1959", baslik: "Kuruluş", aciklama: "Kapsamlı inşaat portföyüyle sektöre giriş." },
-        { yil: "1975", baslik: "Uluslararası Genişleme", aciklama: "Libya ve S. Arabistan'da büyük ölçekli projeler." },
-        { yil: "1990", baslik: "Proje Geliştirme & İşletme", aciklama: "Entegre proje sahipliği modeline geçiş." },
-        { yil: "1994", baslik: "Büyük İstanbul Otogarı", aciklama: "Avrupa'nın en büyüğü, dünyanın 3. otogarı." },
-        { yil: "1995", baslik: "The Plaza Hotel", aciklama: "Yatırım–inşaat–işletme oteli projesi." },
-        { yil: "2005", baslik: "Avrupa'nın En Büyük AVM'si", aciklama: "En büyük kapalı alışveriş ve eğlence merkezi." },
-        { yil: "2020", baslik: "Balkanlar'da En Büyük Yatırım", aciklama: "280.000 m² Türk özel sektör yatırımı." },
-        { yil: "2023", baslik: "TOKİ Deprem Konutları", aciklama: "Adıyaman–Hatay'da 7.500+ bağımsız bölüm." },
-        { yil: "2024", baslik: "İFM Faz-3 Projesi", aciklama: "İstanbul Finans Merkezi'nde 100 bin+ m² yapım." },
-        { yil: "2025", baslik: "Kritik Altyapı & Veri Merkezi", aciklama: "Tier-3 & LEED veri merkezi çözümleri." },
+        {
+          yil: "1959",
+          baslik: "Kuruluş",
+          aciklama: "Kapsamlı inşaat portföyüyle sektöre giriş.",
+        },
+        {
+          yil: "1975",
+          baslik: "Uluslararası Genişleme",
+          aciklama: "Libya ve S. Arabistan'da büyük ölçekli projeler.",
+        },
+        {
+          yil: "1990",
+          baslik: "Proje Geliştirme & İşletme",
+          aciklama: "Entegre proje sahipliği modeline geçiş.",
+        },
+        {
+          yil: "1994",
+          baslik: "Büyük İstanbul Otogarı",
+          aciklama: "Avrupa'nın en büyüğü, dünyanın 3. otogarı.",
+        },
+        {
+          yil: "1995",
+          baslik: "The Plaza Hotel",
+          aciklama: "Yatırım–inşaat–işletme oteli projesi.",
+        },
+        {
+          yil: "2005",
+          baslik: "Avrupa'nın En Büyük AVM'si",
+          aciklama: "En büyük kapalı alışveriş ve eğlence merkezi.",
+        },
+        {
+          yil: "2020",
+          baslik: "Balkanlar'da En Büyük Yatırım",
+          aciklama: "280.000 m² Türk özel sektör yatırımı.",
+        },
+        {
+          yil: "2023",
+          baslik: "TOKİ Deprem Konutları",
+          aciklama: "Adıyaman–Hatay'da 7.500+ bağımsız bölüm.",
+        },
+        {
+          yil: "2024",
+          baslik: "İFM Faz-3 Projesi",
+          aciklama: "İstanbul Finans Merkezi'nde 100 bin+ m² yapım.",
+        },
+        {
+          yil: "2025",
+          baslik: "Kritik Altyapı & Veri Merkezi",
+          aciklama: "Tier-3 & LEED veri merkezi çözümleri.",
+        },
       ],
     },
     veriMerkeziOlcek: {
       eyebrow: "RAKAMLARLA CEVAHİR GRUBU",
       baslik: "Veri Merkezi Ölçeğimiz",
       stats: [
-        { deger: "70+", birim: "M USD", baslik: "Ortalama Veri Merkezi Proje Büyüklüğü" },
-        { deger: "100+", birim: "", baslik: "Minimum Veri Merkezi Kabinet Sayısı" },
-        { deger: "350+", birim: "M USD", baslik: "Aktif Veri Merkezi Proje Büyüklüğü" },
+        {
+          deger: "70+",
+          birim: "M USD",
+          baslik: "Ortalama Veri Merkezi Proje Büyüklüğü",
+        },
+        {
+          deger: "100+",
+          birim: "",
+          baslik: "Minimum Veri Merkezi Kabinet Sayısı",
+        },
+        {
+          deger: "350+",
+          birim: "M USD",
+          baslik: "Aktif Veri Merkezi Proje Büyüklüğü",
+        },
       ],
       alinti: '"Kalite ve güven, her projemizin temelinde yatar."',
     },
@@ -290,29 +354,34 @@ export const tr = {
       liste: [
         {
           baslik: "İnşaat",
-          aciklama: "Cevahir Yapı, Cevahir Taahhüt, Cevahir Proje ve LIBCO markalarıyla; konuttan kritik altyapıya geniş bir yapı portföyü.",
+          aciklama:
+            "Cevahir Yapı, Cevahir Taahhüt, Cevahir Proje ve LIBCO markalarıyla; konuttan kritik altyapıya geniş bir yapı portföyü.",
           featured: false,
         },
         {
           baslik: "Teknoloji",
-          aciklama: "CDC, CBIT, KVK ve KVK Teknik Servis markalarıyla; veri merkezinden bilgi teknolojilerine, saha hizmetlerine uzanan teknoloji ekosistemi.",
+          aciklama:
+            "CDC, CBIT, KVK ve KVK Teknik Servis markalarıyla; veri merkezinden bilgi teknolojilerine, saha hizmetlerine uzanan teknoloji ekosistemi.",
           featured: true,
         },
         {
           baslik: "Enerji",
-          aciklama: "Baraj ve enerji altyapısı projeleriyle sürdürülebilir güç kaynaklarına ve kritik enerji sistemlerine yatırım.",
+          aciklama:
+            "Baraj ve enerji altyapısı projeleriyle sürdürülebilir güç kaynaklarına ve kritik enerji sistemlerine yatırım.",
           featured: false,
         },
         {
           baslik: "Turizm",
-          aciklama: "Cevahir Hotel Istanbul Asia ile konaklama ve ağırlama sektöründe kaliteli hizmet anlayışı.",
+          aciklama:
+            "Cevahir Hotel Istanbul Asia ile konaklama ve ağırlama sektöründe kaliteli hizmet anlayışı.",
           featured: false,
         },
       ],
     },
     cta: {
       baslik: "Ekibimizle Tanışmak İster misiniz?",
-      aciklama: "CBIT'in üretici bağımsız yaklaşımını ve Cevahir Grubu güvencesini projenizde birlikte değerlendirelim.",
+      aciklama:
+        "CBIT'in üretici bağımsız yaklaşımını ve Cevahir Grubu güvencesini projenizde birlikte değerlendirelim.",
       btnIletisim: "Bize Ulaşın",
       btnCozumler: "Veri Merkezi Çözümleri",
     },
@@ -320,7 +389,8 @@ export const tr = {
   cozumler: {
     hero: {
       eyebrow: "ÇÖZÜMLERİMİZ",
-      baslik: "Kurumunuzun İhtiyaç Duyduğu Her Teknoloji Katmanında Uçtan Uca Hizmet",
+      baslik:
+        "Kurumunuzun İhtiyaç Duyduğu Her Teknoloji Katmanında Uçtan Uca Hizmet",
       lead: "Ağ altyapısından veri merkezine, buluttan yapay zekaya, siber güvenlikten yönetilen hizmetlere kadar altı çözüm alanında tasarımdan işletmeye tam kapsamlı hizmet veriyoruz.",
     },
     chips: [
@@ -337,17 +407,30 @@ export const tr = {
         num: "ÇÖZÜM ALANI 01",
         icon: "Server",
         baslik: "Ağ Altyapısı ve Veri Merkezi",
-        aciklama: "Kampüsten veri merkezine, yüksek erişilebilir ve ölçeklenebilir ağ mimarileri tasarlıyor ve kuruyoruz.",
+        aciklama:
+          "Kampüsten veri merkezine, yüksek erişilebilir ve ölçeklenebilir ağ mimarileri tasarlıyor ve kuruyoruz.",
         kpi: {
           deger: "%99.9999",
           etiket: "Hedeflenen Ağ Kullanılabilirlik Oranı",
         },
         lead: "Bu, en derin uzmanlığa sahip olduğumuz ve Cevahir Grubu'nun inşaat gücüyle birleştirdiğimiz amiral gemisi çözüm alanımızdır.",
         maddeler: [
-          { baslik: "Kampüs ve WAN Ağ Tasarımı", tanim: "LAN/WAN, kablosuz ağ, SD-WAN ve SASE mimarileri" },
-          { baslik: "Veri Merkezi Kurulumu", tanim: "Sunucu, depolama ve sanallaştırma altyapısı" },
-          { baslik: "Felaket Kurtarma Planlama", tanim: "Yedeklilik, yük dengeleme ve iş sürekliliği" },
-          { baslik: "Uçtan Uca Gözlemleme", tanim: "Proaktif-reaktif izleme ve trend kapasite planlaması" },
+          {
+            baslik: "Kampüs ve WAN Ağ Tasarımı",
+            tanim: "LAN/WAN, kablosuz ağ, SD-WAN ve SASE mimarileri",
+          },
+          {
+            baslik: "Veri Merkezi Kurulumu",
+            tanim: "Sunucu, depolama ve sanallaştırma altyapısı",
+          },
+          {
+            baslik: "Felaket Kurtarma Planlama",
+            tanim: "Yedeklilik, yük dengeleme ve iş sürekliliği",
+          },
+          {
+            baslik: "Uçtan Uca Gözlemleme",
+            tanim: "Proaktif-reaktif izleme ve trend kapasite planlaması",
+          },
         ],
         btnText: "Veri Merkezi Sayfasında Detaylı İnceleyin",
         btnLink: "/veri-merkezi",
@@ -357,16 +440,29 @@ export const tr = {
         num: "ÇÖZÜM ALANI 02",
         icon: "Cloud",
         baslik: "Bulut Çözümleri",
-        aciklama: "Hibrit ve çoklu bulut stratejileriyle iş yüklerinizi uygun platforma taşıyor, maliyet ve performansı optimize ediyoruz.",
+        aciklama:
+          "Hibrit ve çoklu bulut stratejileriyle iş yüklerinizi uygun platforma taşıyor, maliyet ve performansı optimize ediyoruz.",
         kpi: {
           deger: "%30",
           etiket: "Ortalama Altyapı Maliyet Tasarrufu",
         },
         maddeler: [
-          { baslik: "Bulut Taşınma Hizmetleri", tanim: "Uygulama ve veri taşıma, mimari dönüşüm" },
-          { baslik: "Hibrit / Çoklu Bulut Mimarisi", tanim: "Özel bulut ile genel bulut entegrasyonu" },
-          { baslik: "Maliyet Optimizasyonu", tanim: "Kaynak kullanımı analizi ve ölçeklendirme" },
-          { baslik: "Bulut Güvenliği ve Uyumluluk", tanim: "Kimlik yönetimi, erişim kontrolü, denetim" },
+          {
+            baslik: "Bulut Taşınma Hizmetleri",
+            tanim: "Uygulama ve veri taşıma, mimari dönüşüm",
+          },
+          {
+            baslik: "Hibrit / Çoklu Bulut Mimarisi",
+            tanim: "Özel bulut ile genel bulut entegrasyonu",
+          },
+          {
+            baslik: "Maliyet Optimizasyonu",
+            tanim: "Kaynak kullanımı analizi ve ölçeklendirme",
+          },
+          {
+            baslik: "Bulut Güvenliği ve Uyumluluk",
+            tanim: "Kimlik yönetimi, erişim kontrolü, denetim",
+          },
         ],
       },
       {
@@ -374,15 +470,28 @@ export const tr = {
         num: "ÇÖZÜM ALANI 03",
         icon: "Cpu",
         baslik: "Yapay Zeka Çözümleri",
-        aciklama: "Kurumsal varlıklarınızın ve verilerinizin, iş amaçlarınıza uygun olarak işlenerek fayda üretilmesini mümkün kılıyoruz.",
+        aciklama:
+          "Kurumsal varlıklarınızın ve verilerinizin, iş amaçlarınıza uygun olarak işlenerek fayda üretilmesini mümkün kılıyoruz.",
         kpi: {
           deger: "%40",
           etiket: "Ortalama Operasyonel Verimlilik Artışı",
         },
         maddeler: [
-          { baslik: "Yapay Zeka – Makine Öğrenmesi", tanim: "Mevcut kurumsal verinizin iş amaçlarına uygun zenginleştirilmesi" },
-          { baslik: "Agentic AI", tanim: "Yapay zekanın iş süreçleriniz için aksiyon alabilmesi, iş gücü tasarrufu" },
-          { baslik: "Veri Olgunlaştırma Hizmetleri ve Danışmanlığı", tanim: "Kurumsal verilerinizin yapay zeka ile işlenmeye hazırlanması" },
+          {
+            baslik: "Yapay Zeka – Makine Öğrenmesi",
+            tanim:
+              "Mevcut kurumsal verinizin iş amaçlarına uygun zenginleştirilmesi",
+          },
+          {
+            baslik: "Agentic AI",
+            tanim:
+              "Yapay zekanın iş süreçleriniz için aksiyon alabilmesi, iş gücü tasarrufu",
+          },
+          {
+            baslik: "Veri Olgunlaştırma Hizmetleri ve Danışmanlığı",
+            tanim:
+              "Kurumsal verilerinizin yapay zeka ile işlenmeye hazırlanması",
+          },
         ],
       },
       {
@@ -390,16 +499,29 @@ export const tr = {
         num: "ÇÖZÜM ALANI 04",
         icon: "Shield",
         baslik: "Siber Güvenlik Çözümleri",
-        aciklama: "Kurumunuzu uçtan uca koruyacak güvenlik mimarisini tasarlıyor, 7/24 izleme ile tehditleri tespit ediyoruz.",
+        aciklama:
+          "Kurumunuzu uçtan uca koruyacak güvenlik mimarisini tasarlıyor, 7/24 izleme ile tehditleri tespit ediyoruz.",
         kpi: {
           deger: "7/24",
           etiket: "Kesintisiz Tehdit İzleme ve Müdahale",
         },
         maddeler: [
-          { baslik: "Güvenlik Mimarisi Tasarımı", tanim: "Ağ, uç nokta ve uygulama güvenliği" },
-          { baslik: "SOC ve Tehdit İzleme", tanim: "7/24 güvenlik operasyon merkezi hizmeti" },
-          { baslik: "Sızma Testi ve Denetim", tanim: "Zafiyet taraması ve risk değerlendirmesi" },
-          { baslik: "Uyumluluk Danışmanlığı", tanim: "KVKK, ISO 27001 ve sektörel regülasyonlar" },
+          {
+            baslik: "Güvenlik Mimarisi Tasarımı",
+            tanim: "Ağ, uç nokta ve uygulama güvenliği",
+          },
+          {
+            baslik: "SOC ve Tehdit İzleme",
+            tanim: "7/24 güvenlik operasyon merkezi hizmeti",
+          },
+          {
+            baslik: "Sızma Testi ve Denetim",
+            tanim: "Zafiyet taraması ve risk değerlendirmesi",
+          },
+          {
+            baslik: "Uyumluluk Danışmanlığı",
+            tanim: "KVKK, ISO 27001 ve sektörel regülasyonlar",
+          },
         ],
       },
       {
@@ -407,16 +529,29 @@ export const tr = {
         num: "ÇÖZÜM ALANI 05",
         icon: "Headset",
         baslik: "Yönetilen Hizmetler ve Destek",
-        aciklama: "Kurulumdan sonrasında da yanınızdayız: altyapınızı izliyor, sorunları siz fark etmeden çözüyoruz.",
+        aciklama:
+          "Kurulumdan sonrasında da yanınızdayız: altyapınızı izliyor, sorunları siz fark etmeden çözüyoruz.",
         kpi: {
           deger: "<45 dk",
           etiket: "Ortalama İlk Müdahale Süresi",
         },
         maddeler: [
-          { baslik: "7/24 NOC İzleme", tanim: "Proaktif altyapı ve uygulama izleme" },
-          { baslik: "Saha ve Uzaktan Destek", tanim: "SLA garantili teknik destek hizmetleri" },
-          { baslik: "Varlık ve Lisans Yönetimi", tanim: "Donanım/yazılım envanteri takibi" },
-          { baslik: "Düzenli Bakım ve Raporlama", tanim: "Periyodik sağlık kontrolleri ve raporlar" },
+          {
+            baslik: "7/24 NOC İzleme",
+            tanim: "Proaktif altyapı ve uygulama izleme",
+          },
+          {
+            baslik: "Saha ve Uzaktan Destek",
+            tanim: "SLA garantili teknik destek hizmetleri",
+          },
+          {
+            baslik: "Varlık ve Lisans Yönetimi",
+            tanim: "Donanım/yazılım envanteri takibi",
+          },
+          {
+            baslik: "Düzenli Bakım ve Raporlama",
+            tanim: "Periyodik sağlık kontrolleri ve raporlar",
+          },
         ],
       },
       {
@@ -424,23 +559,50 @@ export const tr = {
         num: "ÇÖZÜM ALANI 06",
         icon: "ClipboardCheck",
         baslik: "Danışmanlık ve Proje Yönetimi",
-        aciklama: "Her proje beş net aşamadan geçer; şeffaf iletişim ve ölçülebilir çıktılarla ilerleriz.",
+        aciklama:
+          "Her proje beş net aşamadan geçer; şeffaf iletişim ve ölçülebilir çıktılarla ilerleriz.",
         kpi: {
           deger: "5",
           etiket: "Aşamalı Uçtan Uca Proje Süreci",
         },
         surec: [
-          { num: "01", baslik: "Analiz", tanim: "İhtiyaç ve mevcut altyapı değerlendirmesi", icon: "Search" },
-          { num: "02", baslik: "Tasarım", tanim: "Çözüm mimarisi ve yol haritası", icon: "Ruler" },
-          { num: "03", baslik: "Kurulum – Test", tanim: "Kurulum ve doğrulama testleri", icon: "Wrench" },
-          { num: "04", baslik: "İşletim Hizmeti", tanim: "Sistem işletimi, gözlemleme ve raporlama", icon: "Settings" },
-          { num: "05", baslik: "Destek", tanim: "Garanti, bakım ve yedek parça hizmetleri", icon: "LifeBuoy" },
+          {
+            num: "01",
+            baslik: "Analiz",
+            tanim: "İhtiyaç ve mevcut altyapı değerlendirmesi",
+            icon: "Search",
+          },
+          {
+            num: "02",
+            baslik: "Tasarım",
+            tanim: "Çözüm mimarisi ve yol haritası",
+            icon: "Ruler",
+          },
+          {
+            num: "03",
+            baslik: "Kurulum – Test",
+            tanim: "Kurulum ve doğrulama testleri",
+            icon: "Wrench",
+          },
+          {
+            num: "04",
+            baslik: "İşletim Hizmeti",
+            tanim: "Sistem işletimi, gözlemleme ve raporlama",
+            icon: "Settings",
+          },
+          {
+            num: "05",
+            baslik: "Destek",
+            tanim: "Garanti, bakım ve yedek parça hizmetleri",
+            icon: "LifeBuoy",
+          },
         ],
       },
     ],
     ctaBand: {
       baslik: "Hangi Çözüm Size Uygun, Birlikte Bulalım",
-      aciklama: "İhtiyacınızı birlikte değerlendirelim ve size en uygun teknoloji yol haritasını çıkaralım.",
+      aciklama:
+        "İhtiyacınızı birlikte değerlendirelim ve size en uygun teknoloji yol haritasını çıkaralım.",
       btnText: "Bize Ulaşın",
     },
   },
@@ -496,7 +658,7 @@ export const tr = {
   },
   haberler: {
     baslik: "Haberler",
-    altBaslik: "CDC Teknoloji'den güncel gelişmeler.",
+    altBaslik: "CBIT Teknoloji'den güncel gelişmeler.",
     yukleniyor: "Yükleniyor...",
     hata: "Lütfen ağınızı kontrol ediniz",
     bos: "Henüz haber eklenmemiş.",
@@ -505,7 +667,7 @@ export const tr = {
     baslik: "İletişim",
     altBaslik: "İletişim Bilgileri",
     aciklama:
-      "CDC, veri merkezi ihtiyaçları doğrultusunda özelleştirilmiş çözümler sunmaktadır. Uzman ekiple iletişime geçmek ve projeler hakkında detaylı bilgi almak için aşağıdaki iletişim bilgileri veya iletişim formu kullanılabilir.",
+      "CBIT, veri merkezi ihtiyaçları doğrultusunda özelleştirilmiş çözümler sunmaktadır. Uzman ekiple iletişime geçmek ve projeler hakkında detaylı bilgi almak için aşağıdaki iletişim bilgileri veya iletişim formu kullanılabilir.",
     form: {
       baslik: "İletişim Formu",
       altBaslik:
@@ -532,19 +694,19 @@ export const tr = {
     cerezPolitikasi: {
       baslik: "Çerez Politikası",
       metin: [
-        "CDC Teknoloji web sitesi ve belirli çevrimiçi hizmetlerde, veri toplamayı etkinleştirmek için cihazınıza yerleştirilen dosyalar olan çerezler kullanılabilir.",
+        "CBIT Teknoloji web sitesi ve belirli çevrimiçi hizmetlerde, veri toplamayı etkinleştirmek için cihazınıza yerleştirilen dosyalar olan çerezler kullanılabilir.",
         "Çerezleri kullanmamıza izin verirseniz web sitemizde nasıl gezindiğinizi daha iyi anlayabilmek ve katılımınızı değerlendirebilmek, dil seçiminiz gibi özelleştirilmiş ayarları ve tercihleri hatırlamak amacıyla çerezler tarafından toplanan bilgileri kullanacağız.",
         "Çerezleri kullanmamıza izin verdikten sonra, tarayıcınızdaki ayarları değiştirerek çerezleri devre dışı bırakabilirsiniz. Bunu yapmayı seçerseniz çerezlere bağımlı olan bazı işlevler düzgün çalışmayabilir.",
-        "Detaylı bilgi için info@cdcteknoloji.com.tr adresi ile iletişime geçebilirsiniz.",
+        "Detaylı bilgi için info@cbit.com.tr adresi ile iletişime geçebilirsiniz.",
       ],
     },
     aydinlatmaMetni: {
       baslik: "Kişisel Verilerin Korunması",
       metin: [
-        "CDC Teknoloji olarak kişisel verilerinizin güvenliği hususuna azami gayreti ve hassasiyeti göstermekteyiz.",
+        "CBIT Teknoloji olarak kişisel verilerinizin güvenliği hususuna azami gayreti ve hassasiyeti göstermekteyiz.",
         "Mevzuat gereği veri sorumlusu sıfatıyla, iş ve hizmet ilişkimiz kapsamında edinilen her türlü özel ve genel kişisel veriler, Kişisel Verilerin Korunması Kanunu’na uygun olarak kaydedilecek, saklanacak, güncellenecek, üçüncü kişilere açıklanabilecek, devredilebilecek, sınıflandırılabilecek ve mevzuatta belirtilen diğer usul ve esaslara göre işlenecektir.",
         "Şirketimiz, verilerinizi güvenle korumak için en üst düzey güvenlik önlemlerini almaktadır.",
-        "Detaylı bilgi için info@cdcteknoloji.com.tr adresi ile iletişime geçebilirsiniz.",
+        "Detaylı bilgi için info@cbit.com.tr adresi ile iletişime geçebilirsiniz.",
       ],
     },
   },

@@ -17,10 +17,10 @@ interface IEmailData {
 
 const sendContactEmail = async (data: IEmailData) => {
   const mailOptions = {
-    from: `"CDC Teknoloji İletişim" <${process.env.GMAIL_USER}>`,
+    from: `"CBIT Teknoloji İletişim" <${process.env.GMAIL_USER}>`,
     to: process.env.GMAIL_USER,
     replyTo: data.eposta,
-    subject: `[CDC İletişim Formu] ${data.konu}`,
+    subject: `[CBIT İletişim Formu] ${data.konu}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="background: linear-gradient(135deg, #eb1c23, #a31d24); padding: 20px; border-radius: 8px 8px 0 0;">
@@ -46,7 +46,7 @@ const sendContactEmail = async (data: IEmailData) => {
           <p style="color: #555; line-height: 1.6; white-space: pre-wrap;">${data.mesaj}</p>
         </div>
         <p style="color: #999; font-size: 12px; text-align: center; margin-top: 16px;">
-          Bu mesaj cdcteknoloji.com.tr iletişim formundan gönderilmiştir.
+          Bu mesaj cbit.com.tr iletişim formundan gönderilmiştir.
         </p>
       </div>
     `,

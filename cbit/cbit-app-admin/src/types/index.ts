@@ -1,3 +1,21 @@
+export interface Proje {
+  id: string;
+  projeAdi: string;
+  projeAdiEn?: string | null;
+  projeDetayi?: string | null;
+  projeDetayiEn?: string | null;
+  projeResmi?: string | null;
+  beyazAlan?: string | null;
+  sertifikasyon?: string | null;
+  itGucu?: string | null;
+  toplamKuruluGuc?: string | null;
+  projeSuresi?: string | null;
+  toplamInsaatAlani?: string | null;
+  durum?: string | null;
+  durumEn?: string | null;
+  createdAt: string;
+}
+
 export interface Haber {
   id: string;
   haberAdi: string;

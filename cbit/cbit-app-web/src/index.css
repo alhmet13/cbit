@@ -759,7 +759,9 @@ main {
   align-items: center;
   gap: 20px;
   box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .about-stat-box:hover {
@@ -966,7 +968,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .sector-tile:hover .sector-icon-wrapper {
@@ -2345,7 +2349,7 @@ main {
 }
 
 /* ============================================================
-   NEDEN CDC TEKNOLOJİ BÖLÜMÜ YENİ MODERN DÜZENİ
+   NEDEN CBIT TEKNOLOJİ BÖLÜMÜ YENİ MODERN DÜZENİ
    ============================================================ */
 .why-us-section {
   padding: 90px 24px;
@@ -3739,7 +3743,9 @@ main {
   padding: 40px;
   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
   scroll-margin-top: 100px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .cozumler-solution-block:hover {

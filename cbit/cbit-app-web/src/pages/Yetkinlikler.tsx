@@ -26,7 +26,7 @@ export default function Yetkinlikler() {
         <figure className="solutions-hero-figure">
           <img
             src="/hero-exterior-v2.jpg"
-            alt="CDC Teknoloji - Tamamlanmış modern veri merkezi dış cephesi"
+            alt="CBIT Teknoloji - Tamamlanmış modern veri merkezi dış cephesi"
             className="solutions-hero-img"
           />
           <figcaption className="solutions-hero-caption">
@@ -46,10 +46,7 @@ export default function Yetkinlikler() {
               <div key={idx} className="split-block">
                 <h3 className="split-block-title">{item.baslik}</h3>
                 <div className="split-block-image">
-                  <img
-                    src={yetkinliklerGorseller[idx]}
-                    alt={item.baslik}
-                  />
+                  <img src={yetkinliklerGorseller[idx]} alt={item.baslik} />
                 </div>
                 <p className="split-block-detail">{item.tanim}</p>
               </div>
@@ -63,10 +60,7 @@ export default function Yetkinlikler() {
               <div key={idx} className="split-block">
                 <h3 className="split-block-title">{item.baslik}</h3>
                 <div className="split-block-image">
-                  <img
-                    src={yetkinliklerGorseller[idx + 3]}
-                    alt={item.baslik}
-                  />
+                  <img src={yetkinliklerGorseller[idx + 3]} alt={item.baslik} />
                 </div>
                 <p className="split-block-detail">{item.tanim}</p>
               </div>

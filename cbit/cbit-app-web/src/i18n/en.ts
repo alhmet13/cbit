@@ -4,7 +4,7 @@ export const en: Translations = {
   nav: {
     anasayfa: "Home",
     hakkimizda: "About Us",
-    cozumler: "Why CDC?",
+    cozumler: "Why CBIT?",
     yetkinlikler: "Solutions",
     projeler: "References",
     haberler: "News",
@@ -15,7 +15,7 @@ export const en: Translations = {
       "Rüzgarlıbahçe Mah. Çam Pınarı Sk. No:1 34805 Kavacık Ticaret Merkezi Beykoz/İstanbul",
     aydinlatmaMetni: "Clarification Text",
     cerezPolitikasi: "Cookie Policy",
-    eposta: "mail: info@cdcteknoloji.com.tr",
+    eposta: "mail: info@cbit.com.tr",
     telefon: "T: +90 216 333 6161",
   },
   anasayfa: {
@@ -203,17 +203,24 @@ export const en: Translations = {
   hakkimizda: {
     hero: {
       eyebrow: "ABOUT US",
-      baslik: "From Complex Engineering to Critical Infrastructure — Reliable Solutions, On Time",
+      baslik:
+        "From Complex Engineering to Critical Infrastructure — Reliable Solutions, On Time",
       lead: "CBIT is a vendor-independent system integrator that combines Cevahir Group's 65-year engineering heritage with deep information-technology expertise.",
     },
     bizKimiz: {
       eyebrow: "WHO WE ARE",
-      baslik: "An Independent System Integrator Built on 20+ Years of Sector Experience",
-      aciklama: "With a team carrying 20+ years of sector experience, we are an independent system integrator that aligns organizations' technology infrastructure with their business goals. With our vendor-independent approach, we deliver solutions using the most suitable global or local technologies — undertaking the entire process from design through operation and maintenance.",
+      baslik:
+        "An Independent System Integrator Built on 20+ Years of Sector Experience",
+      aciklama:
+        "With a team carrying 20+ years of sector experience, we are an independent system integrator that aligns organizations' technology infrastructure with their business goals. With our vendor-independent approach, we deliver solutions using the most suitable global or local technologies — undertaking the entire process from design through operation and maintenance.",
       stats: [
         { deger: "20+", baslik: "Years of Sector Experience", isRed: false },
         { deger: "%100", baslik: "Vendor-Independent Solutions", isRed: true },
-        { deger: "5", baslik: "Stage End-to-End Project Management", isRed: false },
+        {
+          deger: "5",
+          baslik: "Stage End-to-End Project Management",
+          isRed: false,
+        },
       ],
     },
     vizyonMisyon: {
@@ -221,11 +228,13 @@ export const en: Translations = {
       baslik: "The Principles That Define Us",
       vizyon: {
         baslik: "Our Vision",
-        aciklama: "To produce world-standard projects in national and international markets — to be a brand built on trust and permanence, carried into the future with growing strength, and to make sustainable performance a corporate foundation.",
+        aciklama:
+          "To produce world-standard projects in national and international markets — to be a brand built on trust and permanence, carried into the future with growing strength, and to make sustainable performance a corporate foundation.",
       },
       misyon: {
         baslik: "Our Mission",
-        aciklama: "To contribute to Türkiye's development and growth through every responsibility we undertake — creating sustainable added value for our employees, stakeholders, and society at large.",
+        aciklama:
+          "To contribute to Türkiye's development and growth through every responsibility we undertake — creating sustainable added value for our employees, stakeholders, and society at large.",
       },
       degerler: {
         baslik: "Our Values",
@@ -244,14 +253,16 @@ export const en: Translations = {
     cevahirGrup: {
       eyebrow: "ABOUT CEVAHIR GROUP",
       baslik: "From Complex Engineering to Critical Infrastructure",
-      aciklama: "Growing through uninterrupted operations since 1959, Cevahir Group is a multi-sector organization of which CBIT is a part.",
+      aciklama:
+        "Growing through uninterrupted operations since 1959, Cevahir Group is a multi-sector organization of which CBIT is a part.",
       stats: [
         { deger: "1959", baslik: "Founding Year" },
         { deger: "65+", baslik: "Years of Uninterrupted Operation" },
         { deger: "4+", baslik: "Countries — International Presence" },
         { deger: "~15.000", baslik: "Employees (900+ Expert Technical Staff)" },
       ],
-      ulkelerNotu: "We operate in Türkiye, Libya, Saudi Arabia, and North Macedonia.",
+      ulkelerNotu:
+        "We operate in Türkiye, Libya, Saudi Arabia, and North Macedonia.",
       sektorler: [
         { baslik: "Dam" },
         { baslik: "Data Center" },
@@ -265,27 +276,81 @@ export const en: Translations = {
       eyebrow: "OUR HISTORY",
       baslik: "Cevahir Group Timeline",
       liste: [
-        { yil: "1959", baslik: "Founding", aciklama: "Entered the industry with a comprehensive construction portfolio." },
-        { yil: "1975", baslik: "International Expansion", aciklama: "Large-scale projects in Libya and Saudi Arabia." },
-        { yil: "1990", baslik: "Development & Operation", aciklama: "Transition to an integrated project-ownership model." },
-        { yil: "1994", baslik: "Grand Istanbul Bus Terminal", aciklama: "Europe's largest, world's 3rd-largest bus terminal." },
-        { yil: "1995", baslik: "The Plaza Hotel", aciklama: "Invest–build–operate hotel project." },
-        { yil: "2005", baslik: "Europe's Largest Mall", aciklama: "The largest indoor shopping & entertainment center." },
-        { yil: "2020", baslik: "Largest Balkan Investment", aciklama: "280,000 m² Turkish private-sector investment." },
-        { yil: "2023", baslik: "TOKİ Post-Quake Housing", aciklama: "7,500+ housing units in Adıyaman–Hatay." },
-        { yil: "2024", baslik: "IFC Phase-3 Project", aciklama: "100,000+ m² built at Istanbul Financial Center." },
-        { yil: "2025", baslik: "Critical Infrastructure & Data Center", aciklama: "Tier-3 & LEED data center solutions." },
+        {
+          yil: "1959",
+          baslik: "Founding",
+          aciklama:
+            "Entered the industry with a comprehensive construction portfolio.",
+        },
+        {
+          yil: "1975",
+          baslik: "International Expansion",
+          aciklama: "Large-scale projects in Libya and Saudi Arabia.",
+        },
+        {
+          yil: "1990",
+          baslik: "Development & Operation",
+          aciklama: "Transition to an integrated project-ownership model.",
+        },
+        {
+          yil: "1994",
+          baslik: "Grand Istanbul Bus Terminal",
+          aciklama: "Europe's largest, world's 3rd-largest bus terminal.",
+        },
+        {
+          yil: "1995",
+          baslik: "The Plaza Hotel",
+          aciklama: "Invest–build–operate hotel project.",
+        },
+        {
+          yil: "2005",
+          baslik: "Europe's Largest Mall",
+          aciklama: "The largest indoor shopping & entertainment center.",
+        },
+        {
+          yil: "2020",
+          baslik: "Largest Balkan Investment",
+          aciklama: "280,000 m² Turkish private-sector investment.",
+        },
+        {
+          yil: "2023",
+          baslik: "TOKİ Post-Quake Housing",
+          aciklama: "7,500+ housing units in Adıyaman–Hatay.",
+        },
+        {
+          yil: "2024",
+          baslik: "IFC Phase-3 Project",
+          aciklama: "100,000+ m² built at Istanbul Financial Center.",
+        },
+        {
+          yil: "2025",
+          baslik: "Critical Infrastructure & Data Center",
+          aciklama: "Tier-3 & LEED data center solutions.",
+        },
       ],
     },
     veriMerkeziOlcek: {
       eyebrow: "CEVAHIR GROUP BY THE NUMBERS",
       baslik: "Our Data Center Scale",
       stats: [
-        { deger: "70+", birim: "M USD", baslik: "Avg. Data Center Project Size" },
-        { deger: "100+", birim: "", baslik: "Minimum Data Center Cabinet Count" },
-        { deger: "350+", birim: "M USD", baslik: "Active Data Center Project Value" },
+        {
+          deger: "70+",
+          birim: "M USD",
+          baslik: "Avg. Data Center Project Size",
+        },
+        {
+          deger: "100+",
+          birim: "",
+          baslik: "Minimum Data Center Cabinet Count",
+        },
+        {
+          deger: "350+",
+          birim: "M USD",
+          baslik: "Active Data Center Project Value",
+        },
       ],
-      alinti: '"Quality and trust lie at the foundation of every project we undertake."',
+      alinti:
+        '"Quality and trust lie at the foundation of every project we undertake."',
     },
     grupSirketleri: {
       eyebrow: "OUR GROUP COMPANIES",
@@ -293,29 +358,34 @@ export const en: Translations = {
       liste: [
         {
           baslik: "Construction",
-          aciklama: "A broad construction portfolio spanning housing to critical infrastructure, under the Cevahir Yapı, Cevahir Taahhüt, Cevahir Proje, and LIBCO brands.",
+          aciklama:
+            "A broad construction portfolio spanning housing to critical infrastructure, under the Cevahir Yapı, Cevahir Taahhüt, Cevahir Proje, and LIBCO brands.",
           featured: false,
         },
         {
           baslik: "Technology",
-          aciklama: "A technology ecosystem spanning data centers, information technology, and field services, under the CDC, CBIT, KVK, and KVK Teknik Servis brands.",
+          aciklama:
+            "A technology ecosystem spanning data centers, information technology, and field services, under the CDC, CBIT, KVK, and KVK Teknik Servis brands.",
           featured: true,
         },
         {
           baslik: "Energy",
-          aciklama: "Investment in sustainable power sources and critical energy systems through dam and energy-infrastructure projects.",
+          aciklama:
+            "Investment in sustainable power sources and critical energy systems through dam and energy-infrastructure projects.",
           featured: false,
         },
         {
           baslik: "Tourism",
-          aciklama: "Quality hospitality service in the accommodation sector with Cevahir Hotel Istanbul Asia.",
+          aciklama:
+            "Quality hospitality service in the accommodation sector with Cevahir Hotel Istanbul Asia.",
           featured: false,
         },
       ],
     },
     cta: {
       baslik: "Want to Meet Our Team?",
-      aciklama: "Let's explore what CBIT's vendor-independent approach and Cevahir Group's assurance can do for your project.",
+      aciklama:
+        "Let's explore what CBIT's vendor-independent approach and Cevahir Group's assurance can do for your project.",
       btnIletisim: "Contact Us",
       btnCozumler: "Data Center Solutions",
     },
@@ -323,7 +393,8 @@ export const en: Translations = {
   cozumler: {
     hero: {
       eyebrow: "OUR SOLUTIONS",
-      baslik: "End-to-End Service Across Every Technology Layer Your Organization Needs",
+      baslik:
+        "End-to-End Service Across Every Technology Layer Your Organization Needs",
       lead: "From network infrastructure to data centers, from cloud to artificial intelligence, from cybersecurity to managed services — we provide full-scope service across six solution areas, from design to operation.",
     },
     chips: [
@@ -340,17 +411,30 @@ export const en: Translations = {
         num: "SOLUTION AREA 01",
         icon: "Server",
         baslik: "Network Infrastructure & Data Center",
-        aciklama: "We design and build highly available, scalable network architectures — from campus to data center.",
+        aciklama:
+          "We design and build highly available, scalable network architectures — from campus to data center.",
         kpi: {
           deger: "%99.9999",
           etiket: "Targeted Network Availability",
         },
         lead: "This is our flagship solution area, where we combine the deepest expertise with Cevahir Group's construction strength.",
         maddeler: [
-          { baslik: "Campus & WAN Network Design", tanim: "LAN/WAN, wireless, SD-WAN and SASE architectures" },
-          { baslik: "Data Center Deployment", tanim: "Server, storage, and virtualization infrastructure" },
-          { baslik: "Disaster Recovery Planning", tanim: "Redundancy, load balancing, and business continuity" },
-          { baslik: "End-to-End Observability", tanim: "Proactive-reactive monitoring and trend capacity planning" },
+          {
+            baslik: "Campus & WAN Network Design",
+            tanim: "LAN/WAN, wireless, SD-WAN and SASE architectures",
+          },
+          {
+            baslik: "Data Center Deployment",
+            tanim: "Server, storage, and virtualization infrastructure",
+          },
+          {
+            baslik: "Disaster Recovery Planning",
+            tanim: "Redundancy, load balancing, and business continuity",
+          },
+          {
+            baslik: "End-to-End Observability",
+            tanim: "Proactive-reactive monitoring and trend capacity planning",
+          },
         ],
         btnText: "See Full Detail on the Data Center Page",
         btnLink: "/veri-merkezi",
@@ -360,16 +444,30 @@ export const en: Translations = {
         num: "SOLUTION AREA 02",
         icon: "Cloud",
         baslik: "Cloud Solutions",
-        aciklama: "We move your workloads to the right platform with hybrid and multi-cloud strategies, optimizing cost and performance.",
+        aciklama:
+          "We move your workloads to the right platform with hybrid and multi-cloud strategies, optimizing cost and performance.",
         kpi: {
           deger: "%30",
           etiket: "Average Infrastructure Cost Savings",
         },
         maddeler: [
-          { baslik: "Cloud Migration Services", tanim: "Application and data migration, architecture transformation" },
-          { baslik: "Hybrid / Multi-Cloud Architecture", tanim: "Private-cloud and public-cloud integration" },
-          { baslik: "Cost Optimization", tanim: "Resource-usage analysis and scaling" },
-          { baslik: "Cloud Security & Compliance", tanim: "Identity management, access control, auditing" },
+          {
+            baslik: "Cloud Migration Services",
+            tanim:
+              "Application and data migration, architecture transformation",
+          },
+          {
+            baslik: "Hybrid / Multi-Cloud Architecture",
+            tanim: "Private-cloud and public-cloud integration",
+          },
+          {
+            baslik: "Cost Optimization",
+            tanim: "Resource-usage analysis and scaling",
+          },
+          {
+            baslik: "Cloud Security & Compliance",
+            tanim: "Identity management, access control, auditing",
+          },
         ],
       },
       {
@@ -377,15 +475,27 @@ export const en: Translations = {
         num: "SOLUTION AREA 03",
         icon: "Cpu",
         baslik: "AI Solutions",
-        aciklama: "We make it possible for your corporate assets and data to be processed in line with your business goals to generate real benefit.",
+        aciklama:
+          "We make it possible for your corporate assets and data to be processed in line with your business goals to generate real benefit.",
         kpi: {
           deger: "%40",
           etiket: "Average Operational Efficiency Gain",
         },
         maddeler: [
-          { baslik: "AI – Machine Learning", tanim: "Enriching your existing corporate data in line with business goals" },
-          { baslik: "Agentic AI", tanim: "AI that can take action within your business processes, saving labor" },
-          { baslik: "Data-Maturity Services & Consulting", tanim: "Preparing your corporate data to be processed with AI" },
+          {
+            baslik: "AI – Machine Learning",
+            tanim:
+              "Enriching your existing corporate data in line with business goals",
+          },
+          {
+            baslik: "Agentic AI",
+            tanim:
+              "AI that can take action within your business processes, saving labor",
+          },
+          {
+            baslik: "Data-Maturity Services & Consulting",
+            tanim: "Preparing your corporate data to be processed with AI",
+          },
         ],
       },
       {
@@ -393,16 +503,29 @@ export const en: Translations = {
         num: "SOLUTION AREA 04",
         icon: "Shield",
         baslik: "Cybersecurity Solutions",
-        aciklama: "We design the security architecture to protect your organization end-to-end, detecting threats through 24/7 monitoring.",
+        aciklama:
+          "We design the security architecture to protect your organization end-to-end, detecting threats through 24/7 monitoring.",
         kpi: {
           deger: "7/24",
           etiket: "Continuous Threat Monitoring & Response",
         },
         maddeler: [
-          { baslik: "Security Architecture Design", tanim: "Network, endpoint, and application security" },
-          { baslik: "SOC & Threat Monitoring", tanim: "24/7 security operations center service" },
-          { baslik: "Penetration Testing & Audit", tanim: "Vulnerability scanning and risk assessment" },
-          { baslik: "Compliance Consulting", tanim: "KVKK (Turkish DPL), ISO 27001, and sector regulations" },
+          {
+            baslik: "Security Architecture Design",
+            tanim: "Network, endpoint, and application security",
+          },
+          {
+            baslik: "SOC & Threat Monitoring",
+            tanim: "24/7 security operations center service",
+          },
+          {
+            baslik: "Penetration Testing & Audit",
+            tanim: "Vulnerability scanning and risk assessment",
+          },
+          {
+            baslik: "Compliance Consulting",
+            tanim: "KVKK (Turkish DPL), ISO 27001, and sector regulations",
+          },
         ],
       },
       {
@@ -410,16 +533,29 @@ export const en: Translations = {
         num: "SOLUTION AREA 05",
         icon: "Headset",
         baslik: "Managed Services & Support",
-        aciklama: "We stay with you after installation too — monitoring your infrastructure and resolving issues before you notice them.",
+        aciklama:
+          "We stay with you after installation too — monitoring your infrastructure and resolving issues before you notice them.",
         kpi: {
           deger: "<45 min",
           etiket: "Average First-Response Time",
         },
         maddeler: [
-          { baslik: "24/7 NOC Monitoring", tanim: "Proactive infrastructure and application monitoring" },
-          { baslik: "On-Site & Remote Support", tanim: "SLA-backed technical support services" },
-          { baslik: "Asset & License Management", tanim: "Hardware/software inventory tracking" },
-          { baslik: "Regular Maintenance & Reporting", tanim: "Periodic health checks and reports" },
+          {
+            baslik: "24/7 NOC Monitoring",
+            tanim: "Proactive infrastructure and application monitoring",
+          },
+          {
+            baslik: "On-Site & Remote Support",
+            tanim: "SLA-backed technical support services",
+          },
+          {
+            baslik: "Asset & License Management",
+            tanim: "Hardware/software inventory tracking",
+          },
+          {
+            baslik: "Regular Maintenance & Reporting",
+            tanim: "Periodic health checks and reports",
+          },
         ],
       },
       {
@@ -427,23 +563,50 @@ export const en: Translations = {
         num: "SOLUTION AREA 06",
         icon: "ClipboardCheck",
         baslik: "Consulting & Project Management",
-        aciklama: "Every project passes through five clear stages; we proceed with transparent communication and measurable outputs.",
+        aciklama:
+          "Every project passes through five clear stages; we proceed with transparent communication and measurable outputs.",
         kpi: {
           deger: "5",
           etiket: "Stage End-to-End Project Process",
         },
         surec: [
-          { num: "01", baslik: "Analysis", tanim: "Needs and existing-infrastructure assessment", icon: "Search" },
-          { num: "02", baslik: "Design", tanim: "Solution architecture and roadmap", icon: "Ruler" },
-          { num: "03", baslik: "Install – Test", tanim: "Installation and verification testing", icon: "Wrench" },
-          { num: "04", baslik: "Operation", tanim: "System operation, monitoring, and reporting", icon: "Settings" },
-          { num: "05", baslik: "Support", tanim: "Warranty, maintenance, and spare-parts services", icon: "LifeBuoy" },
+          {
+            num: "01",
+            baslik: "Analysis",
+            tanim: "Needs and existing-infrastructure assessment",
+            icon: "Search",
+          },
+          {
+            num: "02",
+            baslik: "Design",
+            tanim: "Solution architecture and roadmap",
+            icon: "Ruler",
+          },
+          {
+            num: "03",
+            baslik: "Install – Test",
+            tanim: "Installation and verification testing",
+            icon: "Wrench",
+          },
+          {
+            num: "04",
+            baslik: "Operation",
+            tanim: "System operation, monitoring, and reporting",
+            icon: "Settings",
+          },
+          {
+            num: "05",
+            baslik: "Support",
+            tanim: "Warranty, maintenance, and spare-parts services",
+            icon: "LifeBuoy",
+          },
         ],
       },
     ],
     ctaBand: {
       baslik: "Let's Find the Right Solution for You, Together",
-      aciklama: "Let's assess your needs together and map out the technology roadmap that fits you best.",
+      aciklama:
+        "Let's assess your needs together and map out the technology roadmap that fits you best.",
       btnText: "Contact Us",
     },
   },
@@ -500,7 +663,7 @@ export const en: Translations = {
   },
   haberler: {
     baslik: "News",
-    altBaslik: "Latest developments from CDC Technology.",
+    altBaslik: "Latest developments from CBIT.",
     yukleniyor: "Loading...",
     hata: "Please check your network connection",
     bos: "No news added yet.",
@@ -509,7 +672,7 @@ export const en: Translations = {
     baslik: "Contact",
     altBaslik: "Get in Touch",
     aciklama:
-      "As CDC, we would be pleased to offer customized solutions for your data center needs. You can use the contact details below to get in touch with our expert team and learn more about our projects, or fill out our contact form.",
+      "As CBIT, we would be pleased to offer customized solutions for your data center needs. You can use the contact details below to get in touch with our expert team and learn more about our projects, or fill out our contact form.",
     form: {
       baslik: "Contact Form",
       altBaslik:
@@ -536,19 +699,19 @@ export const en: Translations = {
     cerezPolitikasi: {
       baslik: "Cookie Policy",
       metin: [
-        "CDC Technology website and certain online services may use cookies, which are files placed on your device to enable data collection.",
+        "CBIT Technology website and certain online services may use cookies, which are files placed on your device to enable data collection.",
         "If you allow us to use cookies, we will use the information collected by cookies to better understand how you navigate our website, evaluate your participation, and remember customized settings and preferences such as your language selection.",
         "After allowing us to use cookies, you can disable cookies by changing the settings in your browser. If you choose to do this, some functionalities that depend on cookies may not work properly.",
-        "For detailed information, you can contact info@cdcteknoloji.com.tr.",
+        "For detailed information, you can contact info@cbit.com.tr.",
       ],
     },
     aydinlatmaMetni: {
       baslik: "Protection of Personal Data",
       metin: [
-        "As CDC Technology, we show maximum effort and sensitivity to the security of your personal data.",
+        "As CBIT Technology, we show maximum effort and sensitivity to the security of your personal data.",
         "As a data controller according to the legislation, all kinds of special and general personal data obtained within the scope of our business and service relationship will be recorded, stored, updated, disclosed to third parties, transferred, classified and processed in accordance with the Law on the Protection of Personal Data and other procedures and principles specified in the legislation.",
         "Our company takes the highest level of security measures to protect your data safely.",
-        "For detailed information, you can contact info@cdcteknoloji.com.tr.",
+        "For detailed information, you can contact info@cbit.com.tr.",
       ],
     },
   },

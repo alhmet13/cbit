@@ -4,17 +4,19 @@ import {
   Routes,
   NavLink,
   useNavigate,
-} from "react-router-dom";
+} from "react-router";
 import { AuthProvider } from "./context/AuthProvider";
 import { PrivateRoute } from "./components/PrivateRoute";
 import { useAuth } from "./context/useAuth";
 import { api } from "./api/client";
 import Dashboard from "./pages/Dashboard";
+import Projeler from "./pages/Projeler";
 import News from "./pages/News";
 import Messages from "./pages/Messages";
 import Login from "./pages/Login";
 import {
   LayoutDashboard,
+  Building2,
   Newspaper,
   Mail,
   Globe,
@@ -58,6 +60,16 @@ function AdminLayout() {
           >
             <LayoutDashboard size={19} strokeWidth={2} />
             <span>Kontrol Paneli</span>
+          </NavLink>
+
+          <NavLink
+            to="/projeler"
+            className={({ isActive }) =>
+              `sidebar-link ${isActive ? "active" : ""}`
+            }
+          >
+            <Building2 size={19} strokeWidth={2} />
+            <span>Projeler</span>
           </NavLink>
 
           <NavLink
@@ -109,6 +121,7 @@ function AdminLayout() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/projeler" element={<Projeler />} />
           <Route path="/news" element={<News />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/change-password" element={<ChangePassword />} />
