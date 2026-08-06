@@ -21,6 +21,7 @@
     "lint": "eslint \"src/**/*.ts\" --fix",
     "lint:check": "eslint \"src/**/*.ts\"",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "create-admin": "node scripts/create-admin.js",
     "postinstall": "npx prisma generate"
   },
   "dependencies": {
@@ -41,6 +42,7 @@
     "pg": "^8.22.0",
     "pino": "^9.8.0",
     "pino-http": "^10.5.0",
+    "pino-pretty": "^13.1.1",
     "ws": "^8.18.0",
     "zod": "^3.25.76"
   },
@@ -64,7 +66,6 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "nodemon": "^3.1.10",
-    "pino-pretty": "^13.1.1",
     "prettier": "^3.6.2",
     "prisma": "^7.8.0",
     "ts-node": "^10.9.2",

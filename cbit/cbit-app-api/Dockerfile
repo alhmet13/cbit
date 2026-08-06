@@ -44,4 +44,5 @@ RUN mkdir -p /app/uploads
 # Expose backend port
 EXPOSE 2000
 
-CMD ["sh", "-c", "npx prisma db push || echo 'Prisma DB push fallback...'; node dist/app.js"]
+CMD ["node", "dist/app.js"]
+
