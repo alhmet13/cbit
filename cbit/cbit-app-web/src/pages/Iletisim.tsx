@@ -11,9 +11,9 @@ export default function Iletisim() {
     konu: "",
     mesaj: "",
   });
-  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">(
-    "idle"
-  );
+  const [status, setStatus] = useState<
+    "idle" | "sending" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -21,7 +21,12 @@ export default function Iletisim() {
     setErrorMessage(null);
 
     // Tüm alanların dolu olduğunu kontrol ediyoruz
-    if (!formData.adSoyad.trim() || !formData.eposta.trim() || !formData.konu.trim() || !formData.mesaj.trim()) {
+    if (
+      !formData.adSoyad.trim() ||
+      !formData.eposta.trim() ||
+      !formData.konu.trim() ||
+      !formData.mesaj.trim()
+    ) {
       setStatus("error");
       setErrorMessage("Lütfen tüm alanları doldurunuz.");
       return;
@@ -43,7 +48,7 @@ export default function Iletisim() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -72,12 +77,12 @@ export default function Iletisim() {
               <li>
                 <strong>{t.iletisim.sirketDetayi.webSitesi}: </strong>
                 <a
-                  href="https://www.cdcteknoloji.com.tr"
+                  href="https://www.cbit.com.tr"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact-link"
                 >
-                  www.cdcteknoloji.com.tr
+                  www.cbit.com.tr
                 </a>
               </li>
               <li>
@@ -174,7 +179,10 @@ export default function Iletisim() {
       {/* Konum / Harita - Açık Gri Arka Plan */}
       <section className="section-block bg-light p-large border-radius-medium mt-large mb-large">
         <h2 className="section-title mb-large">{t.iletisim.konum}</h2>
-        <div className="map-container card" style={{ padding: 0, overflow: "hidden", height: "450px" }}>
+        <div
+          className="map-container card"
+          style={{ padding: 0, overflow: "hidden", height: "450px" }}
+        >
           <iframe
             title="Google Maps"
             width="100%"
