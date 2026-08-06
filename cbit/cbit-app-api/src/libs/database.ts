@@ -1,16 +1,13 @@
+import { Pool } from 'pg';
+import { PrismaPg } from '@prisma/adapter-pg';
 import { PrismaClient } from '../generated/prisma';
-import { PrismaNeon } from '@prisma/adapter-neon';
-import { neonConfig } from '@neondatabase/serverless';
-import ws from 'ws';
 
-// Force the Neon serverless driver to use WebSockets to bypass corporate port restrictions
-neonConfig.webSocketConstructor = ws;
-
-const adapter = new PrismaNeon({ connectionString: process.env.DATABASE_URL! });
+const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+const adapter = new PrismaPg(pool);
 
 const prisma = new PrismaClient({
   adapter,
-  log: ['info', 'error', 'query', 'warn'],
+  log: process.env.NODE_ENV === 'development' ? ['query'] : [],
 });
 
 export { prisma };

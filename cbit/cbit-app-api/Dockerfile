@@ -9,8 +9,8 @@ COPY prisma ./prisma/
 COPY prisma.config.ts ./
 
 # Install all dependencies (needed for compiling TypeScript and generating Prisma client)
-# Prisma config requires DIRECT_URL to be set, but generate doesn't actually connect to the DB
-ENV DIRECT_URL="postgresql://dummy:dummy@localhost:5432/dummy"
+# Prisma config requires DATABASE_URL to be set, but generate doesn't actually connect to the DB
+ENV DATABASE_URL="postgresql://dummy:dummy@localhost:5432/dummy"
 RUN npm ci
 
 # Copy source code and config
@@ -44,5 +44,5 @@ RUN mkdir -p /app/uploads
 # Expose backend port
 EXPOSE 2000
 
-CMD ["node", "dist/app.js"]
+CMD ["sh", "-c", "npx prisma db push && node dist/app.js"]
 
