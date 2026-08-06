@@ -1,14 +1,37 @@
 services:
+  cbit-db:
+    image: postgres:15-alpine
+    container_name: cbit-db
+    environment:
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
+    volumes:
+      - cbit-db-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - cbit-network
+    restart: unless-stopped
+
   cbit-app-api:
     build:
-      context: ./cbit/cbit-app-api
+      context: ./cbit-app-api
       dockerfile: Dockerfile
     container_name: cbit-app-api
     restart: unless-stopped
     ports:
       - "2000:2000"
     env_file:
-      - ./cbit/cbit-app-api/.env
+      - ./cbit-app-api/.env
+    environment:
+      - DATABASE_URL=postgresql://${DB_USER}:${DB_PASSWORD}@cbit-db:5432/${DB_NAME}?schema=public
+    depends_on:
+      cbit-db:
+        condition: service_healthy
     volumes:
       - cbit_uploads:/app/uploads
     networks:
@@ -16,7 +39,7 @@ services:
 
   cbit-app-admin:
     build:
-      context: ./cbit/cbit-app-admin
+      context: ./cbit-app-admin
       dockerfile: Dockerfile
     container_name: cbit-app-admin
     restart: unless-stopped
@@ -29,7 +52,7 @@ services:
 
   cbit-app-web:
     build:
-      context: ./cbit/cbit-app-web
+      context: ./cbit-app-web
       dockerfile: Dockerfile
     container_name: cbit-app-web
     restart: unless-stopped
@@ -41,6 +64,7 @@ services:
       - cbit-network
 
 volumes:
+  cbit-db-data:
   cbit_uploads:
     driver: local
 
