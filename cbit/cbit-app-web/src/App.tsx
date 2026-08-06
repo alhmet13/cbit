@@ -6,8 +6,7 @@ import "./index.css";
 // Sayfaları dinamik import (lazy load) ile tanımlayarak bundle boyutunu küçültüyoruz
 const Anasayfa = lazy(() => import("./pages/Anasayfa"));
 const Hakkimizda = lazy(() => import("./pages/Hakkimizda"));
-const Cozumler = lazy(() => import("./pages/Cozumler")); // Neden Biz?
-const Yetkinlikler = lazy(() => import("./pages/Yetkinlikler")); // Veri Merkezi Çözümleri
+const Cozumler = lazy(() => import("./pages/Cozumler"));
 const Projeler = lazy(() => import("./pages/Projeler"));
 const Haberler = lazy(() => import("./pages/Haberler"));
 const Iletisim = lazy(() => import("./pages/Iletisim"));
@@ -30,7 +29,7 @@ function App() {
             <Route path="/" element={<Anasayfa />} />
             <Route path="/hakkimizda" element={<Hakkimizda />} />
             <Route path="/neden-biz" element={<Cozumler />} />
-            <Route path="/cozumler" element={<Yetkinlikler />} />
+            <Route path="/cozumler" element={<Cozumler />} />
             <Route path="/yetkinliklerimiz" element={<Navigate to="/cozumler" replace />} />
             <Route path="/projeler" element={<Projeler />} />
             <Route path="/haberler" element={<Haberler />} />

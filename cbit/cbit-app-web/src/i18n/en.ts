@@ -321,137 +321,130 @@ export const en: Translations = {
     },
   },
   cozumler: {
-    baslik: "Why CDC?",
-    altBaslik: "End-to-End Expertise in Data Center Deployment",
-    heroCaption: "From design to commissioning, end-to-end on-site responsibility.",
-    aciklama:
-      "CDC Technology is Turkey's turnkey data center technology company, managing the entire lifecycle from design and construction, electrical-mechanical infrastructure, commissioning, and operations, to hardware supply under a single roof.",
-    ekstraBilgiler: [
+    hero: {
+      eyebrow: "OUR SOLUTIONS",
+      baslik: "End-to-End Service Across Every Technology Layer Your Organization Needs",
+      lead: "From network infrastructure to data centers, from cloud to artificial intelligence, from cybersecurity to managed services — we provide full-scope service across six solution areas, from design to operation.",
+    },
+    chips: [
+      { id: "ag-veri-merkezi", label: "01 · Network & Data Center" },
+      { id: "bulut", label: "02 · Cloud Solutions" },
+      { id: "yapay-zeka", label: "03 · AI Solutions" },
+      { id: "siber-guvenlik", label: "04 · Cybersecurity" },
+      { id: "yonetilen-hizmetler", label: "05 · Managed Services" },
+      { id: "danismanlik", label: "06 · Consulting & PM" },
+    ],
+    alanlar: [
       {
-        baslik: "Elite Certified Engineering Staff",
-        tanim:
-          "We keep projects directly under control with our agile team of Uptime Accredited Tier Designers, TS50600 specialists, and PMP-certified senior project managers within our organization.",
+        id: "ag-veri-merkezi",
+        num: "SOLUTION AREA 01",
+        icon: "Server",
+        baslik: "Network Infrastructure & Data Center",
+        aciklama: "We design and build highly available, scalable network architectures — from campus to data center.",
+        kpi: {
+          deger: "%99.9999",
+          etiket: "Targeted Network Availability",
+        },
+        lead: "This is our flagship solution area, where we combine the deepest expertise with Cevahir Group's construction strength.",
+        maddeler: [
+          { baslik: "Campus & WAN Network Design", tanim: "LAN/WAN, wireless, SD-WAN and SASE architectures" },
+          { baslik: "Data Center Deployment", tanim: "Server, storage, and virtualization infrastructure" },
+          { baslik: "Disaster Recovery Planning", tanim: "Redundancy, load balancing, and business continuity" },
+          { baslik: "End-to-End Observability", tanim: "Proactive-reactive monitoring and trend capacity planning" },
+        ],
+        btnText: "See Full Detail on the Data Center Page",
+        btnLink: "/veri-merkezi",
       },
       {
-        baslik: "Advanced Value Engineering",
-        tanim:
-          "While strictly maintaining full system redundancy, we perform meticulous structural and material optimizations to lower initial capital expenditures and operational energy expenses.",
+        id: "bulut",
+        num: "SOLUTION AREA 02",
+        icon: "Cloud",
+        baslik: "Cloud Solutions",
+        aciklama: "We move your workloads to the right platform with hybrid and multi-cloud strategies, optimizing cost and performance.",
+        kpi: {
+          deger: "%30",
+          etiket: "Average Infrastructure Cost Savings",
+        },
+        maddeler: [
+          { baslik: "Cloud Migration Services", tanim: "Application and data migration, architecture transformation" },
+          { baslik: "Hybrid / Multi-Cloud Architecture", tanim: "Private-cloud and public-cloud integration" },
+          { baslik: "Cost Optimization", tanim: "Resource-usage analysis and scaling" },
+          { baslik: "Cloud Security & Compliance", tanim: "Identity management, access control, auditing" },
+        ],
       },
       {
-        baslik: "Live Environment Seamless Intervention Capability",
-        tanim:
-          "Staff specialized in expanding and upgrading existing electrical and HVAC infrastructures in operational data centers. We successfully complete high-complexity mechanical revisions with zero interruption and zero downtime in live customer data traffic.",
+        id: "yapay-zeka",
+        num: "SOLUTION AREA 03",
+        icon: "Cpu",
+        baslik: "AI Solutions",
+        aciklama: "We make it possible for your corporate assets and data to be processed in line with your business goals to generate real benefit.",
+        kpi: {
+          deger: "%40",
+          etiket: "Average Operational Efficiency Gain",
+        },
+        maddeler: [
+          { baslik: "AI – Machine Learning", tanim: "Enriching your existing corporate data in line with business goals" },
+          { baslik: "Agentic AI", tanim: "AI that can take action within your business processes, saving labor" },
+          { baslik: "Data-Maturity Services & Consulting", tanim: "Preparing your corporate data to be processed with AI" },
+        ],
       },
       {
-        baslik: "Scalable Procurement Assurance",
-        tanim:
-          "We leverage our active purchasing volume of 150 Million USD to protect our customers from global supply chain bottlenecks. This strength allows us to obtain priority ranking in manufacturer factories for critical infrastructure components with long lead times.",
+        id: "siber-guvenlik",
+        num: "SOLUTION AREA 04",
+        icon: "Shield",
+        baslik: "Cybersecurity Solutions",
+        aciklama: "We design the security architecture to protect your organization end-to-end, detecting threats through 24/7 monitoring.",
+        kpi: {
+          deger: "7/24",
+          etiket: "Continuous Threat Monitoring & Response",
+        },
+        maddeler: [
+          { baslik: "Security Architecture Design", tanim: "Network, endpoint, and application security" },
+          { baslik: "SOC & Threat Monitoring", tanim: "24/7 security operations center service" },
+          { baslik: "Penetration Testing & Audit", tanim: "Vulnerability scanning and risk assessment" },
+          { baslik: "Compliance Consulting", tanim: "KVKK (Turkish DPL), ISO 27001, and sector regulations" },
+        ],
+      },
+      {
+        id: "yonetilen-hizmetler",
+        num: "SOLUTION AREA 05",
+        icon: "Headset",
+        baslik: "Managed Services & Support",
+        aciklama: "We stay with you after installation too — monitoring your infrastructure and resolving issues before you notice them.",
+        kpi: {
+          deger: "<45 min",
+          etiket: "Average First-Response Time",
+        },
+        maddeler: [
+          { baslik: "24/7 NOC Monitoring", tanim: "Proactive infrastructure and application monitoring" },
+          { baslik: "On-Site & Remote Support", tanim: "SLA-backed technical support services" },
+          { baslik: "Asset & License Management", tanim: "Hardware/software inventory tracking" },
+          { baslik: "Regular Maintenance & Reporting", tanim: "Periodic health checks and reports" },
+        ],
+      },
+      {
+        id: "danismanlik",
+        num: "SOLUTION AREA 06",
+        icon: "ClipboardCheck",
+        baslik: "Consulting & Project Management",
+        aciklama: "Every project passes through five clear stages; we proceed with transparent communication and measurable outputs.",
+        kpi: {
+          deger: "5",
+          etiket: "Stage End-to-End Project Process",
+        },
+        surec: [
+          { num: "01", baslik: "Analysis", tanim: "Needs and existing-infrastructure assessment", icon: "Search" },
+          { num: "02", baslik: "Design", tanim: "Solution architecture and roadmap", icon: "Ruler" },
+          { num: "03", baslik: "Install – Test", tanim: "Installation and verification testing", icon: "Wrench" },
+          { num: "04", baslik: "Operation", tanim: "System operation, monitoring, and reporting", icon: "Settings" },
+          { num: "05", baslik: "Support", tanim: "Warranty, maintenance, and spare-parts services", icon: "LifeBuoy" },
+        ],
       },
     ],
-    degerOnerisi: {
-      baslik:
-        "Our Value Proposition: Critical Infrastructure Solutions with Holistic Expertise",
-      maddeler: [
-        {
-          baslik: "End-to-End Project Management",
-          tanim:
-            "We offer solutions without compromising on quality, operational efficiency, and unique precision from the initial design to the final delivery stage. We ensure seamless system integration by assuming single-point responsibility from design to commissioning.",
-        },
-        {
-          baslik: "EPC Leadership",
-          tanim:
-            "Scope, timeline, and budget ownership; risk mitigation through proper management of contract models; project delivery as a prime contractor.",
-        },
-        {
-          baslik: "Deep MEP Expertise",
-          tanim:
-            "Expertise in Mechanical, Electrical, and Extra-Low Voltage (ELV) systems; performance and efficiency optimization; ensuring infrastructure resilience.",
-        },
-      ],
-    },
-    degerYaratanYaklasimlar: {
-      baslik: "Our Approaches Creating Value in Data Centers",
-      maddeler: [
-        {
-          baslik: "Proven Experience and Scale Competence",
-          tanim:
-            "Large-scale facilities with critical operational continuity are successfully delivered, and complex supply chains are effectively managed end-to-end.",
-        },
-        {
-          baslik: "Risk Management and Contractual Expertise",
-          tanim:
-            "Full mastery of all contract models is maintained, ensuring compliance, steady progress, and protection of all parties through proactive risk management.",
-        },
-        {
-          baslik: "Cost Efficiency and Value Engineering",
-          tanim:
-            "Measurable cost savings are achieved through design and material optimizations without compromising on performance or reliability.",
-        },
-        {
-          baslik: "On-time Commissioning",
-          tanim:
-            "Schedules are established through integrated project management methodologies, detecting and proactively managing potential deviations early.",
-        },
-        {
-          baslik: "End-to-End Quality Management and System Reliability",
-          tanim:
-            "The industry's highest quality standards are applied from construction to system integration, with operational continuity adopted as the core design criterion.",
-        },
-        {
-          baslik: "Uninterrupted Operations & Maintenance Assurance",
-          tanim:
-            "24/7 continuous operational management, predictive maintenance, and high SLA assurance are provided to maximize facility lifespan and energy efficiency post-commissioning.",
-        },
-      ],
-    },
-    tekNoktadanIsBirligi: {
-      baslik: "Single Point Cooperation and Customer-Oriented Solutions",
-      maddeler: [
-        {
-          baslik: "Design",
-          tanim:
-            "CFD analysis and BIM-based multi-disciplinary clash detection are executed utilizing rich design resources, UPTIME ATD certified engineering staff, and international partnerships.",
-        },
-        {
-          baslik: "Procurement",
-          tanim:
-            "By managing all procurement processes from a single point, transparent, traceable, and guaranteed on-time delivery is provided.",
-        },
-        {
-          baslik: "Consultancy",
-          tanim:
-            "Customized integrated consulting solutions tailored to project requirements are developed by an expert architectural and engineering team.",
-        },
-        {
-          baslik: "MEP and Infrastructure Engineering",
-          tanim:
-            "Mechanical, Electrical, and Plumbing (MEP) systems are designed with a holistic engineering approach, providing continuous reliability and high energy efficiency.",
-        },
-        {
-          baslik: "Installation & Delivery",
-          tanim:
-            "Installation and delivery phases are tracked digitally from end to end using an experienced field team and standardized EPC processes.",
-        },
-        {
-          baslik: "Smart Operation",
-          tanim:
-            "Drawing on extensive experience in advanced DCIM solutions, 24/7 continuous maintenance, repair, and smart operation support are provided for facilities.",
-        },
-      ],
-    },
-    kadro: {
-      baslik: "Our Technical Capability Staff",
-      altBaslik:
-        "Expert engineer and field staff in electrical, mechanical, construction, white space, and testing and commissioning disciplines:",
-      toplam: "Total 450+ Employees",
-      liste: [
-        "Electrical — 25+ engineers, average 5 years of data center experience, 35+ field staff.",
-        "Mechanical — 25+ engineers, average 4 years of data center experience, 35+ field staff.",
-        "Construction — 20+ engineers, average 4 years of data center experience, 20+ field staff.",
-        "White Space — 7+ engineers, average 7 years of data center experience, 10+ field staff.",
-        "Testing and Commissioning — 10+ engineers, average 8 years of data center experience, 15+ field staff.",
-        "Technical Office and Design — 35+ engineers, average 3 years of data center experience.",
-      ],
+    ctaBand: {
+      baslik: "Let's Find the Right Solution for You, Together",
+      aciklama: "Let's assess your needs together and map out the technology roadmap that fits you best.",
+      btnText: "Contact Us",
     },
   },
   yetkinlikler: {

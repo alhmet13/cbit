@@ -318,136 +318,130 @@ export const tr = {
     },
   },
   cozumler: {
-    baslik: "Neden CDC?",
-    altBaslik: "Veri Merkezi Kurulumunda Uçtan Uca Uzmanlık",
-    heroCaption: "Tasarımdan devreye almaya, sahada uçtan uca sorumluluk.",
-    aciklama:
-      "CDC Teknoloji; tasarım, inşaat, elektrik-mekanik altyapı, beyaz alan kurulumu ve devreye almadan işletmeye kadar tüm süreci tek çatı altında yöneten, Türkiye'nin anahtar teslim veri merkezi teknoloji şirketidir.",
-    ekstraBilgiler: [
+    hero: {
+      eyebrow: "ÇÖZÜMLERİMİZ",
+      baslik: "Kurumunuzun İhtiyaç Duyduğu Her Teknoloji Katmanında Uçtan Uca Hizmet",
+      lead: "Ağ altyapısından veri merkezine, buluttan yapay zekaya, siber güvenlikten yönetilen hizmetlere kadar altı çözüm alanında tasarımdan işletmeye tam kapsamlı hizmet veriyoruz.",
+    },
+    chips: [
+      { id: "ag-veri-merkezi", label: "01 · Ağ Altyapısı ve Veri Merkezi" },
+      { id: "bulut", label: "02 · Bulut Çözümleri" },
+      { id: "yapay-zeka", label: "03 · Yapay Zeka" },
+      { id: "siber-guvenlik", label: "04 · Siber Güvenlik" },
+      { id: "yonetilen-hizmetler", label: "05 · Yönetilen Hizmetler" },
+      { id: "danismanlik", label: "06 · Danışmanlık ve PY" },
+    ],
+    alanlar: [
       {
-        baslik: "Seçkin Sertifikalı Mühendislik Kadrosu",
-        tanim:
-          "Bünyesinde barındırdığı Uptime Akredite Tier Tasarımcıları, TS50600 uzmanları ve PMP sertifikalı kıdemli proje yöneticilerinden oluşan çevik ekibiyle projeleri doğrudan kontrol altında tutmaktadır.",
+        id: "ag-veri-merkezi",
+        num: "ÇÖZÜM ALANI 01",
+        icon: "Server",
+        baslik: "Ağ Altyapısı ve Veri Merkezi",
+        aciklama: "Kampüsten veri merkezine, yüksek erişilebilir ve ölçeklenebilir ağ mimarileri tasarlıyor ve kuruyoruz.",
+        kpi: {
+          deger: "%99.9999",
+          etiket: "Hedeflenen Ağ Kullanılabilirlik Oranı",
+        },
+        lead: "Bu, en derin uzmanlığa sahip olduğumuz ve Cevahir Grubu'nun inşaat gücüyle birleştirdiğimiz amiral gemisi çözüm alanımızdır.",
+        maddeler: [
+          { baslik: "Kampüs ve WAN Ağ Tasarımı", tanim: "LAN/WAN, kablosuz ağ, SD-WAN ve SASE mimarileri" },
+          { baslik: "Veri Merkezi Kurulumu", tanim: "Sunucu, depolama ve sanallaştırma altyapısı" },
+          { baslik: "Felaket Kurtarma Planlama", tanim: "Yedeklilik, yük dengeleme ve iş sürekliliği" },
+          { baslik: "Uçtan Uca Gözlemleme", tanim: "Proaktif-reaktif izleme ve trend kapasite planlaması" },
+        ],
+        btnText: "Veri Merkezi Sayfasında Detaylı İnceleyin",
+        btnLink: "/veri-merkezi",
       },
       {
-        baslik: "İleri Değer Mühendisliği",
-        tanim:
-          "Tam sistem yedekliliğini sıkı bir şekilde korurken, ilk yatırım maliyetlerini ve operasyonel enerji giderlerini düşürmek için titiz yapısal ve malzeme optimizasyonları gerçekleştirmektedir.",
+        id: "bulut",
+        num: "ÇÖZÜM ALANI 02",
+        icon: "Cloud",
+        baslik: "Bulut Çözümleri",
+        aciklama: "Hibrit ve çoklu bulut stratejileriyle iş yüklerinizi uygun platforma taşıyor, maliyet ve performansı optimize ediyoruz.",
+        kpi: {
+          deger: "%30",
+          etiket: "Ortalama Altyapı Maliyet Tasarrufu",
+        },
+        maddeler: [
+          { baslik: "Bulut Taşınma Hizmetleri", tanim: "Uygulama ve veri taşıma, mimari dönüşüm" },
+          { baslik: "Hibrit / Çoklu Bulut Mimarisi", tanim: "Özel bulut ile genel bulut entegrasyonu" },
+          { baslik: "Maliyet Optimizasyonu", tanim: "Kaynak kullanımı analizi ve ölçeklendirme" },
+          { baslik: "Bulut Güvenliği ve Uyumluluk", tanim: "Kimlik yönetimi, erişim kontrolü, denetim" },
+        ],
       },
       {
-        baslik: "Canlı Ortamda Kesintisiz Müdahale Yetkinliği",
-        tanim:
-          "Faal durumdaki veri merkezlerinde, mevcut elektrik ve HVAC altyapılarını genişletme ve yükseltme konusunda uzmanlaşmış kadro. Canlı müşteri veri trafiğinde sıfır kesinti ve sıfır duraklama ile yüksek karmaşıklıktaki mekanik revizyonları başarıyla tamamlamaktadır.",
+        id: "yapay-zeka",
+        num: "ÇÖZÜM ALANI 03",
+        icon: "Cpu",
+        baslik: "Yapay Zeka Çözümleri",
+        aciklama: "Kurumsal varlıklarınızın ve verilerinizin, iş amaçlarınıza uygun olarak işlenerek fayda üretilmesini mümkün kılıyoruz.",
+        kpi: {
+          deger: "%40",
+          etiket: "Ortalama Operasyonel Verimlilik Artışı",
+        },
+        maddeler: [
+          { baslik: "Yapay Zeka – Makine Öğrenmesi", tanim: "Mevcut kurumsal verinizin iş amaçlarına uygun zenginleştirilmesi" },
+          { baslik: "Agentic AI", tanim: "Yapay zekanın iş süreçleriniz için aksiyon alabilmesi, iş gücü tasarrufu" },
+          { baslik: "Veri Olgunlaştırma Hizmetleri ve Danışmanlığı", tanim: "Kurumsal verilerinizin yapay zeka ile işlenmeye hazırlanması" },
+        ],
       },
       {
-        baslik: "Ölçeklenebilir Tedarik Güvencesi",
-        tanim:
-          "Müşterileri küresel tedarik zinciri tıkanıklıklarından korumak için 150 Milyon USD değerindeki aktif satın alma hacminden yararlanmaktadır. Bu güç, uzun tedarik süreli kritik altyapı bileşenleri için üretici fabrikalarında öncelik sırası elde edilmesini sağlar.",
+        id: "siber-guvenlik",
+        num: "ÇÖZÜM ALANI 04",
+        icon: "Shield",
+        baslik: "Siber Güvenlik Çözümleri",
+        aciklama: "Kurumunuzu uçtan uca koruyacak güvenlik mimarisini tasarlıyor, 7/24 izleme ile tehditleri tespit ediyoruz.",
+        kpi: {
+          deger: "7/24",
+          etiket: "Kesintisiz Tehdit İzleme ve Müdahale",
+        },
+        maddeler: [
+          { baslik: "Güvenlik Mimarisi Tasarımı", tanim: "Ağ, uç nokta ve uygulama güvenliği" },
+          { baslik: "SOC ve Tehdit İzleme", tanim: "7/24 güvenlik operasyon merkezi hizmeti" },
+          { baslik: "Sızma Testi ve Denetim", tanim: "Zafiyet taraması ve risk değerlendirmesi" },
+          { baslik: "Uyumluluk Danışmanlığı", tanim: "KVKK, ISO 27001 ve sektörel regülasyonlar" },
+        ],
+      },
+      {
+        id: "yonetilen-hizmetler",
+        num: "ÇÖZÜM ALANI 05",
+        icon: "Headset",
+        baslik: "Yönetilen Hizmetler ve Destek",
+        aciklama: "Kurulumdan sonrasında da yanınızdayız: altyapınızı izliyor, sorunları siz fark etmeden çözüyoruz.",
+        kpi: {
+          deger: "<45 dk",
+          etiket: "Ortalama İlk Müdahale Süresi",
+        },
+        maddeler: [
+          { baslik: "7/24 NOC İzleme", tanim: "Proaktif altyapı ve uygulama izleme" },
+          { baslik: "Saha ve Uzaktan Destek", tanim: "SLA garantili teknik destek hizmetleri" },
+          { baslik: "Varlık ve Lisans Yönetimi", tanim: "Donanım/yazılım envanteri takibi" },
+          { baslik: "Düzenli Bakım ve Raporlama", tanim: "Periyodik sağlık kontrolleri ve raporlar" },
+        ],
+      },
+      {
+        id: "danismanlik",
+        num: "ÇÖZÜM ALANI 06",
+        icon: "ClipboardCheck",
+        baslik: "Danışmanlık ve Proje Yönetimi",
+        aciklama: "Her proje beş net aşamadan geçer; şeffaf iletişim ve ölçülebilir çıktılarla ilerleriz.",
+        kpi: {
+          deger: "5",
+          etiket: "Aşamalı Uçtan Uca Proje Süreci",
+        },
+        surec: [
+          { num: "01", baslik: "Analiz", tanim: "İhtiyaç ve mevcut altyapı değerlendirmesi", icon: "Search" },
+          { num: "02", baslik: "Tasarım", tanim: "Çözüm mimarisi ve yol haritası", icon: "Ruler" },
+          { num: "03", baslik: "Kurulum – Test", tanim: "Kurulum ve doğrulama testleri", icon: "Wrench" },
+          { num: "04", baslik: "İşletim Hizmeti", tanim: "Sistem işletimi, gözlemleme ve raporlama", icon: "Settings" },
+          { num: "05", baslik: "Destek", tanim: "Garanti, bakım ve yedek parça hizmetleri", icon: "LifeBuoy" },
+        ],
       },
     ],
-    degerOnerisi: {
-      baslik: "Değer Önerisi: Bütüncül Uzmanlıkla Kritik Altyapı Çözümleri",
-      maddeler: [
-        {
-          baslik: "Uçtan Uca Proje Yönetimi",
-          tanim:
-            "İlk tasarımdan son teslim aşamasına kadar eşsiz kesinlik, operasyonel verimlilik ve kaliteden ödün vermeden çözüm sunulmaktadır. Tasarımdan devreye almaya kadar tek noktadan sorumluluk üstlenerek sorunsuz sistem entegrasyonu sağlanmaktadır.",
-        },
-        {
-          baslik: "EPC Liderliği",
-          tanim:
-            "Kapsam, zamanlama ve bütçe sahipliği; sözleşme modellerinin doğru yönetimiyle risk azaltma; ana yüklenici olarak proje teslimi.",
-        },
-        {
-          baslik: "Derin MEP Uzmanlığı",
-          tanim:
-            "Mekanik, Elektrik ve Zayıf Akım sistemlerinde uzmanlık; performans ve verimlilik optimizasyonu; altyapı dayanıklılığının sağlanması.",
-        },
-      ],
-    },
-    degerYaratanYaklasimlar: {
-      baslik: "Veri Merkezlerinde Değer Yaratan Yaklaşımlar",
-      maddeler: [
-        {
-          baslik: "Kanıtlanmış Deneyim ve Ölçek Yetkinliği",
-          tanim:
-            "Operasyonel sürekliliği kritik, büyük ölçekli tesisler başarıyla teslim edilmekte ve karmaşık tedarik zincirleri uçtan uca etkin şekilde yönetilmektedir.",
-        },
-        {
-          baslik: "Risk Yönetimi ve Sözleşme Uzmanlığı",
-          tanim:
-            "Tüm sözleşme modellerine tam hâkimiyet sağlanmakta; proaktif risk yönetimi ile süreçlerdeki uyum, ilerleme ve tüm tarafların hakları güvence altına alınmaktadır.",
-        },
-        {
-          baslik: "Maliyet Verimliliği ve Değer Mühendisliği",
-          tanim:
-            "Tasarım ve malzeme optimizasyonlarıyla, performans ve güvenilirlikten ödün vermeksizin projelerde ölçülebilir maliyet tasarrufu sağlanmaktadır.",
-        },
-        {
-          baslik: "Zamanında Devreye Alma",
-          tanim:
-            "Entegre proje yönetimi metodolojileriyle takvimler netleştirilmekte, olası sapmalar erken aşamada tespit edilerek proaktif şekilde yönetilmektedir.",
-        },
-        {
-          baslik: "Uçtan Uca Kalite Yönetimi ve Sistem Güvenilirliği",
-          tanim:
-            "İnşaattan sistem entegrasyonuna kadar sektörün en yüksek kalite standartları uygulanmakta, operasyonel süreklilik temel tasarım kriteri olarak benimsenmektedir.",
-        },
-        {
-          baslik: "Kesintisiz Operasyon ve Bakım Güvencesi",
-          tanim:
-            "Devreye alma sonrasında tesis ömrünü ve enerji verimliliğini maksimum seviyede tutmak için 7/24 kesintisiz operasyonel yönetim, kestirimci bakım ve yüksek SLA güvencesi sunulmaktadır.",
-        },
-      ],
-    },
-    tekNoktadanIsBirligi: {
-      baslik: "Tek Noktadan İş Birliği ve Müşteri Odaklı Çözümler",
-      maddeler: [
-        {
-          baslik: "Tasarım",
-          tanim:
-            "Zengin tasarım kaynakları, UPTIME ATD sertifikalı mühendislik kadrosu ve uluslararası ortaklıklarla CFD analizi ile BIM tabanlı disiplinler arası çakışma tespiti yürütülmektedir.",
-        },
-        {
-          baslik: "Satın Alma",
-          tanim:
-            "Tüm tedarik süreçleri tek noktadan yönetilerek şeffaf, izlenebilir ve zamanında teslimat garantisi sunulmaktadır.",
-        },
-        {
-          baslik: "Danışmanlık",
-          tanim:
-            "Uzman mimari ve mühendislik kadrosu ile projelerin ihtiyaçlarına özel bütünleşik danışmanlık çözümleri geliştirilmektedir.",
-        },
-        {
-          baslik: "MEP ve Altyapı Mühendisliği",
-          tanim:
-            "Mekanik, Elektrik ve Tesisat (MEP) sistemleri bütünsel bir mühendislik kurgusuyla tasarlanarak kesintisiz süreklilik ve yüksek enerji verimliliği sağlanmaktadır.",
-        },
-        {
-          baslik: "Kurulum & Teslimat",
-          tanim:
-            "Tecrübeli saha ekibi ve standartlaştırılmış EPC süreçleri ile kurulum ve teslimat aşamaları uçtan uca dijital olarak takip edilmektedir.",
-        },
-        {
-          baslik: "Akıllı İşletim",
-          tanim:
-            "Gelişmiş DCIM çözümleri tecrübesi ile tesislerde 7/24 kesintisiz bakım, onarım ve akıllı işletme desteği sunulmaktadır.",
-        },
-      ],
-    },
-    kadro: {
-      baslik: "Teknik Yetkinlik Kadrosu",
-      altBaslik:
-        "Elektrik, mekanik, inşaat, beyaz alan ile test ve devreye alma disiplinlerinde uzman mühendis ve saha kadrosu:",
-      toplam: "Toplam 450+ Çalışan",
-      liste: [
-        "Elektrik — 25+ mühendis, ortalama 5 yıl veri merkezi tecrübesi, 35+ saha personeli.",
-        "Mekanik — 25+ mühendis, ortalama 4 yıl veri merkezi tecrübesi, 35+ saha personeli.",
-        "İnşaat — 20+ mühendis, ortalama 4 yıl veri merkezi tecrübesi, 20+ saha personeli.",
-        "Beyaz Alan — 7+ mühendis, ortalama 7 yıl veri merkezi tecrübesi, 10+ saha personeli.",
-        "Test ve Devreye Alma — 10+ mühendis, ortalama 8 yıl veri merkezi tecrübesi, 15+ saha personeli.",
-        "Teknik Ofis ve Dizayn — 35+ mühendis, ortalama 3 yıl veri merkezi tecrübesi.",
-      ],
+    ctaBand: {
+      baslik: "Hangi Çözüm Size Uygun, Birlikte Bulalım",
+      aciklama: "İhtiyacınızı birlikte değerlendirelim ve size en uygun teknoloji yol haritasını çıkaralım.",
+      btnText: "Bize Ulaşın",
     },
   },
   yetkinlikler: {
