@@ -71,7 +71,7 @@ main {
 
 .logo img {
   height: auto;
-  width: 280px;
+  width: 240px;
   max-width: 280px;
   object-fit: contain;
   display: block;
@@ -97,7 +97,7 @@ main {
   .navbar-bg.is-shrunk .logo img,
   .navbar-bg.scrolled .logo img {
     height: auto;
-    width: 220px;
+    width: 180px;
     max-width: 220px;
   }
 }
@@ -620,7 +620,7 @@ main {
 
 .section-global {
   padding: 90px 24px;
-  background-color: #ffffff;
+  background-color: #fdfdfd;
   box-sizing: border-box;
 }
 
@@ -751,7 +751,7 @@ main {
 }
 
 .about-stat-box {
-  background: #ffffff;
+  background: #fdfdfd;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
   padding: 20px 24px;
@@ -839,7 +839,7 @@ main {
 }
 
 .values-container {
-  background: #ffffff;
+  background: #fdfdfd;
   border: 1px solid #f1f5f9;
   border-radius: 16px;
   padding: 32px;
@@ -1924,7 +1924,7 @@ main {
 }
 
 .bg-light {
-  background-color: #ffffff;
+  background-color: #fdfdfd;
 }
 
 .bg-dark {

@@ -199,6 +199,12 @@ export const en: Translations = {
       btnTeklif: "Request a Quote",
       btnCozumler: "View Our Solutions",
     },
+    projelerVitrin: {
+      baslik: "Projects",
+      aciklama:
+        "Leading Turkey's digital transformation with over 20 MW of installed IT power, Tier-III and TS EN50600 certified data center projects.",
+      btnText: "Explore All Projects",
+    },
   },
   hakkimizda: {
     hero: {

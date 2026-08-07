@@ -197,6 +197,12 @@ export const tr = {
       btnTeklif: "Teklif Alın",
       btnCozumler: "Çözümlerimizi İnceleyin",
     },
+    projelerVitrin: {
+      baslik: "Projeler",
+      aciklama:
+        "20 MW'ın üzerinde kurulu IT gücü, Tier-III ve TS EN50600 sertifikalı veri merkezi projeleriyle Türkiye'nin dijital dönüşümüne öncülük etmektedir.",
+      btnText: "Tüm Projeleri İnceleyin",
+    },
   },
   hakkimizda: {
     hero: {
