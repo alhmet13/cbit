@@ -6,6 +6,7 @@ export const en: Translations = {
     hakkimizda: "About Us",
     cozumler: "Why CBIT?",
     yetkinlikler: "Solutions",
+    isOrtaklari: "Our Partners",
     projeler: "References",
     haberler: "News",
     iletisim: "Contact",
@@ -209,38 +210,36 @@ export const en: Translations = {
   hakkimizda: {
     hero: {
       eyebrow: "ABOUT US",
-      baslik:
-        "From Complex Engineering to Critical Infrastructure — Reliable Solutions, On Time",
-      lead: "CBIT is a vendor-independent system integrator that combines Cevahir Group's 65-year engineering heritage with deep information-technology expertise.",
+      baslik: "About Us",
+      lead: "From Complex Engineering to Critical Infrastructure: Cevahir Assurance",
     },
     bizKimiz: {
-      eyebrow: "WHO WE ARE",
-      baslik:
-        "An Independent System Integrator Built on 20+ Years of Sector Experience",
+      eyebrow: "From 1959 to Today",
+      baslik: "Same engineering discipline, same trust today at the Digital Homeland's critical infrastructure",
       aciklama:
-        "With a team carrying 20+ years of sector experience, we are an independent system integrator that aligns organizations' technology infrastructure with their business goals. With our vendor-independent approach, we deliver solutions using the most suitable global or local technologies — undertaking the entire process from design through operation and maintenance.",
+        "CBIT is the digital infrastructure and high-tech solution partner that carries Cevahir Group's deep engineering legacy into the technologies of the future. We continue to be the reliable address for digital transformation and regional data sovereignty by providing turnkey solutions in critical hardware procurement, high-density artificial intelligence (GPU/DPU) clusters, cloud software, and enterprise network systems integration.",
+    },
+    rakamlarlaCevahir: {
+      baslik: "Cevahir by the Numbers",
       stats: [
-        { deger: "20+", baslik: "Years of Sector Experience", isRed: false },
-        { deger: "%100", baslik: "Vendor-Independent Solutions", isRed: true },
-        {
-          deger: "5",
-          baslik: "Stage End-to-End Project Management",
-          isRed: false,
-        },
+        { deger: "~15.000", baslik: "EMPLOYEES" },
+        { deger: "100+", baslik: "COMPLETED PROJECTS" },
+        { deger: "6M+ m²", baslik: "TOTAL PROJECT AREA" },
+        { deger: "5", baslik: "ACTIVE PROJECTS" },
       ],
     },
     vizyonMisyon: {
-      eyebrow: "OUR VISION, MISSION & VALUES",
-      baslik: "The Principles That Define Us",
+      eyebrow: "OUR MISSION & OUR VISION",
+      baslik: "Principles Powering the Future",
       vizyon: {
         baslik: "Our Vision",
         aciklama:
-          "To produce world-standard projects in national and international markets — to be a brand built on trust and permanence, carried into the future with growing strength, and to make sustainable performance a corporate foundation.",
+          "Becoming a brand that produces projects at world standards in national and international markets; built on trust, durability, and moving into the future with strength. Setting sustainable performance as a corporate foundation.",
       },
       misyon: {
         baslik: "Our Mission",
         aciklama:
-          "To contribute to Türkiye's development and growth through every responsibility we undertake — creating sustainable added value for our employees, stakeholders, and society at large.",
+          "Contributing to the development and growth of Turkey with every responsibility we undertake; creating sustainable added value for our employees, stakeholders, and the whole society. Reliability, solution orientation, innovation, commitment to ethical principles, perfectionism, visionary perspective, fast and quality service approach, and inclusivity are our core values.",
       },
       degerler: {
         baslik: "Our Values",
@@ -255,145 +254,6 @@ export const en: Translations = {
           "Inclusiveness",
         ],
       },
-    },
-    cevahirGrup: {
-      eyebrow: "ABOUT CEVAHIR GROUP",
-      baslik: "From Complex Engineering to Critical Infrastructure",
-      aciklama:
-        "Growing through uninterrupted operations since 1959, Cevahir Group is a multi-sector organization of which CBIT is a part.",
-      stats: [
-        { deger: "1959", baslik: "Founding Year" },
-        { deger: "65+", baslik: "Years of Uninterrupted Operation" },
-        { deger: "4+", baslik: "Countries — International Presence" },
-        { deger: "~15.000", baslik: "Employees (900+ Expert Technical Staff)" },
-      ],
-      ulkelerNotu:
-        "We operate in Türkiye, Libya, Saudi Arabia, and North Macedonia.",
-      sektorler: [
-        { baslik: "Dam" },
-        { baslik: "Data Center" },
-        { baslik: "Shopping Mall" },
-        { baslik: "Hospital" },
-        { baslik: "Technology Campus" },
-        { baslik: "Tourism" },
-      ],
-    },
-    tarihce: {
-      eyebrow: "OUR HISTORY",
-      baslik: "Cevahir Group Timeline",
-      liste: [
-        {
-          yil: "1959",
-          baslik: "Founding",
-          aciklama:
-            "Entered the industry with a comprehensive construction portfolio.",
-        },
-        {
-          yil: "1975",
-          baslik: "International Expansion",
-          aciklama: "Large-scale projects in Libya and Saudi Arabia.",
-        },
-        {
-          yil: "1990",
-          baslik: "Development & Operation",
-          aciklama: "Transition to an integrated project-ownership model.",
-        },
-        {
-          yil: "1994",
-          baslik: "Grand Istanbul Bus Terminal",
-          aciklama: "Europe's largest, world's 3rd-largest bus terminal.",
-        },
-        {
-          yil: "1995",
-          baslik: "The Plaza Hotel",
-          aciklama: "Invest–build–operate hotel project.",
-        },
-        {
-          yil: "2005",
-          baslik: "Europe's Largest Mall",
-          aciklama: "The largest indoor shopping & entertainment center.",
-        },
-        {
-          yil: "2020",
-          baslik: "Largest Balkan Investment",
-          aciklama: "280,000 m² Turkish private-sector investment.",
-        },
-        {
-          yil: "2023",
-          baslik: "TOKİ Post-Quake Housing",
-          aciklama: "7,500+ housing units in Adıyaman–Hatay.",
-        },
-        {
-          yil: "2024",
-          baslik: "IFC Phase-3 Project",
-          aciklama: "100,000+ m² built at Istanbul Financial Center.",
-        },
-        {
-          yil: "2025",
-          baslik: "Critical Infrastructure & Data Center",
-          aciklama: "Tier-3 & LEED data center solutions.",
-        },
-      ],
-    },
-    veriMerkeziOlcek: {
-      eyebrow: "CEVAHIR GROUP BY THE NUMBERS",
-      baslik: "Our Data Center Scale",
-      stats: [
-        {
-          deger: "70+",
-          birim: "M USD",
-          baslik: "Avg. Data Center Project Size",
-        },
-        {
-          deger: "100+",
-          birim: "",
-          baslik: "Minimum Data Center Cabinet Count",
-        },
-        {
-          deger: "350+",
-          birim: "M USD",
-          baslik: "Active Data Center Project Value",
-        },
-      ],
-      alinti:
-        '"Quality and trust lie at the foundation of every project we undertake."',
-    },
-    grupSirketleri: {
-      eyebrow: "OUR GROUP COMPANIES",
-      baslik: "Cevahir Group Business Lines",
-      liste: [
-        {
-          baslik: "Construction",
-          aciklama:
-            "A broad construction portfolio spanning housing to critical infrastructure, under the Cevahir Yapı, Cevahir Taahhüt, Cevahir Proje, and LIBCO brands.",
-          featured: false,
-        },
-        {
-          baslik: "Technology",
-          aciklama:
-            "A technology ecosystem spanning data centers, information technology, and field services, under the CDC, CBIT, KVK, and KVK Teknik Servis brands.",
-          featured: true,
-        },
-        {
-          baslik: "Energy",
-          aciklama:
-            "Investment in sustainable power sources and critical energy systems through dam and energy-infrastructure projects.",
-          featured: false,
-        },
-        {
-          baslik: "Tourism",
-          aciklama:
-            "Quality hospitality service in the accommodation sector with Cevahir Hotel Istanbul Asia.",
-          featured: false,
-        },
-      ],
-    },
-    cta: {
-      baslik: "Want to Meet Our Team?",
-      aciklama:
-        "Let's explore what CBIT's vendor-independent approach and Cevahir Group's assurance can do for your project.",
-      btnIletisim: "Contact Us",
-      btnCozumler: "Data Center Solutions",
     },
   },
   cozumler: {
@@ -720,5 +580,18 @@ export const en: Translations = {
         "For detailed information, you can contact info@cbit.com.tr.",
       ],
     },
+  },
+  isOrtaklariSayfasi: {
+    hero: {
+      eyebrow: "OUR PARTNERS",
+      baslik: "Digital Infrastructure & High-Tech Solution Partners",
+      lead: "Our Growth Areas Together and Strong Ecosystem"
+    },
+    kategoriler: [
+      { baslik: "IT & AI Infrastructure", logos: ["nvidia.png", "supermicro.png", "x-fusion.png"] },
+      { baslik: "Storage & Data", logos: ["huawei.png", "pure-storage.png", "ngx-storage.png"] },
+      { baslik: "Cloud & Software", logos: ["vmware.png", "canonical.png", "sas.png"] },
+      { baslik: "Network Security & Facility", logos: ["paloalto.png", "fortinet.png", "fastnac.png", "vertiv.png"] }
+    ]
   },
 };

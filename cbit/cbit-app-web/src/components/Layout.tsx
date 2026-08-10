@@ -93,6 +93,12 @@ export default function Layout() {
               {t.nav.yetkinlikler}
             </NavLink>
             <NavLink
+              to="/is-ortaklari"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+            >
+              {(t as any).nav.isOrtaklari}
+            </NavLink>
+            <NavLink
               to="/projeler"
               className={({ isActive }) => (isActive ? "active-link" : "")}
             >
@@ -184,6 +190,13 @@ export default function Layout() {
             onClick={() => setMenuAcik(false)}
           >
             {t.nav.yetkinlikler}
+          </NavLink>
+          <NavLink
+            to="/is-ortaklari"
+            className={({ isActive }) => (isActive ? "active-link" : "")}
+            onClick={() => setMenuAcik(false)}
+          >
+            {(t as any).nav.isOrtaklari}
           </NavLink>
           <NavLink
             to="/projeler"

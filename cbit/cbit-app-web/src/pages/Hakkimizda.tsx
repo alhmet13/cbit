@@ -1,38 +1,10 @@
-import { Link } from "react-router-dom";
 import {
-  ArrowRight,
-  Building,
-  Building2,
-  Calendar,
-  CheckCircle2,
   Compass,
-  Cpu,
-  Globe2,
-  Hotel,
-  Landmark,
-  Layers,
-  Server,
-  Sparkles,
   Target,
-  Zap,
+  CheckCircle2,
+  Sparkles,
 } from "lucide-react";
 import { useLanguage } from "../context/useLanguage";
-
-const sectorIconMap = [
-  Layers,      // Baraj
-  Server,      // Veri Merkezi
-  Building,    // AVM
-  Landmark,    // Hastane
-  Cpu,         // Teknoloji Kampüsü
-  Hotel,       // Turizm
-];
-
-const companyIconMap = [
-  Building2,   // İnşaat
-  Cpu,         // Teknoloji
-  Zap,         // Enerji
-  Hotel,       // Turizm
-];
 
 export default function Hakkimizda() {
   const { t } = useLanguage();
@@ -40,243 +12,184 @@ export default function Hakkimizda() {
   return (
     <div className="about-page">
       {/* 1. HERO SECTION */}
-      <section className="about-hero">
-        <div className="about-hero-overlay">
-          <div className="global-container">
-            <div className="about-hero-content">
-              <div className="hero-eyebrow">{t.hakkimizda.hero.eyebrow}</div>
-              <h1 className="about-hero-title">{t.hakkimizda.hero.baslik}</h1>
-              <p className="about-hero-lead">{t.hakkimizda.hero.lead}</p>
+      <section className="about-hero" style={{ paddingBottom: "0px" }}>
+        <div className="about-hero-overlay" style={{ background: "none" }}>
+          <div className="global-container" style={{ display: "block" }}>
+            <div className="about-hero-content" style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}>
+              <div className="hero-eyebrow" style={{ color: "#eb1c23" }}>{t.hakkimizda.hero.eyebrow}</div>
+              <h1 className="about-hero-title" style={{ color: "#111111", fontSize: "3rem", fontWeight: "800", marginTop: "12px" }}>
+                {t.hakkimizda.hero.baslik}
+              </h1>
+              <p className="about-hero-lead" style={{ color: "#475569", fontSize: "1.25rem", marginTop: "16px", lineHeight: "1.6" }}>
+                {t.hakkimizda.hero.lead}
+              </p>
+            </div>
+
+            {/* Heritage Timeline Image */}
+            <div
+              className="about-hero-image-wrap"
+              style={{
+                marginTop: "48px",
+                textAlign: "center",
+                borderRadius: "24px",
+                overflow: "hidden",
+                boxShadow: "0 12px 40px rgba(0,0,0,0.06)",
+                border: "1px solid rgba(0,0,0,0.04)",
+              }}
+            >
+              <img
+                src="/heritage-timeline-1.png"
+                alt="Cevahir Mirası Zaman Tüneli"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "550px",
+                  objectFit: "cover",
+                  display: "block",
+                }}
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* 2. BİZ KİMİZ */}
-      <section className="section-global bg-light">
-        <div className="global-container">
-          <div className="about-bizkimiz-grid">
-            <div className="about-bizkimiz-content">
-              <div className="section-eyebrow">{t.hakkimizda.bizKimiz.eyebrow}</div>
-              <h2 className="section-title">{t.hakkimizda.bizKimiz.baslik}</h2>
-              <p className="section-description">{t.hakkimizda.bizKimiz.aciklama}</p>
-            </div>
-            <div className="about-stats-column">
-              {t.hakkimizda.bizKimiz.stats.map((st, idx) => (
-                <div
-                  key={idx}
-                  className={`about-stat-box ${st.isRed ? "stat-highlight-red" : ""}`}
-                >
-                  <div className="about-stat-number">{st.deger}</div>
-                  <div className="about-stat-label">{st.baslik}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 3. VİZYON, MİSYON VE DEĞERLERİMİZ */}
+      {/* 2. BİZ KİMİZ (1959'dan Bugüne) */}
       <section className="section-global">
         <div className="global-container">
-          <div className="section-header-center">
-            <div className="section-eyebrow">{t.hakkimizda.vizyonMisyon.eyebrow}</div>
+          <div className="about-bizkimiz-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
+            <div className="about-bizkimiz-content">
+              <div className="section-eyebrow" style={{ color: "#eb1c23", fontWeight: "600", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+                {t.hakkimizda.bizKimiz.eyebrow}
+              </div>
+              <h2 className="section-title" style={{ fontSize: "2rem", fontWeight: "800", marginTop: "12px", lineHeight: "1.3" }}>
+                {t.hakkimizda.bizKimiz.baslik}
+              </h2>
+              <p className="section-description" style={{ marginTop: "24px", fontSize: "1.05rem", color: "#475569", lineHeight: "1.8" }}>
+                {t.hakkimizda.bizKimiz.aciklama}
+              </p>
+            </div>
+            <div
+              className="about-bizkimiz-image-wrap"
+              style={{
+                borderRadius: "24px",
+                overflow: "hidden",
+                boxShadow: "0 12px 40px rgba(0,0,0,0.06)",
+                border: "1px solid rgba(0,0,0,0.04)",
+              }}
+            >
+              <img
+                src="/end-to-end-expertise.png"
+                alt="Uçtan Uca Uzmanlık"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  display: "block",
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. RAKAMLARLA CEVAHİR */}
+      <section className="section-global bg-light">
+        <div className="global-container" style={{ display: "block" }}>
+          <div className="section-header-center" style={{ textAlign: "center", marginBottom: "48px" }}>
+            <h2 className="section-title">{t.hakkimizda.rakamlarlaCevahir.baslik}</h2>
+          </div>
+
+          <div className="stats-grid four-col" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "24px" }}>
+            {t.hakkimizda.rakamlarlaCevahir.stats.map((st: any, idx: number) => (
+              <div
+                key={idx}
+                className="stat-card"
+                style={{
+                  background: "#fdfdfd",
+                  padding: "32px 24px",
+                  borderRadius: "16px",
+                  textAlign: "center",
+                  border: "1px solid rgba(0,0,0,0.04)",
+                  boxShadow: "0 4px 20px rgba(0,0,0,0.01)",
+                }}
+              >
+                <div
+                  className="stat-number"
+                  style={{
+                    fontSize: "2.5rem",
+                    fontWeight: "800",
+                    color: "#eb1c23",
+                    lineHeight: "1.1",
+                  }}
+                >
+                  {st.deger}
+                </div>
+                <div
+                  className="stat-label"
+                  style={{
+                    fontSize: "0.85rem",
+                    fontWeight: "700",
+                    color: "#64748b",
+                    marginTop: "12px",
+                    letterSpacing: "0.05em",
+                  }}
+                >
+                  {st.baslik}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 4. VİZYON, MİSYON VE DEĞERLERİMİZ */}
+      <section className="section-global">
+        <div className="global-container" style={{ display: "block" }}>
+          <div className="section-header-center" style={{ textAlign: "center", marginBottom: "48px" }}>
+            <div className="section-eyebrow" style={{ color: "#eb1c23" }}>{t.hakkimizda.vizyonMisyon.eyebrow}</div>
             <h2 className="section-title">{t.hakkimizda.vizyonMisyon.baslik}</h2>
           </div>
 
-          <div className="grid-layout two-col gap-medium mt-large">
+          <div className="grid-layout two-col gap-medium" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px" }}>
             {/* Vizyon Kartı */}
-            <div className="card vision-card">
-              <div className="card-icon-header">
-                <div className="icon-badge badge-blue">
+            <div className="card vision-card" style={{ padding: "40px", borderRadius: "20px", borderTop: "4px solid #3b82f6" }}>
+              <div className="card-icon-header" style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "20px" }}>
+                <div className="icon-badge badge-blue" style={{ background: "rgba(59, 130, 246, 0.1)", color: "#3b82f6", padding: "12px", borderRadius: "12px" }}>
                   <Compass size={28} />
                 </div>
-                <h3>{t.hakkimizda.vizyonMisyon.vizyon.baslik}</h3>
+                <h3 style={{ fontSize: "1.5rem", fontWeight: "700", margin: "0" }}>{t.hakkimizda.vizyonMisyon.vizyon.baslik}</h3>
               </div>
-              <p className="card-body-text">
+              <p className="card-body-text" style={{ color: "#475569", lineHeight: "1.7", fontSize: "1.05rem" }}>
                 {t.hakkimizda.vizyonMisyon.vizyon.aciklama}
               </p>
             </div>
 
             {/* Misyon Kartı */}
-            <div className="card mission-card">
-              <div className="card-icon-header">
-                <div className="icon-badge badge-red">
+            <div className="card mission-card" style={{ padding: "40px", borderRadius: "20px", borderTop: "4px solid #eb1c23" }}>
+              <div className="card-icon-header" style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "20px" }}>
+                <div className="icon-badge badge-red" style={{ background: "rgba(235, 28, 35, 0.1)", color: "#eb1c23", padding: "12px", borderRadius: "12px" }}>
                   <Target size={28} />
                 </div>
-                <h3>{t.hakkimizda.vizyonMisyon.misyon.baslik}</h3>
+                <h3 style={{ fontSize: "1.5rem", fontWeight: "700", margin: "0" }}>{t.hakkimizda.vizyonMisyon.misyon.baslik}</h3>
               </div>
-              <p className="card-body-text">
+              <p className="card-body-text" style={{ color: "#475569", lineHeight: "1.7", fontSize: "1.05rem" }}>
                 {t.hakkimizda.vizyonMisyon.misyon.aciklama}
               </p>
             </div>
           </div>
 
           {/* Değerlerimiz */}
-          <div className="values-container mt-large">
-            <h3 className="values-title">
-              <Sparkles size={20} className="values-title-icon" />
+          <div className="values-container" style={{ marginTop: "48px", background: "#fdfdfd", padding: "40px", borderRadius: "20px", border: "1px solid rgba(0,0,0,0.04)" }}>
+            <h3 className="values-title" style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "1.25rem", fontWeight: "700", color: "#111111", marginBottom: "28px" }}>
+              <Sparkles size={20} className="values-title-icon" style={{ color: "#eb1c23" }} />
               {t.hakkimizda.vizyonMisyon.degerler.baslik}
             </h3>
-            <div className="values-grid">
-              {t.hakkimizda.vizyonMisyon.degerler.liste.map((val, idx) => (
-                <div key={idx} className="value-item">
-                  <CheckCircle2 size={18} className="value-check-icon" />
-                  <span>{val}</span>
+            <div className="values-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "20px" }}>
+              {t.hakkimizda.vizyonMisyon.degerler.liste.map((val: string, idx: number) => (
+                <div key={idx} className="value-item" style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+                  <CheckCircle2 size={18} className="value-check-icon" style={{ color: "#eb1c23", flexShrink: "0" }} />
+                  <span style={{ fontSize: "1rem", color: "#334155", fontWeight: "500" }}>{val}</span>
                 </div>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 4. CEVAHİR GRUBU HAKKINDA & SEKTÖRLER */}
-      <section className="section-global bg-light">
-        <div className="global-container">
-          <div className="section-header-center">
-            <div className="section-eyebrow">{t.hakkimizda.cevahirGrup.eyebrow}</div>
-            <h2 className="section-title">{t.hakkimizda.cevahirGrup.baslik}</h2>
-            <p className="section-description max-w-700">
-              {t.hakkimizda.cevahirGrup.aciklama}
-            </p>
-            <div className="countries-badge mt-small">
-              <Globe2 size={16} />
-              <span>{t.hakkimizda.cevahirGrup.ulkelerNotu}</span>
-            </div>
-          </div>
-
-          {/* 4 Stats Grid */}
-          <div className="stats-grid four-col mt-large">
-            {t.hakkimizda.cevahirGrup.stats.map((st, idx) => (
-              <div key={idx} className="stat-card">
-                <div className="stat-number">{st.deger}</div>
-                <div className="stat-label">{st.baslik}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Faaliyet Sektörleri */}
-          <div className="sectors-grid mt-large">
-            {t.hakkimizda.cevahirGrup.sektorler.map((sek, idx) => {
-              const IconComp = sectorIconMap[idx] || Building2;
-              return (
-                <div key={idx} className="sector-tile">
-                  <div className="sector-icon-wrapper">
-                    <IconComp size={24} />
-                  </div>
-                  <span className="sector-name">{sek.baslik}</span>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* 5. CEVAHİR GRUBU TARİHÇESİ (TIMELINE) */}
-      <section className="section-global">
-        <div className="global-container">
-          <div className="section-header-center">
-            <div className="section-eyebrow">{t.hakkimizda.tarihce.eyebrow}</div>
-            <h2 className="section-title">{t.hakkimizda.tarihce.baslik}</h2>
-          </div>
-
-          <div className="timeline-wrapper mt-large">
-            <div className="timeline-line" />
-            <div className="timeline-grid">
-              {t.hakkimizda.tarihce.liste.map((item, idx) => (
-                <div key={idx} className="timeline-card">
-                  <div className="timeline-year-badge">
-                    <Calendar size={14} />
-                    <span>{item.yil}</span>
-                  </div>
-                  <h4 className="timeline-item-title">{item.baslik}</h4>
-                  <p className="timeline-item-desc">{item.aciklama}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 6. VERİ MERKEZİ ÖLÇEĞİMİZ (DARK ACCENT) */}
-      <section className="section-global dc-scale-section">
-        <div className="global-container">
-          <div className="section-header-center text-white">
-            <div className="hero-eyebrow text-red-light">
-              {t.hakkimizda.veriMerkeziOlcek.eyebrow}
-            </div>
-            <h2 className="section-title text-white">
-              {t.hakkimizda.veriMerkeziOlcek.baslik}
-            </h2>
-          </div>
-
-          <div className="grid-layout three-col gap-medium mt-large">
-            {t.hakkimizda.veriMerkeziOlcek.stats.map((st, idx) => (
-              <div key={idx} className="dc-scale-card">
-                <div className="dc-scale-val">
-                  <span className="dc-number">{st.deger}</span>
-                  {st.birim && <span className="dc-unit"> {st.birim}</span>}
-                </div>
-                <div className="dc-scale-label">{st.baslik}</div>
-              </div>
-            ))}
-          </div>
-
-          <div className="quote-box mt-large">
-            <p>{t.hakkimizda.veriMerkeziOlcek.alinti}</p>
-          </div>
-        </div>
-      </section>
-
-      {/* 7. GRUP ŞİRKETLERİMİZ */}
-      <section className="section-global bg-light">
-        <div className="global-container">
-          <div className="section-header-center">
-            <div className="section-eyebrow">{t.hakkimizda.grupSirketleri.eyebrow}</div>
-            <h2 className="section-title">{t.hakkimizda.grupSirketleri.baslik}</h2>
-          </div>
-
-          <div className="grid-layout four-col gap-medium mt-large">
-            {t.hakkimizda.grupSirketleri.liste.map((sirket, idx) => {
-              const IconComp = companyIconMap[idx] || Building2;
-              return (
-                <div
-                  key={idx}
-                  className={`card company-card ${
-                    sirket.featured ? "company-card-featured" : ""
-                  }`}
-                >
-                  {sirket.featured && (
-                    <div className="featured-tag">CBIT & CDC</div>
-                  )}
-                  <div className="company-icon-circle">
-                    <IconComp size={26} />
-                  </div>
-                  <h3 className="company-title">{sirket.baslik}</h3>
-                  <p className="company-desc">{sirket.aciklama}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* 8. CTA BANDI */}
-      <section className="section-global cta-band-section">
-        <div className="global-container">
-          <div className="cta-band-card">
-            <div className="cta-band-content">
-              <h2>{t.hakkimizda.cta.baslik}</h2>
-              <p>{t.hakkimizda.cta.aciklama}</p>
-            </div>
-            <div className="cta-band-actions">
-              <Link to="/iletisim" className="btn-primary">
-                {t.hakkimizda.cta.btnIletisim}
-                <ArrowRight size={18} />
-              </Link>
-              <Link to="/cozumler" className="btn-secondary">
-                {t.hakkimizda.cta.btnCozumler}
-              </Link>
             </div>
           </div>
         </div>

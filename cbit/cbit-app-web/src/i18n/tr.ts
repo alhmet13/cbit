@@ -1,9 +1,10 @@
 export const tr = {
   nav: {
-    anasayfa: "Ana Sayfa",
+    anasayfa: "Anasayfa",
     hakkimizda: "Hakkımızda",
     cozumler: "Neden CBIT?",
     yetkinlikler: "Çözümler",
+    isOrtaklari: "İş Ortaklarımız",
     projeler: "Referanslar",
     haberler: "Haberler",
     iletisim: "İletişim",
@@ -207,38 +208,36 @@ export const tr = {
   hakkimizda: {
     hero: {
       eyebrow: "HAKKIMIZDA",
-      baslik:
-        "Karmaşık Mühendislikten Kritik Altyapılara, Zamanında ve Güvenilir Çözümler",
-      lead: "CBIT; Cevahir Grubu'nun 65 yıllık mühendislik mirasını, bilgi teknolojileri alanındaki uzmanlığıyla birleştiren üretici bağımsız bir sistem entegratörüdür.",
+      baslik: "Hakkımızda",
+      lead: "Karmaşık Mühendislikten Kritik Altyapılara: Cevahir Güvencesi",
     },
     bizKimiz: {
-      eyebrow: "BİZ KİMİZ",
-      baslik:
-        "20 Yılı Aşkın Sektör Tecrübesiyle Kurulan Bağımsız Bir Sistem Entegratörü",
+      eyebrow: "1959'dan bugüne",
+      baslik: "Aynı mühendislik disiplini, aynı güven bugün Dijital Vatan'ın kritik altyapısında",
       aciklama:
-        "20+ yıl sektör tecrübeli ekibimizle, kurumların teknoloji altyapısını iş hedefleriyle buluşturan bağımsız bir sistem entegratörüyüz. Üretici bağımsız yaklaşımımızla en uygun global veya yerli teknolojiler ile çözüm sunmaktayız. Tasarımdan işletme dahil bakıma kadar tüm süreci üstleniriz.",
+        "CBIT, Cevahir Grubunun köklü mühendislik mirasını geleceğin teknolojilerine taşıyan dijital altyapı ve yüksek teknoloji çözüm ortağıdır. Kritik donanım tedariki, yüksek yoğunluklu yapay zeka (GPU/DPU) kümeleri, bulut yazılımları ve kurumsal ağ sistemleri entegrasyonunda anahtar teslim çözümler sunarak dijital dönüşümün ve bölgesel veri egemenliğinin güvenilir adresi olmaya devam ediyoruz.",
+    },
+    rakamlarlaCevahir: {
+      baslik: "Rakamlarla Cevahir",
       stats: [
-        { deger: "20+", baslik: "Yıllık Sektör Tecrübesi", isRed: false },
-        { deger: "%100", baslik: "Üretici Bağımsız Çözümler", isRed: true },
-        {
-          deger: "5",
-          baslik: "Aşamalı Uçtan Uca Proje Yönetimi",
-          isRed: false,
-        },
+        { deger: "~15.000", baslik: "ÇALIŞAN" },
+        { deger: "100+", baslik: "TAMAMLANAN PROJE" },
+        { deger: "6M+ m²", baslik: "TOPLAM PROJE ALANI" },
+        { deger: "5", baslik: "AKTİF PROJELER" },
       ],
     },
     vizyonMisyon: {
-      eyebrow: "VİZYON, MİSYON VE DEĞERLERİMİZ",
-      baslik: "Bizi Biz Yapan İlkeler",
+      eyebrow: "MİSYON & VİZYON",
+      baslik: "Geleceğe Güç Veren İlkelerimiz",
       vizyon: {
-        baslik: "Vizyonumuz",
+        baslik: "Vizyon",
         aciklama:
           "Ulusal ve uluslararası pazarlarda dünya standartlarında projeler üreten; güven, kalıcılık ve geleceğe güçlenerek taşınan bir marka olmak. Sürdürülebilir performansı kurumsal temele oturtmak.",
       },
       misyon: {
-        baslik: "Misyonumuz",
+        baslik: "Misyon",
         aciklama:
-          "Üstlendiğimiz her sorumlulukla Türkiye'nin gelişmesine ve büyümesine katkıda bulunmak; çalışanlarımız, paydaşlarımız ve tüm toplum için sürdürülebilir katma değer yaratmak.",
+          "Üstlenilen her sorumlulukla Türkiye'nin gelişmesine ve büyümesine katkıda bulunmak; çalışanlar, paydaşlar ve tüm toplum için sürdürülebilir katma değer yaratmak. Güvenilirlik, çözüm odaklılık, inovasyon, etik ilkelere bağlılık, mükemmelliyetçilik, vizyoner bakış açısı, hızlı ve kaliteli hizmet anlayışı ile kapsayıcılık temel değerlerdir.",
       },
       degerler: {
         baslik: "Değerlerimiz",
@@ -253,143 +252,6 @@ export const tr = {
           "Kapsayıcılık",
         ],
       },
-    },
-    cevahirGrup: {
-      eyebrow: "CEVAHİR GRUBU HAKKINDA",
-      baslik: "Karmaşık Mühendislikten Kritik Altyapılara",
-      aciklama:
-        "1959'dan bu yana kesintisiz operasyonla büyüyen Cevahir Grubu, CBIT'in de içinde yer aldığı çok sektörlü bir kuruluştur.",
-      stats: [
-        { deger: "1959", baslik: "Kuruluş Yılı" },
-        { deger: "65+", baslik: "Yıllık Kesintisiz Operasyon" },
-        { deger: "4+", baslik: "Ülkede Uluslararası Varlık" },
-        { deger: "~15.000", baslik: "Çalışan (900+'ü Uzman Teknik Personel)" },
-      ],
-      ulkelerNotu:
-        "Türkiye, Libya, Suudi Arabistan ve Kuzey Makedonya'da faaliyet gösteriyoruz.",
-      sektorler: [
-        { baslik: "Baraj" },
-        { baslik: "Veri Merkezi" },
-        { baslik: "AVM" },
-        { baslik: "Hastane" },
-        { baslik: "Teknoloji Kampüsü" },
-        { baslik: "Turizm" },
-      ],
-    },
-    tarihce: {
-      eyebrow: "TARİHÇEMİZ",
-      baslik: "Cevahir Grubu Tarihçesi",
-      liste: [
-        {
-          yil: "1959",
-          baslik: "Kuruluş",
-          aciklama: "Kapsamlı inşaat portföyüyle sektöre giriş.",
-        },
-        {
-          yil: "1975",
-          baslik: "Uluslararası Genişleme",
-          aciklama: "Libya ve S. Arabistan'da büyük ölçekli projeler.",
-        },
-        {
-          yil: "1990",
-          baslik: "Proje Geliştirme & İşletme",
-          aciklama: "Entegre proje sahipliği modeline geçiş.",
-        },
-        {
-          yil: "1994",
-          baslik: "Büyük İstanbul Otogarı",
-          aciklama: "Avrupa'nın en büyüğü, dünyanın 3. otogarı.",
-        },
-        {
-          yil: "1995",
-          baslik: "The Plaza Hotel",
-          aciklama: "Yatırım–inşaat–işletme oteli projesi.",
-        },
-        {
-          yil: "2005",
-          baslik: "Avrupa'nın En Büyük AVM'si",
-          aciklama: "En büyük kapalı alışveriş ve eğlence merkezi.",
-        },
-        {
-          yil: "2020",
-          baslik: "Balkanlar'da En Büyük Yatırım",
-          aciklama: "280.000 m² Türk özel sektör yatırımı.",
-        },
-        {
-          yil: "2023",
-          baslik: "TOKİ Deprem Konutları",
-          aciklama: "Adıyaman–Hatay'da 7.500+ bağımsız bölüm.",
-        },
-        {
-          yil: "2024",
-          baslik: "İFM Faz-3 Projesi",
-          aciklama: "İstanbul Finans Merkezi'nde 100 bin+ m² yapım.",
-        },
-        {
-          yil: "2025",
-          baslik: "Kritik Altyapı & Veri Merkezi",
-          aciklama: "Tier-3 & LEED veri merkezi çözümleri.",
-        },
-      ],
-    },
-    veriMerkeziOlcek: {
-      eyebrow: "RAKAMLARLA CEVAHİR GRUBU",
-      baslik: "Veri Merkezi Ölçeğimiz",
-      stats: [
-        {
-          deger: "70+",
-          birim: "M USD",
-          baslik: "Ortalama Veri Merkezi Proje Büyüklüğü",
-        },
-        {
-          deger: "100+",
-          birim: "",
-          baslik: "Minimum Veri Merkezi Kabinet Sayısı",
-        },
-        {
-          deger: "350+",
-          birim: "M USD",
-          baslik: "Aktif Veri Merkezi Proje Büyüklüğü",
-        },
-      ],
-      alinti: '"Kalite ve güven, her projemizin temelinde yatar."',
-    },
-    grupSirketleri: {
-      eyebrow: "GRUP ŞİRKETLERİMİZ",
-      baslik: "Cevahir Grubu Faaliyet Alanları",
-      liste: [
-        {
-          baslik: "İnşaat",
-          aciklama:
-            "Cevahir Yapı, Cevahir Taahhüt, Cevahir Proje ve LIBCO markalarıyla; konuttan kritik altyapıya geniş bir yapı portföyü.",
-          featured: false,
-        },
-        {
-          baslik: "Teknoloji",
-          aciklama:
-            "CDC, CBIT, KVK ve KVK Teknik Servis markalarıyla; veri merkezinden bilgi teknolojilerine, saha hizmetlerine uzanan teknoloji ekosistemi.",
-          featured: true,
-        },
-        {
-          baslik: "Enerji",
-          aciklama:
-            "Baraj ve enerji altyapısı projeleriyle sürdürülebilir güç kaynaklarına ve kritik enerji sistemlerine yatırım.",
-          featured: false,
-        },
-        {
-          baslik: "Turizm",
-          aciklama:
-            "Cevahir Hotel Istanbul Asia ile konaklama ve ağırlama sektöründe kaliteli hizmet anlayışı.",
-          featured: false,
-        },
-      ],
-    },
-    cta: {
-      baslik: "Ekibimizle Tanışmak İster misiniz?",
-      aciklama:
-        "CBIT'in üretici bağımsız yaklaşımını ve Cevahir Grubu güvencesini projenizde birlikte değerlendirelim.",
-      btnIletisim: "Bize Ulaşın",
-      btnCozumler: "Veri Merkezi Çözümleri",
     },
   },
   cozumler: {
@@ -715,6 +577,19 @@ export const tr = {
         "Detaylı bilgi için info@cbit.com.tr adresi ile iletişime geçebilirsiniz.",
       ],
     },
+  },
+  isOrtaklariSayfasi: {
+    hero: {
+      eyebrow: "İŞ ORTAKLARIMIZ",
+      baslik: "Dijital Altyapı ve Yüksek Teknoloji Çözüm Ortaklarımız",
+      lead: "Birlikte Büyüme Alanlarımız ve Güçlü Ekosistemimiz"
+    },
+    kategoriler: [
+      { baslik: "Bilişim ve YZ Altyapısı", logos: ["nvidia.png", "supermicro.png", "x-fusion.png"] },
+      { baslik: "Depolama ve Veri", logos: ["huawei.png", "pure-storage.png", "ngx-storage.png"] },
+      { baslik: "Bulut ve Yazılım", logos: ["vmware.png", "canonical.png", "sas.png"] },
+      { baslik: "Ağ Güvenliği ve Tesisi", logos: ["paloalto.png", "fortinet.png", "fastnac.png", "vertiv.png"] }
+    ]
   },
 };
 
