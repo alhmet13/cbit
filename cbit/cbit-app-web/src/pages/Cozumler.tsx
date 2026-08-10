@@ -7,6 +7,7 @@ import {
   Shield,
   Headphones,
   ClipboardCheck,
+  Database,
   CheckCircle2,
   ArrowRight,
   Search,
@@ -35,6 +36,8 @@ export default function Cozumler() {
         return <Headphones className="solution-icon" />;
       case "ClipboardCheck":
         return <ClipboardCheck className="solution-icon" />;
+      case "Database":
+        return <Database className="solution-icon" />;
       default:
         return <Server className="solution-icon" />;
     }

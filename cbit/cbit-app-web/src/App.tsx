@@ -13,6 +13,7 @@ const Haberler = lazy(() => import("./pages/Haberler"));
 const Iletisim = lazy(() => import("./pages/Iletisim"));
 const CerezPolitikasi = lazy(() => import("./pages/CerezPolitikasi"));
 const KisiselVerilerinKorunmasi = lazy(() => import("./pages/KisiselVerilerinKorunmasi"));
+const NedenCbit = lazy(() => import("./pages/NedenCbit"));
 
 // Sayfa yüklenene kadar gösterilecek loading tasarımı
 const LoadingFallback = () => (
@@ -29,7 +30,7 @@ function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Anasayfa />} />
             <Route path="/hakkimizda" element={<Hakkimizda />} />
-            <Route path="/neden-biz" element={<Cozumler />} />
+            <Route path="/neden-biz" element={<NedenCbit />} />
             <Route path="/cozumler" element={<Cozumler />} />
             <Route path="/yetkinliklerimiz" element={<Navigate to="/cozumler" replace />} />
             <Route path="/is-ortaklari" element={<IsOrtaklari />} />

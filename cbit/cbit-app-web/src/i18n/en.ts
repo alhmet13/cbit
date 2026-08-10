@@ -22,9 +22,9 @@ export const en: Translations = {
   anasayfa: {
     hero: {
       badge: "CEVAHIR GROUP · TECHNOLOGY BRAND",
-      baslik: "Managing Your Critical Infrastructure, End to End",
+      baslik: "Single Contractor in Digital Infrastructure, Zero Complexity",
       aciklama:
-        "We are the vendor-independent technology partner for organizations' journey — from network infrastructure to data centers, from cloud to artificial intelligence. We combine 20+ years of sector experience with Cevahir Group's 65-year engineering and construction heritage.",
+        "We blend a deep-rooted 65-year engineering and construction legacy with high-tech IT expertise. We design, build, and operationalize your critical facilities from start to finish with the assurance of a single point of contact.",
       ctaCozumler: "Explore Solutions",
       ctaNedenBiz: "Why CBIT?",
       ctaIletisim: "Get in Touch",
@@ -63,50 +63,34 @@ export const en: Translations = {
       liste: [
         {
           no: "01",
-          baslik: "Network Infrastructure & Data Center",
+          baslik: "Artificial Intelligence (AI) Infrastructure",
           tanim:
-            "We design and build highly available, scalable network architectures — from campus to data center.",
+            "We provide the high-performance hardware architecture and data maturity processes required for processing your corporate data with artificial intelligence from a single source.",
           link: "/cozumler",
           linkText: "Learn More",
         },
         {
           no: "02",
-          baslik: "Cloud Solutions",
+          baslik: "Server, Virtualization and Cloud Solutions",
           tanim:
-            "We design the right platform for your applications with hybrid and multi-cloud architectures, optimizing cost.",
+            "We offer a broad and secure platform ranging from high-performance server hardware best suited to your workloads to flexible cloud strategies.",
           link: "/cozumler",
           linkText: "Learn More",
         },
         {
           no: "03",
-          baslik: "AI Solutions",
+          baslik: "Storage and Data Management",
           tanim:
-            "We increase your data maturity and operational efficiency with machine learning and agentic AI.",
+            "No matter how large your data volume grows, we design next-generation storage architectures that do not compromise on speed, security, and availability.",
           link: "/cozumler",
           linkText: "Learn More",
         },
         {
           no: "04",
-          baslik: "Cybersecurity Solutions",
+          baslik: "Enterprise Network and Data Center Infrastructure",
           tanim:
-            "From security architecture design to 24/7 threat monitoring, penetration testing to compliance.",
+            "We implement highly available network architectures and turnkey (EPC) data center installations extending from the campus to the main data center.",
           link: "/cozumler",
-          linkText: "Learn More",
-        },
-        {
-          no: "05",
-          baslik: "Managed Services & Support",
-          tanim:
-            "We ensure uninterrupted operation of your systems with 24/7 NOC monitoring, on-site and remote support.",
-          link: "/cozumler",
-          linkText: "Learn More",
-        },
-        {
-          no: "06",
-          baslik: "Consulting & Project Management",
-          tanim:
-            "We manage projects through a 5-stage methodology: analysis, design, install & test, operate, and support.",
-          link: "/neden-biz",
           linkText: "Learn More",
         },
       ],
@@ -264,207 +248,145 @@ export const en: Translations = {
       lead: "From network infrastructure to data centers, from cloud to artificial intelligence, from cybersecurity to managed services — we provide full-scope service across six solution areas, from design to operation.",
     },
     chips: [
-      { id: "ag-veri-merkezi", label: "01 · Network & Data Center" },
-      { id: "bulut", label: "02 · Cloud Solutions" },
-      { id: "yapay-zeka", label: "03 · AI Solutions" },
-      { id: "siber-guvenlik", label: "04 · Cybersecurity" },
-      { id: "yonetilen-hizmetler", label: "05 · Managed Services" },
-      { id: "danismanlik", label: "06 · Consulting & PM" },
+      { id: "yapay-zeka", label: "01 · Artificial Intelligence (AI) Infrastructure" },
+      { id: "sunucu-bulut", label: "02 · Server & Cloud Solutions" },
+      { id: "depolama", label: "03 · Storage & Data Management" },
+      { id: "veri-merkezi", label: "04 · Network & Data Center" },
     ],
     alanlar: [
       {
-        id: "ag-veri-merkezi",
+        id: "yapay-zeka",
         num: "SOLUTION AREA 01",
-        icon: "Server",
-        baslik: "Network Infrastructure & Data Center",
+        icon: "Cpu",
+        baslik: "Artificial Intelligence (AI) Infrastructure",
         aciklama:
-          "We design and build highly available, scalable network architectures — from campus to data center.",
+          "We provide the high-performance hardware architecture and data maturity processes required for processing your corporate data with artificial intelligence from a single source.",
         kpi: {
-          deger: "%99.9999",
-          etiket: "Targeted Network Availability",
+          deger: "40%",
+          etiket: "Average Operational Efficiency Increase",
         },
-        lead: "This is our flagship solution area, where we combine the deepest expertise with Cevahir Group's construction strength.",
         maddeler: [
           {
-            baslik: "Campus & WAN Network Design",
-            tanim: "LAN/WAN, wireless, SD-WAN and SASE architectures",
+            baslik: "High-Density AI Clusters (GPU/DPU/NPU)",
+            tanim:
+              "Uninterrupted computing hardware infrastructure optimized for large-scale AI training and inference tasks.",
           },
           {
-            baslik: "Data Center Deployment",
-            tanim: "Server, storage, and virtualization infrastructure",
+            baslik: "AI Factories",
+            tanim:
+              "Facility architectures specifically designed for AI workloads, capable of meeting increasing rack densities and energy needs.",
           },
           {
-            baslik: "Disaster Recovery Planning",
-            tanim: "Redundancy, load balancing, and business continuity",
+            baslik: "Agentic AI and Machine Learning",
+            tanim:
+              "Smart automation architectures enabling AI to take independent actions for your business processes.",
           },
           {
-            baslik: "End-to-End Observability",
-            tanim: "Proactive-reactive monitoring and trend capacity planning",
+            baslik: "Data Maturity Consulting",
+            tanim:
+              "Seamless integration and enrichment of your existing corporate data into the AI ecosystem.",
           },
         ],
-        btnText: "See Full Detail on the Data Center Page",
-        btnLink: "/veri-merkezi",
       },
       {
-        id: "bulut",
+        id: "sunucu-bulut",
         num: "SOLUTION AREA 02",
         icon: "Cloud",
-        baslik: "Cloud Solutions",
+        baslik: "Server, Virtualization and Cloud Solutions",
         aciklama:
-          "We move your workloads to the right platform with hybrid and multi-cloud strategies, optimizing cost and performance.",
+          "We offer a broad and secure platform ranging from high-performance server hardware best suited to your workloads to flexible cloud strategies.",
         kpi: {
-          deger: "%30",
+          deger: "30%",
           etiket: "Average Infrastructure Cost Savings",
         },
         maddeler: [
           {
-            baslik: "Cloud Migration Services",
+            baslik: "Sovereign Cloud",
             tanim:
-              "Application and data migration, architecture transformation",
+              "An infrastructure fully compliant with KVKK and national security standards, hosting the country's critical workloads locally and securely.",
           },
           {
-            baslik: "Hybrid / Multi-Cloud Architecture",
-            tanim: "Private-cloud and public-cloud integration",
+            baslik: "Hybrid and Multi-Cloud Architecture",
+            tanim:
+              "Flexible and scalable infrastructure through the perfect integration of private and public clouds.",
           },
           {
-            baslik: "Cost Optimization",
-            tanim: "Resource-usage analysis and scaling",
+            baslik: "High-Performance Server Systems",
+            tanim:
+              "Virtualization and high processing power with hardware supplied directly from global technology manufacturers (Tier-1).",
           },
           {
-            baslik: "Cloud Security & Compliance",
-            tanim: "Identity management, access control, auditing",
+            baslik: "Seamless Cloud Migration",
+            tanim:
+              "Migrating your existing data and applications to the cloud environment with minimum downtime and cost optimization.",
           },
         ],
       },
       {
-        id: "yapay-zeka",
+        id: "depolama",
         num: "SOLUTION AREA 03",
-        icon: "Cpu",
-        baslik: "AI Solutions",
+        icon: "Database",
+        baslik: "Storage and Data Management",
         aciklama:
-          "We make it possible for your corporate assets and data to be processed in line with your business goals to generate real benefit.",
+          "No matter how large your data volume grows, we design next-generation storage architectures that do not compromise on speed, security, and availability.",
         kpi: {
-          deger: "%40",
-          etiket: "Average Operational Efficiency Gain",
+          deger: "24/7",
+          etiket: "Data Availability and Protection",
         },
         maddeler: [
           {
-            baslik: "AI – Machine Learning",
+            baslik: "Enterprise Data Storage",
             tanim:
-              "Enriching your existing corporate data in line with business goals",
+              "High-performance and horizontally scalable storage units suitable for hyperscale data centers.",
           },
           {
-            baslik: "Agentic AI",
+            baslik: "Business Continuity and Disaster Recovery",
             tanim:
-              "AI that can take action within your business processes, saving labor",
+              "Redundancy and load balancing setups that instantly activate against unexpected situations.",
           },
           {
-            baslik: "Data-Maturity Services & Consulting",
-            tanim: "Preparing your corporate data to be processed with AI",
+            baslik: "Data Security and Backup",
+            tanim:
+              "Lossless, fast, and periodic secure storage of your critical corporate assets in secure environments.",
+          },
+          {
+            baslik: "Lifecycle Management",
+            tanim:
+              "Cost-performance optimized storage policies in the process from the moment data is created to its archiving.",
           },
         ],
       },
       {
-        id: "siber-guvenlik",
+        id: "veri-merkezi",
         num: "SOLUTION AREA 04",
         icon: "Shield",
-        baslik: "Cybersecurity Solutions",
+        baslik: "Enterprise Network and Data Center Infrastructure",
         aciklama:
-          "We design the security architecture to protect your organization end-to-end, detecting threats through 24/7 monitoring.",
+          "We implement highly available network architectures and turnkey (EPC) data center installations extending from the campus to the main data center.",
         kpi: {
-          deger: "7/24",
-          etiket: "Continuous Threat Monitoring & Response",
+          deger: "99.9999%",
+          etiket: "Targeted System and Network Availability",
         },
         maddeler: [
           {
-            baslik: "Security Architecture Design",
-            tanim: "Network, endpoint, and application security",
+            baslik: "Turnkey Data Center Construction",
+            tanim:
+              "Full scope from concept design (BIM) to concrete foundation, from electromechanical infrastructure to high-efficiency cooling (chiller/CRAC) and white space installation.",
           },
           {
-            baslik: "SOC & Threat Monitoring",
-            tanim: "24/7 security operations center service",
+            baslik: "Campus and WAN Network Design",
+            tanim:
+              "Enterprise-level configuration of secure LAN/WAN, high-speed wireless networks, SD-WAN, and SASE architectures.",
           },
           {
-            baslik: "Penetration Testing & Audit",
-            tanim: "Vulnerability scanning and risk assessment",
+            baslik: "Smart Control and Security Systems",
+            tanim:
+              "Integrated Extra Low Voltage (ELV) building controls and access restriction hardware that facilitate data center management.",
           },
           {
-            baslik: "Compliance Consulting",
-            tanim: "KVKK (Turkish DPL), ISO 27001, and sector regulations",
-          },
-        ],
-      },
-      {
-        id: "yonetilen-hizmetler",
-        num: "SOLUTION AREA 05",
-        icon: "Headset",
-        baslik: "Managed Services & Support",
-        aciklama:
-          "We stay with you after installation too — monitoring your infrastructure and resolving issues before you notice them.",
-        kpi: {
-          deger: "<45 min",
-          etiket: "Average First-Response Time",
-        },
-        maddeler: [
-          {
-            baslik: "24/7 NOC Monitoring",
-            tanim: "Proactive infrastructure and application monitoring",
-          },
-          {
-            baslik: "On-Site & Remote Support",
-            tanim: "SLA-backed technical support services",
-          },
-          {
-            baslik: "Asset & License Management",
-            tanim: "Hardware/software inventory tracking",
-          },
-          {
-            baslik: "Regular Maintenance & Reporting",
-            tanim: "Periodic health checks and reports",
-          },
-        ],
-      },
-      {
-        id: "danismanlik",
-        num: "SOLUTION AREA 06",
-        icon: "ClipboardCheck",
-        baslik: "Consulting & Project Management",
-        aciklama:
-          "Every project passes through five clear stages; we proceed with transparent communication and measurable outputs.",
-        kpi: {
-          deger: "5",
-          etiket: "Stage End-to-End Project Process",
-        },
-        surec: [
-          {
-            num: "01",
-            baslik: "Analysis",
-            tanim: "Needs and existing-infrastructure assessment",
-            icon: "Search",
-          },
-          {
-            num: "02",
-            baslik: "Design",
-            tanim: "Solution architecture and roadmap",
-            icon: "Ruler",
-          },
-          {
-            num: "03",
-            baslik: "Install – Test",
-            tanim: "Installation and verification testing",
-            icon: "Wrench",
-          },
-          {
-            num: "04",
-            baslik: "Operation",
-            tanim: "System operation, monitoring, and reporting",
-            icon: "Settings",
-          },
-          {
-            num: "05",
-            baslik: "Support",
-            tanim: "Warranty, maintenance, and spare-parts services",
-            icon: "LifeBuoy",
+            baslik: "End-to-End Testing and Commissioning",
+            tanim:
+              "Testing systems at L1-L5 levels before moving to the live environment, an error-free and certified (TS EN50600) delivery process.",
           },
         ],
       },
@@ -593,5 +515,35 @@ export const en: Translations = {
       { baslik: "Cloud & Software", logos: ["vmware.png", "canonical.png", "sas.png"] },
       { baslik: "Network Security & Facility", logos: ["paloalto.png", "fortinet.png", "fastnac.png", "vertiv.png"] }
     ]
+  },
+  nedenCbitSayfasi: {
+    hero: {
+      baslik: "Why CBIT?",
+      altBaslik: "Single Contractor in Digital Infrastructure, End-to-End Expertise"
+    },
+    degerOnerisi: [
+      { baslik: "Single Point of Responsibility", tanim: "Single contact from architecture to hardware." },
+      { baslik: "End-to-End Integration", tanim: "Seamless processes running simultaneously." },
+      { baslik: "Cevahir Engineering Legacy", tanim: "65 years of history, strong operational DNA." }
+    ],
+    farkYaratanYaklasimlarimiz: {
+      baslik: "Our Differentiating Approaches",
+      maddeler: [
+        { baslik: "Proven Experience and Scale Capability", icon: "CheckCircle" },
+        { baslik: "Single Contract, Minimum Risk", icon: "FileText" },
+        { baslik: "Cost Advantage", icon: "TrendingDown" },
+        { baslik: "Faster Delivery", icon: "Clock" },
+        { baslik: "Global Procurement and Logistics Power", icon: "Globe" },
+        { baslik: "24/7 Uninterrupted Operation and Maintenance", icon: "Settings" }
+      ]
+    },
+    istatistikler: {
+      baslik: "Team and Operational Strength",
+      maddeler: [
+        { deger: "200+", etiket: "Expert Staff" },
+        { deger: "1M+", etiket: "Annual Repairs" },
+        { deger: "350+ Million USD", etiket: "Active Projects" }
+      ]
+    }
   },
 };

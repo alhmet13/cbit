@@ -20,9 +20,9 @@ export const tr = {
   anasayfa: {
     hero: {
       badge: "CEVAHİR GRUBU · TEKNOLOJİ MARKASI",
-      baslik: "Kritik Altyapınızı Uçtan Uca Güvenle Yönetiyoruz",
+      baslik: "Dijital Altyapıda Tek Yüklenici, Sıfır Karmaşa",
       aciklama:
-        "Ağ altyapısından veri merkezine, buluttan yapay zekâya kadar kurumların teknoloji yolculuğunda üretici bağımsız çözüm ortağıyız. 20+ yıllık sektör tecrübemizi, Cevahir Grubu'nun 65 yıllık mühendislik ve inşaat mirasıyla birleştiriyoruz.",
+        "65 yıllık köklü mühendislik ve inşaat mirasını, ileri teknoloji bilişim uzmanlığıyla harmanlıyoruz. Kritik tesislerinizi baştan sona tek muhatap güvencesiyle tasarlıyor, kuruyor ve operasyonel hale getiriyoruz.",
       ctaCozumler: "Çözümleri İnceleyin",
       ctaNedenBiz: "Neden CBIT?",
       ctaIletisim: "Bizimle İletişime Geçin",
@@ -61,50 +61,34 @@ export const tr = {
       liste: [
         {
           no: "01",
-          baslik: "Ağ Altyapısı ve Veri Merkezi",
+          baslik: "Yapay Zeka (YZ) Altyapısı",
           tanim:
-            "Kampüsten veri merkezine, yüksek erişilebilir ve ölçeklenebilir ağ mimarileri tasarlıyor ve kuruyoruz.",
+            "Kurumsal verilerinizin yapay zeka ile işlenmesi için gerekli olan yüksek performanslı donanım mimarisini ve veri olgunlaştırma süreçlerini tek elden sunuyoruz.",
           link: "/cozumler",
           linkText: "Detaylı Bilgi",
         },
         {
           no: "02",
-          baslik: "Bulut Çözümleri",
+          baslik: "Sunucu, Sanallaştırma ve Bulut Çözümleri",
           tanim:
-            "Hibrit ve çoklu bulut mimarileriyle uygulamalarınız için doğru platformu tasarlıyor, maliyeti optimize ediyoruz.",
+            "İş yüklerinize en uygun, yüksek performanslı sunucu donanımlarından esnek bulut stratejilerine kadar uzanan geniş ve güvenli bir platform sunuyoruz.",
           link: "/cozumler",
           linkText: "Detaylı Bilgi",
         },
         {
           no: "03",
-          baslik: "Yapay Zeka Çözümleri",
+          baslik: "Depolama ve Veri Yönetimi",
           tanim:
-            "Makine öğrenmesi ve agentic AI ile veri olgunluğunuzu ve operasyonel verimliliğinizi artırıyoruz.",
+            "Verilerinizin hacmi ne kadar büyürse büyüsün; hız, güvenlik ve erişilebilirlikten taviz vermeyen yeni nesil depolama mimarileri tasarlıyoruz.",
           link: "/cozumler",
           linkText: "Detaylı Bilgi",
         },
         {
           no: "04",
-          baslik: "Siber Güvenlik Çözümleri",
+          baslik: "Kurumsal Ağ ve Veri Merkezi Altyapısı",
           tanim:
-            "Güvenlik mimarisi tasarımından 7/24 tehdit izlemeye, sızma testinden uyumluluğa kadar.",
+            "Kampüsten ana veri merkezine kadar uzanan, yüksek erişilebilir ağ mimarileri ve anahtar teslim (EPC) veri merkezi kurulumu gerçekleştiriyoruz.",
           link: "/cozumler",
-          linkText: "Detaylı Bilgi",
-        },
-        {
-          no: "05",
-          baslik: "Yönetilen Hizmetler ve Destek",
-          tanim:
-            "7/24 NOC izleme, saha ve uzaktan destekle sistemlerinizin kesintisiz çalışmasını sağlıyoruz.",
-          link: "/cozumler",
-          linkText: "Detaylı Bilgi",
-        },
-        {
-          no: "06",
-          baslik: "Danışmanlık ve Proje Yönetimi",
-          tanim:
-            "Analiz, tasarım, kurulum-test, işletme ve destekten oluşan 5 aşamalı metodolojiyle yönetiyoruz.",
-          link: "/neden-biz",
           linkText: "Detaylı Bilgi",
         },
       ],
@@ -262,207 +246,145 @@ export const tr = {
       lead: "Ağ altyapısından veri merkezine, buluttan yapay zekaya, siber güvenlikten yönetilen hizmetlere kadar altı çözüm alanında tasarımdan işletmeye tam kapsamlı hizmet veriyoruz.",
     },
     chips: [
-      { id: "ag-veri-merkezi", label: "01 · Ağ Altyapısı ve Veri Merkezi" },
-      { id: "bulut", label: "02 · Bulut Çözümleri" },
-      { id: "yapay-zeka", label: "03 · Yapay Zeka" },
-      { id: "siber-guvenlik", label: "04 · Siber Güvenlik" },
-      { id: "yonetilen-hizmetler", label: "05 · Yönetilen Hizmetler" },
-      { id: "danismanlik", label: "06 · Danışmanlık ve PY" },
+      { id: "yapay-zeka", label: "01 · Yapay Zeka (YZ) Altyapısı" },
+      { id: "sunucu-bulut", label: "02 · Sunucu ve Bulut Çözümleri" },
+      { id: "depolama", label: "03 · Depolama ve Veri Yönetimi" },
+      { id: "veri-merkezi", label: "04 · Ağ ve Veri Merkezi" },
     ],
     alanlar: [
       {
-        id: "ag-veri-merkezi",
-        num: "ÇÖZÜM ALANI 01",
-        icon: "Server",
-        baslik: "Ağ Altyapısı ve Veri Merkezi",
-        aciklama:
-          "Kampüsten veri merkezine, yüksek erişilebilir ve ölçeklenebilir ağ mimarileri tasarlıyor ve kuruyoruz.",
-        kpi: {
-          deger: "%99.9999",
-          etiket: "Hedeflenen Ağ Kullanılabilirlik Oranı",
-        },
-        lead: "Bu, en derin uzmanlığa sahip olduğumuz ve Cevahir Grubu'nun inşaat gücüyle birleştirdiğimiz amiral gemisi çözüm alanımızdır.",
-        maddeler: [
-          {
-            baslik: "Kampüs ve WAN Ağ Tasarımı",
-            tanim: "LAN/WAN, kablosuz ağ, SD-WAN ve SASE mimarileri",
-          },
-          {
-            baslik: "Veri Merkezi Kurulumu",
-            tanim: "Sunucu, depolama ve sanallaştırma altyapısı",
-          },
-          {
-            baslik: "Felaket Kurtarma Planlama",
-            tanim: "Yedeklilik, yük dengeleme ve iş sürekliliği",
-          },
-          {
-            baslik: "Uçtan Uca Gözlemleme",
-            tanim: "Proaktif-reaktif izleme ve trend kapasite planlaması",
-          },
-        ],
-        btnText: "Veri Merkezi Sayfasında Detaylı İnceleyin",
-        btnLink: "/veri-merkezi",
-      },
-      {
-        id: "bulut",
-        num: "ÇÖZÜM ALANI 02",
-        icon: "Cloud",
-        baslik: "Bulut Çözümleri",
-        aciklama:
-          "Hibrit ve çoklu bulut stratejileriyle iş yüklerinizi uygun platforma taşıyor, maliyet ve performansı optimize ediyoruz.",
-        kpi: {
-          deger: "%30",
-          etiket: "Ortalama Altyapı Maliyet Tasarrufu",
-        },
-        maddeler: [
-          {
-            baslik: "Bulut Taşınma Hizmetleri",
-            tanim: "Uygulama ve veri taşıma, mimari dönüşüm",
-          },
-          {
-            baslik: "Hibrit / Çoklu Bulut Mimarisi",
-            tanim: "Özel bulut ile genel bulut entegrasyonu",
-          },
-          {
-            baslik: "Maliyet Optimizasyonu",
-            tanim: "Kaynak kullanımı analizi ve ölçeklendirme",
-          },
-          {
-            baslik: "Bulut Güvenliği ve Uyumluluk",
-            tanim: "Kimlik yönetimi, erişim kontrolü, denetim",
-          },
-        ],
-      },
-      {
         id: "yapay-zeka",
-        num: "ÇÖZÜM ALANI 03",
+        num: "ÇÖZÜM ALANI 01",
         icon: "Cpu",
-        baslik: "Yapay Zeka Çözümleri",
+        baslik: "Yapay Zeka (YZ) Altyapısı",
         aciklama:
-          "Kurumsal varlıklarınızın ve verilerinizin, iş amaçlarınıza uygun olarak işlenerek fayda üretilmesini mümkün kılıyoruz.",
+          "Kurumsal verilerinizin yapay zeka ile işlenmesi için gerekli olan yüksek performanslı donanım mimarisini ve veri olgunlaştırma süreçlerini tek elden sunuyoruz.",
         kpi: {
           deger: "%40",
           etiket: "Ortalama Operasyonel Verimlilik Artışı",
         },
         maddeler: [
           {
-            baslik: "Yapay Zeka – Makine Öğrenmesi",
+            baslik: "Yüksek Yoğunluklu YZ Kümeleri (GPU/DPU/NPU)",
             tanim:
-              "Mevcut kurumsal verinizin iş amaçlarına uygun zenginleştirilmesi",
+              "Büyük ölçekli yapay zeka eğitimi ve çıkarım (inference) görevleri için optimize edilmiş, kesintisiz bilgi işlem donanım altyapısı.",
           },
           {
-            baslik: "Agentic AI",
+            baslik: "Yapay Zeka Fabrikaları",
             tanim:
-              "Yapay zekanın iş süreçleriniz için aksiyon alabilmesi, iş gücü tasarrufu",
+              "Artan rack yoğunluklarına ve enerji ihtiyaçlarına cevap verebilen, yapay zeka iş yükleri için özel olarak tasarlanmış tesis mimarileri.",
           },
           {
-            baslik: "Veri Olgunlaştırma Hizmetleri ve Danışmanlığı",
+            baslik: "Agentic AI ve Makine Öğrenmesi",
             tanim:
-              "Kurumsal verilerinizin yapay zeka ile işlenmeye hazırlanması",
+              "Yapay zekanın iş süreçleriniz için bağımsız aksiyon alabilmesini sağlayan akıllı otomasyon mimarileri.",
+          },
+          {
+            baslik: "Veri Olgunlaştırma Danışmanlığı",
+            tanim:
+              "Mevcut kurumsal verilerinizin yapay zeka ekosistemine sorunsuz entegre edilmesi ve zenginleştirilmesi.",
           },
         ],
       },
       {
-        id: "siber-guvenlik",
-        num: "ÇÖZÜM ALANI 04",
-        icon: "Shield",
-        baslik: "Siber Güvenlik Çözümleri",
+        id: "sunucu-bulut",
+        num: "ÇÖZÜM ALANI 02",
+        icon: "Cloud",
+        baslik: "Sunucu, Sanallaştırma ve Bulut Çözümleri",
         aciklama:
-          "Kurumunuzu uçtan uca koruyacak güvenlik mimarisini tasarlıyor, 7/24 izleme ile tehditleri tespit ediyoruz.",
+          "İş yüklerinize en uygun, yüksek performanslı sunucu donanımlarından esnek bulut stratejilerine kadar uzanan geniş ve güvenli bir platform sunuyoruz.",
+        kpi: {
+          deger: "%30",
+          etiket: "Ortalama Altyapı Maliyet Tasarrufu",
+        },
+        maddeler: [
+          {
+            baslik: "Egemen Bulut (Sovereign Cloud)",
+            tanim:
+              "KVKK ve ulusal güvenlik standartlarına tam uyumlu, ülkenin kritik iş yüklerini yerel ve güvenli bir şekilde barındırma altyapısı.",
+          },
+          {
+            baslik: "Hibrit ve Çoklu Bulut Mimarisi",
+            tanim:
+              "Özel (Private) bulut ile genel (Public) bulutun mükemmel entegrasyonuyla esnek ve ölçeklenebilir altyapı.",
+          },
+          {
+            baslik: "Yüksek Performanslı Sunucu Sistemleri",
+            tanim:
+              "Küresel teknoloji üreticilerinden (Tier-1) doğrudan tedarik edilen donanımlarla sanallaştırma ve yüksek işlem gücü.",
+          },
+          {
+            baslik: "Kesintisiz Bulut Taşıma (Migration)",
+            tanim:
+              "Mevcut veri ve uygulamalarınızın minimum kesinti ve maliyet optimizasyonu ile bulut ortamına taşınması.",
+          },
+        ],
+      },
+      {
+        id: "depolama",
+        num: "ÇÖZÜM ALANI 03",
+        icon: "Database",
+        baslik: "Depolama ve Veri Yönetimi",
+        aciklama:
+          "Verilerinizin hacmi ne kadar büyürse büyüsün; hız, güvenlik ve erişilebilirlikten taviz vermeyen yeni nesil depolama mimarileri tasarlıyoruz.",
         kpi: {
           deger: "7/24",
-          etiket: "Kesintisiz Tehdit İzleme ve Müdahale",
+          etiket: "Veri Erişilebilirliği ve Koruma",
         },
         maddeler: [
           {
-            baslik: "Güvenlik Mimarisi Tasarımı",
-            tanim: "Ağ, uç nokta ve uygulama güvenliği",
+            baslik: "Kurumsal Veri Depolama (Storage)",
+            tanim:
+              "Hiper ölçekli veri merkezlerine uygun, yüksek performanslı ve yatayda ölçeklenebilen depolama üniteleri.",
           },
           {
-            baslik: "SOC ve Tehdit İzleme",
-            tanim: "7/24 güvenlik operasyon merkezi hizmeti",
+            baslik: "İş Sürekliliği ve Felaket Kurtarma (Disaster Recovery)",
+            tanim:
+              "Beklenmedik durumlara karşı anında devreye giren yedeklilik ve yük dengeleme (load balancing) kurguları.",
           },
           {
-            baslik: "Sızma Testi ve Denetim",
-            tanim: "Zafiyet taraması ve risk değerlendirmesi",
+            baslik: "Veri Güvenliği ve Yedekleme (Backup)",
+            tanim:
+              "Kritik kurumsal varlıklarınızın kayıpsız, hızlı ve periyodik olarak güvenli ortamlarda saklanması.",
           },
           {
-            baslik: "Uyumluluk Danışmanlığı",
-            tanim: "KVKK, ISO 27001 ve sektörel regülasyonlar",
+            baslik: "Yaşam Döngüsü Yönetimi",
+            tanim:
+              "Verinin oluşturulduğu andan arşivlenmesine kadar geçen süreçte maliyet-performans optimizasyonlu depolama politikaları.",
           },
         ],
       },
       {
-        id: "yonetilen-hizmetler",
-        num: "ÇÖZÜM ALANI 05",
-        icon: "Headset",
-        baslik: "Yönetilen Hizmetler ve Destek",
+        id: "veri-merkezi",
+        num: "ÇÖZÜM ALANI 04",
+        icon: "Shield",
+        baslik: "Kurumsal Ağ ve Veri Merkezi Altyapısı",
         aciklama:
-          "Kurulumdan sonrasında da yanınızdayız: altyapınızı izliyor, sorunları siz fark etmeden çözüyoruz.",
+          "Kampüsten ana veri merkezine kadar uzanan, yüksek erişilebilir ağ mimarileri ve anahtar teslim (EPC) veri merkezi kurulumu gerçekleştiriyoruz.",
         kpi: {
-          deger: "<45 dk",
-          etiket: "Ortalama İlk Müdahale Süresi",
+          deger: "%99.9999",
+          etiket: "Hedeflenen Sistem ve Ağ Kullanılabilirliği",
         },
         maddeler: [
           {
-            baslik: "7/24 NOC İzleme",
-            tanim: "Proaktif altyapı ve uygulama izleme",
+            baslik: "Anahtar Teslim Veri Merkezi İnşası",
+            tanim:
+              "Konsept tasarımdan (BIM) beton temele, elektromekanik altyapıdan yüksek verimli soğutmaya (chiller/CRAC) ve beyaz alan kurulumuna kadar tam kapsam.",
           },
           {
-            baslik: "Saha ve Uzaktan Destek",
-            tanim: "SLA garantili teknik destek hizmetleri",
+            baslik: "Kampüs ve WAN Ağ Tasarımı",
+            tanim:
+              "Güvenli LAN/WAN, yüksek hızlı kablosuz ağ, SD-WAN ve SASE mimarilerinin kurumsal düzeyde yapılandırılması.",
           },
           {
-            baslik: "Varlık ve Lisans Yönetimi",
-            tanim: "Donanım/yazılım envanteri takibi",
+            baslik: "Akıllı Kontrol ve Güvenlik Sistemleri",
+            tanim:
+              "Veri merkezi yönetimini kolaylaştıran entegre akıllı bina kontrolleri (ELV) ve erişim kısıtlama donanımları.",
           },
           {
-            baslik: "Düzenli Bakım ve Raporlama",
-            tanim: "Periyodik sağlık kontrolleri ve raporlar",
-          },
-        ],
-      },
-      {
-        id: "danismanlik",
-        num: "ÇÖZÜM ALANI 06",
-        icon: "ClipboardCheck",
-        baslik: "Danışmanlık ve Proje Yönetimi",
-        aciklama:
-          "Her proje beş net aşamadan geçer; şeffaf iletişim ve ölçülebilir çıktılarla ilerleriz.",
-        kpi: {
-          deger: "5",
-          etiket: "Aşamalı Uçtan Uca Proje Süreci",
-        },
-        surec: [
-          {
-            num: "01",
-            baslik: "Analiz",
-            tanim: "İhtiyaç ve mevcut altyapı değerlendirmesi",
-            icon: "Search",
-          },
-          {
-            num: "02",
-            baslik: "Tasarım",
-            tanim: "Çözüm mimarisi ve yol haritası",
-            icon: "Ruler",
-          },
-          {
-            num: "03",
-            baslik: "Kurulum – Test",
-            tanim: "Kurulum ve doğrulama testleri",
-            icon: "Wrench",
-          },
-          {
-            num: "04",
-            baslik: "İşletim Hizmeti",
-            tanim: "Sistem işletimi, gözlemleme ve raporlama",
-            icon: "Settings",
-          },
-          {
-            num: "05",
-            baslik: "Destek",
-            tanim: "Garanti, bakım ve yedek parça hizmetleri",
-            icon: "LifeBuoy",
+            baslik: "Uçtan Uca Test ve Devreye Alma",
+            tanim:
+              "Sistemlerin canlı ortama geçmeden önce L1-L5 seviyelerinde test edilmesi, hatasız ve sertifikalı (TS EN50600) teslimat süreci.",
           },
         ],
       },
@@ -590,6 +512,36 @@ export const tr = {
       { baslik: "Bulut ve Yazılım", logos: ["vmware.png", "canonical.png", "sas.png"] },
       { baslik: "Ağ Güvenliği ve Tesisi", logos: ["paloalto.png", "fortinet.png", "fastnac.png", "vertiv.png"] }
     ]
+  },
+  nedenCbitSayfasi: {
+    hero: {
+      baslik: "Neden CBIT?",
+      altBaslik: "Dijital Altyapıda Tek Yüklenici, Uçtan Uca Uzmanlık"
+    },
+    degerOnerisi: [
+      { baslik: "Tek Sorumluluk Noktası", tanim: "Mimariden donanıma tek muhatap." },
+      { baslik: "Uçtan Uca Entegrasyon", tanim: "Eşzamanlı yürütülen sorunsuz süreçler." },
+      { baslik: "Cevahir Mühendislik Mirası", tanim: "65 yıllık geçmiş, güçlü operasyonel DNA." }
+    ],
+    farkYaratanYaklasimlarimiz: {
+      baslik: "Fark Yaratan Yaklaşımlarımız",
+      maddeler: [
+        { baslik: "Kanıtlanmış Deneyim ve Ölçek Yetkinliği", icon: "CheckCircle" },
+        { baslik: "Tek Sözleşme, Minimum Risk", icon: "FileText" },
+        { baslik: "Maliyet Avantajı", icon: "TrendingDown" },
+        { baslik: "Daha Hızlı Teslimat", icon: "Clock" },
+        { baslik: "Global Tedarik ve Lojistik Gücü", icon: "Globe" },
+        { baslik: "7/24 Kesintisiz Operasyon ve Bakım", icon: "Settings" }
+      ]
+    },
+    istatistikler: {
+      baslik: "Ekip ve Operasyonel Güç",
+      maddeler: [
+        { deger: "200+", etiket: "Uzman Personel" },
+        { deger: "1M+", etiket: "Yıllık Onarım" },
+        { deger: "350+ Milyon USD", etiket: "Aktif Proje" }
+      ]
+    }
   },
 };
 
