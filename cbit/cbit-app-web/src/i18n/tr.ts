@@ -55,7 +55,7 @@ export const tr = {
     cozumler: {
       eyebrow: "ÇÖZÜMLERİMİZ",
       baslik:
-        "Kurumunuzun İhtiyaç Duyduğu Her Teknoloji Katmanında Uçtan Uca Hizmet",
+        "Her Teknoloji Katmanında Uçtan Uca Hizmet",
       aciklama:
         "Altı çözüm alanında, tasarımdan işletmeye uzanan tam kapsamlı hizmet veriyoruz.",
       liste: [
@@ -197,18 +197,9 @@ export const tr = {
     },
     bizKimiz: {
       eyebrow: "1959'dan bugüne",
-      baslik: "Aynı mühendislik disiplini, aynı güven bugün Dijital Vatan'ın kritik altyapısında",
+      baslik: "Aynı mühendislik disiplini, aynı güven bugün veri merkezlerinin kritik altyapısında",
       aciklama:
         "CBIT, Cevahir Grubunun köklü mühendislik mirasını geleceğin teknolojilerine taşıyan dijital altyapı ve yüksek teknoloji çözüm ortağıdır. Kritik donanım tedariki, yüksek yoğunluklu yapay zeka (GPU/DPU) kümeleri, bulut yazılımları ve kurumsal ağ sistemleri entegrasyonunda anahtar teslim çözümler sunarak dijital dönüşümün ve bölgesel veri egemenliğinin güvenilir adresi olmaya devam ediyoruz.",
-    },
-    rakamlarlaCevahir: {
-      baslik: "Rakamlarla Cevahir",
-      stats: [
-        { deger: "~15.000", baslik: "ÇALIŞAN" },
-        { deger: "100+", baslik: "TAMAMLANAN PROJE" },
-        { deger: "6M+ m²", baslik: "TOPLAM PROJE ALANI" },
-        { deger: "5", baslik: "AKTİF PROJELER" },
-      ],
     },
     vizyonMisyon: {
       eyebrow: "MİSYON & VİZYON",
@@ -223,26 +214,13 @@ export const tr = {
         aciklama:
           "Üstlenilen her sorumlulukla Türkiye'nin gelişmesine ve büyümesine katkıda bulunmak; çalışanlar, paydaşlar ve tüm toplum için sürdürülebilir katma değer yaratmak. Güvenilirlik, çözüm odaklılık, inovasyon, etik ilkelere bağlılık, mükemmelliyetçilik, vizyoner bakış açısı, hızlı ve kaliteli hizmet anlayışı ile kapsayıcılık temel değerlerdir.",
       },
-      degerler: {
-        baslik: "Değerlerimiz",
-        liste: [
-          "Güvenilirlik",
-          "Çözüm Odaklılık",
-          "İnovasyon",
-          "Etik İlkelere Bağlılık",
-          "Mükemmeliyetçilik",
-          "Vizyoner Bakış Açısı",
-          "Hızlı ve Kaliteli Hizmet Anlayışı",
-          "Kapsayıcılık",
-        ],
-      },
     },
   },
   cozumler: {
     hero: {
       eyebrow: "ÇÖZÜMLERİMİZ",
       baslik:
-        "Kurumunuzun İhtiyaç Duyduğu Her Teknoloji Katmanında Uçtan Uca Hizmet",
+        "Her Teknoloji Katmanında Uçtan Uca Hizmet",
       lead: "Ağ altyapısından veri merkezine, buluttan yapay zekaya, siber güvenlikten yönetilen hizmetlere kadar altı çözüm alanında tasarımdan işletmeye tam kapsamlı hizmet veriyoruz.",
     },
     chips: [
@@ -257,6 +235,7 @@ export const tr = {
         num: "ÇÖZÜM ALANI 01",
         icon: "Cpu",
         baslik: "Yapay Zeka (YZ) Altyapısı",
+        gorsel: "/ai_concept.jpg",
         aciklama:
           "Kurumsal verilerinizin yapay zeka ile işlenmesi için gerekli olan yüksek performanslı donanım mimarisini ve veri olgunlaştırma süreçlerini tek elden sunuyoruz.",
         kpi: {
@@ -389,12 +368,6 @@ export const tr = {
         ],
       },
     ],
-    ctaBand: {
-      baslik: "Hangi Çözüm Size Uygun, Birlikte Bulalım",
-      aciklama:
-        "İhtiyacınızı birlikte değerlendirelim ve size en uygun teknoloji yol haritasını çıkaralım.",
-      btnText: "Bize Ulaşın",
-    },
   },
   yetkinlikler: {
     baslik: "Çözümler",
@@ -532,14 +505,6 @@ export const tr = {
         { baslik: "Daha Hızlı Teslimat", icon: "Clock" },
         { baslik: "Global Tedarik ve Lojistik Gücü", icon: "Globe" },
         { baslik: "7/24 Kesintisiz Operasyon ve Bakım", icon: "Settings" }
-      ]
-    },
-    istatistikler: {
-      baslik: "Ekip ve Operasyonel Güç",
-      maddeler: [
-        { deger: "200+", etiket: "Uzman Personel" },
-        { deger: "1M+", etiket: "Yıllık Onarım" },
-        { deger: "350+ Milyon USD", etiket: "Aktif Proje" }
       ]
     }
   },

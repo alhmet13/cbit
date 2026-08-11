@@ -78,7 +78,7 @@ export default function Anasayfa() {
               return (
                 <div
                   key={idx}
-                  className={`solution-card ${idx === 0 ? "featured" : ""}`}
+                  className="solution-card"
                 >
                   <div>
                     <div className="solution-card-top">
@@ -127,7 +127,7 @@ export default function Anasayfa() {
                       }}
                     >
                       <div className="why-us-number">{item.no}</div>
-                      <IconComp size={24} color="#eb1c23" />
+                      <IconComp size={24} color="#AC0000" />
                     </div>
                     <h3>{item.baslik}</h3>
                     <p>{item.tanim}</p>
@@ -138,7 +138,7 @@ export default function Anasayfa() {
             <div className="why-us-image-side">
               <div className="why-us-image-wrapper">
                 <img
-                  src="/tasarim-muhendislik.jpg"
+                  src="/neden-cbit-hero.jpg"
                   alt="CBIT Neden Biz"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "/hero.png";
@@ -156,7 +156,7 @@ export default function Anasayfa() {
         <div className="global-container" style={{ display: "block" }}>
           <div className="projects-showcase-header">
             <h2 className="section-title">{t.anasayfa.projelerVitrin.baslik}</h2>
-            <p className="section-lead" style={{ marginTop: "12px", maxWidth: "900px" }}>
+            <p className="section-lead" style={{ marginTop: "12px" }}>
               {t.anasayfa.projelerVitrin.aciklama}
             </p>
           </div>
@@ -165,11 +165,8 @@ export default function Anasayfa() {
             className="projects-showcase-image-wrap"
             style={{
               marginTop: "32px",
-              textAlign: "center",
               borderRadius: "24px",
               overflow: "hidden",
-              maxWidth: "960px",
-              margin: "32px auto 0 auto",
             }}
           >
             <img

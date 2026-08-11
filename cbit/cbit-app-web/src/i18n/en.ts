@@ -57,7 +57,7 @@ export const en: Translations = {
     cozumler: {
       eyebrow: "OUR SOLUTIONS",
       baslik:
-        "End-to-End Service Across Every Technology Layer Your Organization Needs",
+        "End-to-End Service Across Every Technology Layer",
       aciklama:
         "We provide full-scope service across six solution areas, from design to operation.",
       liste: [
@@ -199,18 +199,9 @@ export const en: Translations = {
     },
     bizKimiz: {
       eyebrow: "From 1959 to Today",
-      baslik: "Same engineering discipline, same trust today at the Digital Homeland's critical infrastructure",
+      baslik: "Same engineering discipline, same trust today at the critical infrastructure of data centers",
       aciklama:
         "CBIT is the digital infrastructure and high-tech solution partner that carries Cevahir Group's deep engineering legacy into the technologies of the future. We continue to be the reliable address for digital transformation and regional data sovereignty by providing turnkey solutions in critical hardware procurement, high-density artificial intelligence (GPU/DPU) clusters, cloud software, and enterprise network systems integration.",
-    },
-    rakamlarlaCevahir: {
-      baslik: "Cevahir by the Numbers",
-      stats: [
-        { deger: "~15.000", baslik: "EMPLOYEES" },
-        { deger: "100+", baslik: "COMPLETED PROJECTS" },
-        { deger: "6M+ m²", baslik: "TOTAL PROJECT AREA" },
-        { deger: "5", baslik: "ACTIVE PROJECTS" },
-      ],
     },
     vizyonMisyon: {
       eyebrow: "OUR MISSION & OUR VISION",
@@ -225,26 +216,13 @@ export const en: Translations = {
         aciklama:
           "Contributing to the development and growth of Turkey with every responsibility we undertake; creating sustainable added value for our employees, stakeholders, and the whole society. Reliability, solution orientation, innovation, commitment to ethical principles, perfectionism, visionary perspective, fast and quality service approach, and inclusivity are our core values.",
       },
-      degerler: {
-        baslik: "Our Values",
-        liste: [
-          "Reliability",
-          "Solution-Oriented",
-          "Innovation",
-          "Commitment to Ethical Principles",
-          "Pursuit of Excellence",
-          "Visionary Perspective",
-          "Fast & Quality Service Approach",
-          "Inclusiveness",
-        ],
-      },
     },
   },
   cozumler: {
     hero: {
       eyebrow: "OUR SOLUTIONS",
       baslik:
-        "End-to-End Service Across Every Technology Layer Your Organization Needs",
+        "End-to-End Service Across Every Technology Layer",
       lead: "From network infrastructure to data centers, from cloud to artificial intelligence, from cybersecurity to managed services — we provide full-scope service across six solution areas, from design to operation.",
     },
     chips: [
@@ -259,6 +237,7 @@ export const en: Translations = {
         num: "SOLUTION AREA 01",
         icon: "Cpu",
         baslik: "Artificial Intelligence (AI) Infrastructure",
+        gorsel: "/ai_concept.jpg",
         aciklama:
           "We provide the high-performance hardware architecture and data maturity processes required for processing your corporate data with artificial intelligence from a single source.",
         kpi: {
@@ -391,12 +370,6 @@ export const en: Translations = {
         ],
       },
     ],
-    ctaBand: {
-      baslik: "Let's Find the Right Solution for You, Together",
-      aciklama:
-        "Let's assess your needs together and map out the technology roadmap that fits you best.",
-      btnText: "Contact Us",
-    },
   },
   yetkinlikler: {
     baslik: "Solutions",
@@ -535,14 +508,6 @@ export const en: Translations = {
         { baslik: "Faster Delivery", icon: "Clock" },
         { baslik: "Global Procurement and Logistics Power", icon: "Globe" },
         { baslik: "24/7 Uninterrupted Operation and Maintenance", icon: "Settings" }
-      ]
-    },
-    istatistikler: {
-      baslik: "Team and Operational Strength",
-      maddeler: [
-        { deger: "200+", etiket: "Expert Staff" },
-        { deger: "1M+", etiket: "Annual Repairs" },
-        { deger: "350+ Million USD", etiket: "Active Projects" }
       ]
     }
   },

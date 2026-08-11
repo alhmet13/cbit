@@ -1,5 +1,5 @@
 import { useLanguage } from "../context/useLanguage";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   Server,
   Cloud,
@@ -19,7 +19,6 @@ import {
 
 export default function Cozumler() {
   const { t } = useLanguage();
-  const navigate = useNavigate();
 
   const getIcon = (iconName: string) => {
     switch (iconName) {
@@ -69,13 +68,20 @@ export default function Cozumler() {
 
   return (
     <div className="page-container cozumler-page">
-      {/* Hero Section */}
-      <section className="cozumler-hero-section">
-        <div className="cozumler-hero-inner">
-          <span className="cozumler-hero-eyebrow">{t.cozumler.hero.eyebrow}</span>
-          <h1 className="cozumler-hero-title">{t.cozumler.hero.baslik}</h1>
-          <p className="cozumler-hero-lead">{t.cozumler.hero.lead}</p>
-        </div>
+      {/* Hero Visual Architecture Banner */}
+      <div className="cozumler-hero-banner-wrap">
+        <img
+          src="/cozumler-hero-banner.jpg"
+          alt="CBIT Teknoloji Mimarisi - Katmanlı Altyapı"
+          className="cozumler-hero-banner-img"
+        />
+      </div>
+
+      {/* Intro Text Section Below Image */}
+      <section className="cozumler-intro-section">
+        <span className="cozumler-intro-eyebrow">{t.cozumler.hero.eyebrow}</span>
+        <h1 className="cozumler-intro-title">{t.cozumler.hero.baslik}</h1>
+        <p className="cozumler-intro-lead">{t.cozumler.hero.lead}</p>
       </section>
 
       {/* Chip Nav Row */}
@@ -105,13 +111,21 @@ export default function Cozumler() {
                 </div>
                 <span className="solution-num-badge">{alan.num}</span>
                 <h3 className="solution-sidebar-title">{alan.baslik}</h3>
-                <p className="solution-sidebar-desc">{alan.aciklama}</p>
 
-                {alan.kpi && (
-                  <div className="solution-kpi-card">
-                    <div className="solution-kpi-val">{alan.kpi.deger}</div>
-                    <div className="solution-kpi-lbl">{alan.kpi.etiket}</div>
+                {alan.gorsel ? (
+                  <div className="solution-sidebar-image-wrap" style={{ marginTop: "24px", borderRadius: "16px", overflow: "hidden", border: "1px solid #333" }}>
+                    <img src={alan.gorsel} alt={alan.baslik} style={{ width: "100%", height: "auto", display: "block" }} />
                   </div>
+                ) : (
+                  <>
+                    <p className="solution-sidebar-desc">{alan.aciklama}</p>
+                    {alan.kpi && (
+                      <div className="solution-kpi-card">
+                        <div className="solution-kpi-val">{alan.kpi.deger}</div>
+                        <div className="solution-kpi-lbl">{alan.kpi.etiket}</div>
+                      </div>
+                    )}
+                  </>
                 )}
               </div>
 
@@ -162,22 +176,6 @@ export default function Cozumler() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* CTA Band */}
-      <section className="cozumler-cta-section">
-        <div className="cozumler-cta-card">
-          <div className="cozumler-cta-content">
-            <h3 className="cozumler-cta-title">{t.cozumler.ctaBand.baslik}</h3>
-            <p className="cozumler-cta-lead">{t.cozumler.ctaBand.aciklama}</p>
-          </div>
-          <button
-            className="cozumler-cta-btn"
-            onClick={() => navigate("/iletisim")}
-          >
-            {t.cozumler.ctaBand.btnText}
-          </button>
         </div>
       </section>
     </div>

@@ -65,21 +65,6 @@ export default function NedenCbit() {
           ))}
         </div>
       </section>
-
-      {/* 4. Ekip ve Operasyonel Güç (İstatistik Bloğu) */}
-      <section className="neden-stats-section">
-        <div className="neden-stats-container">
-          <h2 className="section-title text-center" style={{ marginBottom: '3rem', color: '#fff' }}>{data.istatistikler.baslik}</h2>
-          <div className="neden-stats-grid">
-            {data.istatistikler.maddeler.map((stat: any, idx: number) => (
-              <div key={idx} className="neden-stat-item">
-                <div className="stat-value">{stat.deger}</div>
-                <div className="stat-label">{stat.etiket}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
