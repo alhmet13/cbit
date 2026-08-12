@@ -55,7 +55,7 @@ export const tr = {
     cozumler: {
       eyebrow: "ÇÖZÜMLERİMİZ",
       baslik:
-        "Her Teknoloji Katmanında Uçtan Uca Hizmet",
+        "Her Teknoloji Katmanında\nUçtan Uca Hizmet",
       aciklama:
         "Altı çözüm alanında, tasarımdan işletmeye uzanan tam kapsamlı hizmet veriyoruz.",
       liste: [
@@ -220,7 +220,7 @@ export const tr = {
     hero: {
       eyebrow: "ÇÖZÜMLERİMİZ",
       baslik:
-        "Her Teknoloji Katmanında Uçtan Uca Hizmet",
+        "Her Teknoloji Katmanında\nUçtan Uca Hizmet",
       lead: "Ağ altyapısından veri merkezine, buluttan yapay zekaya, siber güvenlikten yönetilen hizmetlere kadar altı çözüm alanında tasarımdan işletmeye tam kapsamlı hizmet veriyoruz.",
     },
     chips: [
@@ -270,6 +270,7 @@ export const tr = {
         num: "ÇÖZÜM ALANI 02",
         icon: "Cloud",
         baslik: "Sunucu, Sanallaştırma ve Bulut Çözümleri",
+        gorsel: "/server_cloud_concept.jpg",
         aciklama:
           "İş yüklerinize en uygun, yüksek performanslı sunucu donanımlarından esnek bulut stratejilerine kadar uzanan geniş ve güvenli bir platform sunuyoruz.",
         kpi: {
@@ -304,6 +305,7 @@ export const tr = {
         num: "ÇÖZÜM ALANI 03",
         icon: "Database",
         baslik: "Depolama ve Veri Yönetimi",
+        gorsel: "/storage_data_concept.jpg",
         aciklama:
           "Verilerinizin hacmi ne kadar büyürse büyüsün; hız, güvenlik ve erişilebilirlikten taviz vermeyen yeni nesil depolama mimarileri tasarlıyoruz.",
         kpi: {
@@ -338,6 +340,7 @@ export const tr = {
         num: "ÇÖZÜM ALANI 04",
         icon: "Shield",
         baslik: "Kurumsal Ağ ve Veri Merkezi Altyapısı",
+        gorsel: "/network_datacenter_concept.jpg",
         aciklama:
           "Kampüsten ana veri merkezine kadar uzanan, yüksek erişilebilir ağ mimarileri ve anahtar teslim (EPC) veri merkezi kurulumu gerçekleştiriyoruz.",
         kpi: {

@@ -70,7 +70,7 @@ export default function Anasayfa() {
       <section className="section-global">
         <div className="global-container" style={{ display: "block" }}>
           <div className="services-summary-header">
-            <span className="why-us-subtitle">{t.anasayfa.cozumler.eyebrow}</span>
+
             <h2 className="section-title">{t.anasayfa.cozumler.baslik}</h2>
             <p className="section-lead">{t.anasayfa.cozumler.aciklama}</p>
           </div>

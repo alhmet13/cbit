@@ -79,7 +79,7 @@ export default function Cozumler() {
 
       {/* Intro Text Section Below Image */}
       <section className="cozumler-intro-section">
-        <span className="cozumler-intro-eyebrow">{t.cozumler.hero.eyebrow}</span>
+
         <h1 className="cozumler-intro-title">{t.cozumler.hero.baslik}</h1>
         <p className="cozumler-intro-lead">{t.cozumler.hero.lead}</p>
       </section>

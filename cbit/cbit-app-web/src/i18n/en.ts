@@ -57,7 +57,7 @@ export const en: Translations = {
     cozumler: {
       eyebrow: "OUR SOLUTIONS",
       baslik:
-        "End-to-End Service Across Every Technology Layer",
+        "End-to-End Service\nAcross Every Technology Layer",
       aciklama:
         "We provide full-scope service across six solution areas, from design to operation.",
       liste: [
@@ -222,7 +222,7 @@ export const en: Translations = {
     hero: {
       eyebrow: "OUR SOLUTIONS",
       baslik:
-        "End-to-End Service Across Every Technology Layer",
+        "End-to-End Service\nAcross Every Technology Layer",
       lead: "From network infrastructure to data centers, from cloud to artificial intelligence, from cybersecurity to managed services — we provide full-scope service across six solution areas, from design to operation.",
     },
     chips: [
@@ -272,6 +272,7 @@ export const en: Translations = {
         num: "SOLUTION AREA 02",
         icon: "Cloud",
         baslik: "Server, Virtualization and Cloud Solutions",
+        gorsel: "/server_cloud_concept.jpg",
         aciklama:
           "We offer a broad and secure platform ranging from high-performance server hardware best suited to your workloads to flexible cloud strategies.",
         kpi: {
@@ -306,6 +307,7 @@ export const en: Translations = {
         num: "SOLUTION AREA 03",
         icon: "Database",
         baslik: "Storage and Data Management",
+        gorsel: "/storage_data_concept.jpg",
         aciklama:
           "No matter how large your data volume grows, we design next-generation storage architectures that do not compromise on speed, security, and availability.",
         kpi: {
@@ -340,6 +342,7 @@ export const en: Translations = {
         num: "SOLUTION AREA 04",
         icon: "Shield",
         baslik: "Enterprise Network and Data Center Infrastructure",
+        gorsel: "/network_datacenter_concept.jpg",
         aciklama:
           "We implement highly available network architectures and turnkey (EPC) data center installations extending from the campus to the main data center.",
         kpi: {
