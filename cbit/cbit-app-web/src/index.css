@@ -4347,3 +4347,11 @@ p,
 }
 
 
+
+/* ============================================================
+   ALIGNMENT FIXES 
+   ============================================================ */
+.why-us-header p,
+.why-us-header .section-lead {
+  text-align: center !important;
+}
