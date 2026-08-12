@@ -2,14 +2,18 @@ import { useState, useEffect, useRef } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { Globe, ChevronDown } from "lucide-react";
 import { useLanguage } from "../context/useLanguage";
+import { useSiteAyarlari } from "../context/SiteAyarlariContext";
+
 
 export default function Layout() {
   const navigate = useNavigate();
   const { lang, t, setLang } = useLanguage();
+  const { ayarlar } = useSiteAyarlari();
   const [menuAcik, setMenuAcik] = useState(false);
   const [isShrunk, setIsShrunk] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
   const langMenuRef = useRef<HTMLDivElement>(null);
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -98,12 +102,15 @@ export default function Layout() {
             >
               {(t as any).nav.isOrtaklari}
             </NavLink>
-            <NavLink
-              to="/projeler"
-              className={({ isActive }) => (isActive ? "active-link" : "")}
-            >
-              {t.nav.projeler}
-            </NavLink>
+            {ayarlar.projelerAktif && (
+              <NavLink
+                to="/projeler"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                {t.nav.projeler}
+              </NavLink>
+            )}
+
             <NavLink
               to="/haberler"
               className={({ isActive }) => (isActive ? "active-link" : "")}
@@ -198,13 +205,16 @@ export default function Layout() {
           >
             {(t as any).nav.isOrtaklari}
           </NavLink>
-          <NavLink
-            to="/projeler"
-            className={({ isActive }) => (isActive ? "active-link" : "")}
-            onClick={() => setMenuAcik(false)}
-          >
-            {t.nav.projeler}
-          </NavLink>
+          {ayarlar.projelerAktif && (
+            <NavLink
+              to="/projeler"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+              onClick={() => setMenuAcik(false)}
+            >
+              {t.nav.projeler}
+            </NavLink>
+          )}
+
           <NavLink
             to="/haberler"
             className={({ isActive }) => (isActive ? "active-link" : "")}

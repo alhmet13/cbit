@@ -60,3 +60,10 @@ model Proje {
   // Liste isteklerindeki azalan sıralamaları (createdAt DESC) hızlandırmak için indeks
   @@index([createdAt(sort: Desc)])
 }
+
+model SiteAyarlari {
+  id            String   @id @default(uuid()) @db.Uuid
+  projelerAktif Boolean  @default(false)
+  updatedAt     DateTime @updatedAt
+}
+

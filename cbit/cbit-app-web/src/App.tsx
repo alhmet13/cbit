@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
+import { SiteAyarlariProvider, useSiteAyarlari } from "./context/SiteAyarlariContext";
 import "./index.css";
 
 // Sayfaları dinamik import (lazy load) ile tanımlayarak bundle boyutunu küçültüyoruz
@@ -22,26 +23,39 @@ const LoadingFallback = () => (
   </div>
 );
 
+function AppRoutes() {
+  const { ayarlar } = useSiteAyarlari();
+
+  return (
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<Anasayfa />} />
+        <Route path="/hakkimizda" element={<Hakkimizda />} />
+        <Route path="/neden-biz" element={<NedenCbit />} />
+        <Route path="/cozumler" element={<Cozumler />} />
+        <Route path="/yetkinliklerimiz" element={<Navigate to="/cozumler" replace />} />
+        <Route path="/is-ortaklari" element={<IsOrtaklari />} />
+        <Route
+          path="/projeler"
+          element={ayarlar.projelerAktif ? <Projeler /> : <Navigate to="/" replace />}
+        />
+        <Route path="/haberler" element={<Haberler />} />
+        <Route path="/iletisim" element={<Iletisim />} />
+        <Route path="/cerez-politikasi" element={<CerezPolitikasi />} />
+        <Route path="/kisisel-verilerin-korunmasi" element={<KisiselVerilerinKorunmasi />} />
+      </Route>
+    </Routes>
+  );
+}
+
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<LoadingFallback />}>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route path="/" element={<Anasayfa />} />
-            <Route path="/hakkimizda" element={<Hakkimizda />} />
-            <Route path="/neden-biz" element={<NedenCbit />} />
-            <Route path="/cozumler" element={<Cozumler />} />
-            <Route path="/yetkinliklerimiz" element={<Navigate to="/cozumler" replace />} />
-            <Route path="/is-ortaklari" element={<IsOrtaklari />} />
-            <Route path="/projeler" element={<Projeler />} />
-            <Route path="/haberler" element={<Haberler />} />
-            <Route path="/iletisim" element={<Iletisim />} />
-            <Route path="/cerez-politikasi" element={<CerezPolitikasi />} />
-            <Route path="/kisisel-verilerin-korunmasi" element={<KisiselVerilerinKorunmasi />} />
-          </Route>
-        </Routes>
-      </Suspense>
+      <SiteAyarlariProvider>
+        <Suspense fallback={<LoadingFallback />}>
+          <AppRoutes />
+        </Suspense>
+      </SiteAyarlariProvider>
     </BrowserRouter>
   );
 }

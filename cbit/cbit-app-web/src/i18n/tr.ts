@@ -2,7 +2,7 @@ export const tr = {
   nav: {
     anasayfa: "Anasayfa",
     hakkimizda: "Hakkımızda",
-    cozumler: "Neden CBIT?",
+    cozumler: "Neden CBIT",
     yetkinlikler: "Çözümler",
     isOrtaklari: "İş Ortaklarımız",
     projeler: "Referanslar",
@@ -24,7 +24,7 @@ export const tr = {
       aciklama:
         "65 yıllık köklü mühendislik ve inşaat mirasını, ileri teknoloji bilişim uzmanlığıyla harmanlıyoruz. Kritik tesislerinizi baştan sona tek muhatap güvencesiyle tasarlıyor, kuruyor ve operasyonel hale getiriyoruz.",
       ctaCozumler: "Çözümleri İnceleyin",
-      ctaNedenBiz: "Neden CBIT?",
+      ctaNedenBiz: "Neden CBIT",
       ctaIletisim: "Bizimle İletişime Geçin",
       stats: [
         { deger: "20+", baslik: "Yıl Sektör Tecrübesi" },
@@ -106,7 +106,7 @@ export const tr = {
       cta: "Veri Merkezi Çözümlerini Keşfedin",
     },
     nedenCbit: {
-      eyebrow: "NEDEN CBIT?",
+      eyebrow: "NEDEN CBIT",
       baslik: "Sadece Teknoloji Değil, Sürdürülebilir İş Değeri",
       aciklama:
         "Sadece teknoloji üretmiyor, iş hedeflerinize uygun sürdürülebilir çözümler kuruyoruz.",
@@ -176,7 +176,7 @@ export const tr = {
       ],
     },
     ctaBand: {
-      baslik: "Projenizi Konuşmaya Hazır mıyız?",
+      baslik: "Projenizi Konuşmaya Hazır mıyız",
       aciklama:
         "İster yeni bir veri merkezi kuruyor, ister mevcut altyapınızı dönüştürüyor olun — ihtiyacınızı birlikte değerlendirelim.",
       btnTeklif: "Teklif Alın",
@@ -488,7 +488,7 @@ export const tr = {
   },
   nedenCbitSayfasi: {
     hero: {
-      baslik: "Neden CBIT?",
+      baslik: "Neden CBIT",
       altBaslik: "Dijital Altyapıda Tek Yüklenici, Uçtan Uca Uzmanlık"
     },
     degerOnerisi: [

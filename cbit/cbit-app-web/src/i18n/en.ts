@@ -4,7 +4,7 @@ export const en: Translations = {
   nav: {
     anasayfa: "Home",
     hakkimizda: "About Us",
-    cozumler: "Why CBIT?",
+    cozumler: "Why CBIT",
     yetkinlikler: "Solutions",
     isOrtaklari: "Our Partners",
     projeler: "References",
@@ -26,7 +26,7 @@ export const en: Translations = {
       aciklama:
         "We blend a deep-rooted 65-year engineering and construction legacy with high-tech IT expertise. We design, build, and operationalize your critical facilities from start to finish with the assurance of a single point of contact.",
       ctaCozumler: "Explore Solutions",
-      ctaNedenBiz: "Why CBIT?",
+      ctaNedenBiz: "Why CBIT",
       ctaIletisim: "Get in Touch",
       stats: [
         { deger: "20+", baslik: "Years of Sector Experience" },
@@ -108,7 +108,7 @@ export const en: Translations = {
       cta: "Explore Data Center Solutions",
     },
     nedenCbit: {
-      eyebrow: "WHY CBIT?",
+      eyebrow: "WHY CBIT",
       baslik: "Not Just Technology — Sustainable Business Value",
       aciklama:
         "We don't just deliver technology — we build sustainable solutions aligned with your business goals.",
@@ -178,7 +178,7 @@ export const en: Translations = {
       ],
     },
     ctaBand: {
-      baslik: "Ready to Talk About Your Project?",
+      baslik: "Ready to Talk About Your Project",
       aciklama:
         "Whether you're building a new data center or transforming existing infrastructure, let's assess your needs together.",
       btnTeklif: "Request a Quote",
@@ -491,7 +491,7 @@ export const en: Translations = {
   },
   nedenCbitSayfasi: {
     hero: {
-      baslik: "Why CBIT?",
+      baslik: "Why CBIT",
       altBaslik: "Single Contractor in Digital Infrastructure, End-to-End Expertise"
     },
     degerOnerisi: [

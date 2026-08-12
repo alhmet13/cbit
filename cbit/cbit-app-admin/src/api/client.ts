@@ -1,4 +1,4 @@
-import type { Proje, Haber, Message } from "../types";
+import type { SiteAyarlari, Proje, Haber, Message } from "../types";
 
 const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:4101";
 
@@ -48,6 +48,15 @@ export const api = {
       }),
     verify: () =>
       request<{ username: string }>("/v1/auth/verify", { method: "GET" }),
+  },
+
+  ayarlar: {
+    get: () => request<SiteAyarlari>("/v1/ayarlar/site"),
+    update: (data: Partial<Pick<SiteAyarlari, "projelerAktif">>) =>
+      request<SiteAyarlari>("/v1/ayarlar/site/update", {
+        method: "PUT",
+        body: JSON.stringify(data),
+      }),
   },
 
   projeler: {

@@ -14,6 +14,7 @@ import Projeler from "./pages/Projeler";
 import News from "./pages/News";
 import Messages from "./pages/Messages";
 import Login from "./pages/Login";
+import Ayarlar from "./pages/Ayarlar";
 import {
   LayoutDashboard,
   Building2,
@@ -22,6 +23,7 @@ import {
   Globe,
   LogOut,
   KeyRound,
+  Settings,
 } from "lucide-react";
 import ChangePassword from "./pages/ChangePassword";
 
@@ -90,6 +92,15 @@ function AdminLayout() {
             <Mail size={19} strokeWidth={2} />
             <span>Mesaj Kutusu</span>
           </NavLink>
+          <NavLink
+            to="/ayarlar"
+            className={({ isActive }) =>
+              `sidebar-link ${isActive ? "active" : ""}`
+            }
+          >
+            <Settings size={19} strokeWidth={2} />
+            <span>Ayarlar</span>
+          </NavLink>
         </nav>
 
         <div className="sidebar-footer">
@@ -125,6 +136,7 @@ function AdminLayout() {
           <Route path="/news" element={<News />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/change-password" element={<ChangePassword />} />
+          <Route path="/ayarlar" element={<Ayarlar />} />
         </Routes>
       </main>
     </div>

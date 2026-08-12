@@ -3,7 +3,9 @@ const enum API_ROUTES {
   HABER = '/news',
   MESSAGE = '/messages',
   PROJE = '/projects',
+  AYARLAR = '/ayarlar',
 }
+
 
 const enum API_VERSION {
   V1 = '/v1',

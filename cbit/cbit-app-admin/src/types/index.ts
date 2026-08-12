@@ -1,3 +1,9 @@
+export interface SiteAyarlari {
+  id: string;
+  projelerAktif: boolean;
+  updatedAt: string;
+}
+
 export interface Proje {
   id: string;
   projeAdi: string;

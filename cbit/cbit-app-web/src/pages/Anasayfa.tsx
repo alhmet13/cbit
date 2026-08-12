@@ -13,6 +13,8 @@ import {
   Target,
 } from "lucide-react";
 import { useLanguage } from "../context/useLanguage";
+import { useSiteAyarlari } from "../context/SiteAyarlariContext";
+
 
 const solutionIcons = [
   Server,
@@ -33,6 +35,7 @@ const whyUsIcons = [
 
 export default function Anasayfa() {
   const { t } = useLanguage();
+  const { ayarlar } = useSiteAyarlari();
 
   return (
     <div className="home-page">
@@ -151,47 +154,50 @@ export default function Anasayfa() {
         </div>
       </section>
 
-      {/* PROJELER VİTRİN BÖLÜMÜ */}
-      <section className="section-global">
-        <div className="global-container" style={{ display: "block" }}>
-          <div className="projects-showcase-header">
-            <h2 className="section-title">{t.anasayfa.projelerVitrin.baslik}</h2>
-            <p className="section-lead" style={{ marginTop: "12px" }}>
-              {t.anasayfa.projelerVitrin.aciklama}
-            </p>
-          </div>
+      {/* PROJELER VİTRİN BÖLÜMÜ — yalnızca projelerAktif=true ise gösterilir */}
+      {ayarlar.projelerAktif && (
+        <section className="section-global">
+          <div className="global-container" style={{ display: "block" }}>
+            <div className="projects-showcase-header">
+              <h2 className="section-title">{t.anasayfa.projelerVitrin.baslik}</h2>
+              <p className="section-lead" style={{ marginTop: "12px" }}>
+                {t.anasayfa.projelerVitrin.aciklama}
+              </p>
+            </div>
 
-          <div
-            className="projects-showcase-image-wrap"
-            style={{
-              marginTop: "32px",
-              borderRadius: "24px",
-              overflow: "hidden",
-            }}
-          >
-            <img
-              src="/projeler-katalog.png"
-              alt="CBIT Projeler Katalog"
+            <div
+              className="projects-showcase-image-wrap"
               style={{
-                width: "100%",
-                maxHeight: "650px",
-                objectFit: "cover",
+                marginTop: "32px",
                 borderRadius: "24px",
+                overflow: "hidden",
               }}
-            />
-          </div>
-
-          <div style={{ marginTop: "36px", textAlign: "center" }}>
-            <Link
-              to="/projeler"
-              className="btn-primary"
-              style={{ display: "inline-block", padding: "14px 36px", fontSize: "16px" }}
             >
-              {t.anasayfa.projelerVitrin.btnText}
-            </Link>
+              <img
+                src="/projeler-katalog.png"
+                alt="CBIT Projeler Katalog"
+                style={{
+                  width: "100%",
+                  maxHeight: "650px",
+                  objectFit: "cover",
+                  borderRadius: "24px",
+                }}
+              />
+            </div>
+
+            <div style={{ marginTop: "36px", textAlign: "center" }}>
+              <Link
+                to="/projeler"
+                className="btn-primary"
+                style={{ display: "inline-block", padding: "14px 36px", fontSize: "16px" }}
+              >
+                {t.anasayfa.projelerVitrin.btnText}
+              </Link>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
 
     </div>
   );
