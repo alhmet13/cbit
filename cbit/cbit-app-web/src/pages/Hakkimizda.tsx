@@ -96,7 +96,6 @@ export default function Hakkimizda() {
       <section className="section-global">
         <div className="global-container" style={{ display: "block" }}>
           <div className="section-header-center" style={{ textAlign: "center", marginBottom: "48px" }}>
-            <div className="section-eyebrow" style={{ color: "#AC0000" }}>{t.hakkimizda.vizyonMisyon.eyebrow}</div>
             <h2 className="section-title">{t.hakkimizda.vizyonMisyon.baslik}</h2>
           </div>
 
