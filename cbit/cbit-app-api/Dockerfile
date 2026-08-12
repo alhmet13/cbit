@@ -17,6 +17,9 @@ RUN npm ci
 COPY tsconfig.json ./
 COPY src ./src/
 
+# Re-generate Prisma Client to ensure types match source code
+RUN npx prisma generate
+
 # Compile TypeScript
 RUN npm run build:prod
 
