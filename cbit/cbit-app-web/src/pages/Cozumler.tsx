@@ -68,14 +68,7 @@ export default function Cozumler() {
 
   return (
     <div className="page-container cozumler-page">
-      {/* Hero Visual Architecture Banner */}
-      <div className="cozumler-hero-banner-wrap">
-        <img
-          src="/cozumler-hero-banner.jpg"
-          alt="CBIT Teknoloji Mimarisi - Katmanlı Altyapı"
-          className="cozumler-hero-banner-img"
-        />
-      </div>
+
 
       {/* Intro Text Section Below Image */}
       <section className="cozumler-intro-section">
