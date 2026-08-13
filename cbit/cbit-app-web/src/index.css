@@ -4360,3 +4360,8 @@ p,
 .neden-hero-subtitle {
   text-align: center !important;
 }
+
+/* Neden CBIT word letter spacing in header */
+.spaced-cbit {
+  letter-spacing: 0.1em; /* Increased letter spacing */
+}

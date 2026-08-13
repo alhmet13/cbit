@@ -9,6 +9,22 @@ export default function Layout() {
   const navigate = useNavigate();
   const { lang, t, setLang } = useLanguage();
   const { ayarlar } = useSiteAyarlari();
+  
+  const renderWithSpacedCBIT = (text: string) => {
+    if (!text || typeof text !== 'string') return text;
+    const parts = text.split('CBIT');
+    return (
+      <>
+        {parts.map((part, index) => (
+          <span key={index}>
+            {part}
+            {index < parts.length - 1 && <span className="spaced-cbit">CBIT</span>}
+          </span>
+        ))}
+      </>
+    );
+  };
+
   const [menuAcik, setMenuAcik] = useState(false);
   const [isShrunk, setIsShrunk] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
@@ -87,9 +103,7 @@ export default function Layout() {
             <NavLink
               to="/neden-biz"
               className={({ isActive }) => (isActive ? "active-link" : "")}
-            >
-              {t.nav.cozumler}
-            </NavLink>
+            > {renderWithSpacedCBIT(t.nav.cozumler)} </NavLink>
             <NavLink
               to="/cozumler"
               className={({ isActive }) => (isActive ? "active-link" : "")}
@@ -188,9 +202,7 @@ export default function Layout() {
             to="/neden-biz"
             className={({ isActive }) => (isActive ? "active-link" : "")}
             onClick={() => setMenuAcik(false)}
-          >
-            {t.nav.cozumler}
-          </NavLink>
+          > {renderWithSpacedCBIT(t.nav.cozumler)} </NavLink>
           <NavLink
             to="/cozumler"
             className={({ isActive }) => (isActive ? "active-link" : "")}
