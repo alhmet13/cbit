@@ -453,7 +453,7 @@ export const tr = {
       adres: "Adres",
       telefon: "Te­le­fon",
       eposta: "E-posta",
-      linkedin: "Sos­yal Medya",
+      linkedin: "LinkedIn",
     },
   },
   yasal: {

@@ -74,18 +74,7 @@ export default function Iletisim() {
           {/* Contact Details */}
           <div className="card contact-details-card p-large">
             <h2 className="mb-large">{t.iletisim.baslik}</h2>
-            <ul className="contact-details-list">
-              <li>
-                <strong>{t.iletisim.sirketDetayi.webSitesi}: </strong>
-                <a
-                  href="https://www.cbit.com.tr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="contact-link"
-                >
-                  www.cbit.com.tr
-                </a>
-              </li>
+            <ul className="contact-details-list mb-large">
               <li>
                 <strong>{t.iletisim.sirketDetayi.adres}: </strong>
                 {t.footer.adres}
@@ -100,9 +89,32 @@ export default function Iletisim() {
               </li>
               <li>
                 <strong>{t.iletisim.sirketDetayi.linkedin}: </strong>
-                <a href="https://www.linkedin.com/company/cbit-technology/home/" target="_blank" rel="noopener noreferrer">CBIT Technology LinkedIn</a>
+                <a href="https://www.linkedin.com/company/cbit-technology/home/" target="_blank" rel="noopener noreferrer">Bizim Hesap</a>
               </li>
             </ul>
+
+            <h3 className="mb-medium">{t.iletisim.konum}</h3>
+            <div
+              className="map-container"
+              style={{ 
+                padding: 0, 
+                overflow: "hidden", 
+                height: "250px",
+                backgroundColor: "#262626",
+                borderRadius: "12px",
+                boxShadow: "0 0 15px 5px rgba(255, 255, 255, 0.05)"
+              }}
+            >
+              <iframe
+                title="Google Maps"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                src="https://maps.google.com/maps?q=R%C3%BCzgarl%C4%B1bah%C3%A7e%20Mah.%20%C3%87am%20P%C4%B1nar%C4%B1%20Sk.%20No%3A1%2034805%20Kavac%C4%B1k%20Ticaret%20Merkezi%20Beykoz%2F%C4%B0stanbul&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
           </div>
 
           {/* Contact Form */}
@@ -177,31 +189,7 @@ export default function Iletisim() {
         </div>
       </section>
 
-      {/* Konum / Harita */}
-      <section className="section-block p-large border-radius-medium mt-large mb-large" style={{ backgroundColor: "#262626" }}>
-        <h2 className="section-title mb-large">{t.iletisim.konum}</h2>
-        <div
-          className="map-container"
-          style={{ 
-            padding: 0, 
-            overflow: "hidden", 
-            height: "450px",
-            backgroundColor: "#262626",
-            borderRadius: "12px",
-            boxShadow: "0 0 25px 8px rgba(255, 255, 255, 0.15)" /* Beyaz püskürtme/gölge efekti */
-          }}
-        >
-          <iframe
-            title="Google Maps"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            src="https://maps.google.com/maps?q=R%C3%BCzgarl%C4%B1bah%C3%A7e%20Mah.%20%C3%87am%20P%C4%B1nar%C4%B1%20Sk.%20No%3A1%2034805%20Kavac%C4%B1k%20Ticaret%20Merkezi%20Beykoz%2F%C4%B0stanbul&t=&z=16&ie=UTF8&iwloc=&output=embed"
-            allowFullScreen
-            loading="lazy"
-          />
-        </div>
-      </section>
+
     </div>
     </div>
   );

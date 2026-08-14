@@ -456,7 +456,7 @@ export const en: Translations = {
       adres: "Address",
       telefon: "Phone",
       eposta: "Email",
-      linkedin: "Social Media",
+      linkedin: "LinkedIn",
     },
   },
   yasal: {
