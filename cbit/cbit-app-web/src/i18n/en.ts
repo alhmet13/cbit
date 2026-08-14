@@ -505,12 +505,10 @@ export const en: Translations = {
     farkYaratanYaklasimlarimiz: {
       baslik: "Our Differentiating Approaches",
       maddeler: [
-        { baslik: "Proven Experience and Scale Capability", tanim: "With our years of industry experience and large-scale operational successes, we safely deliver even the most complex projects with zero margin for error." },
-        { baslik: "Single Contract, Minimum Risk", tanim: "By gathering all components and stakeholders under a single roof, we minimize legal and commercial risks and provide a secure process management." },
-        { baslik: "Cost Advantage", tanim: "Thanks to our end-to-end integrated service structure, we eliminate intermediate costs and allow you to get the maximum return on your investments." },
-        { baslik: "Faster Delivery", tanim: "With our experienced engineering staff and optimized working principles, we have the capacity to complete projects much earlier and completely than promised." },
-        { baslik: "Global Procurement and Logistics Power", tanim: "We provide seamless material supply with our strong logistics network and strategic connections established with the most reliable manufacturers worldwide." },
-        { baslik: "24/7 Uninterrupted Operation and Maintenance", tanim: "Even after project delivery, we maximize the survival time of your systems by providing 24/7 remote monitoring and uninterrupted field support services." }
+        { baslik: "Proven Experience and Scale Capability", tanim: "With our years of industry experience and large-scale operational successes, we safely deliver even the most complex projects with zero margin for error.", img: "/approach_1.jpg" },
+        { baslik: "Single Contract, Minimum Risk", tanim: "By gathering all components and stakeholders under a single roof, we minimize legal and commercial risks and provide a secure process management.", img: "/approach_2.jpg" },
+        { baslik: "Global Procurement and Logistics Power", tanim: "We provide seamless material supply with our strong logistics network and strategic connections established with the most reliable manufacturers worldwide.", img: "/approach_5.jpg" },
+        { baslik: "Cost Advantage", tanim: "Thanks to our end-to-end integrated service structure, we eliminate intermediate costs and allow you to get the maximum return on your investments.", img: "/approach_3.jpg" }
       ]
     }
   },
