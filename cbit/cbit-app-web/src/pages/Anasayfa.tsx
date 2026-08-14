@@ -26,9 +26,9 @@ const solutionIcons = [
 ];
 
 const whyUsIcons = [
-  Compass,
-  Award,
   Gauge,
+  Award,
+  Compass,
   Target,
 ];
 
