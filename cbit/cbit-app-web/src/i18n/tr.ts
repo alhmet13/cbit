@@ -333,6 +333,8 @@ export const tr = {
             tanim:
               "Sis­tem­le­rin canlı or­ta­ma geç­me­den önce L1-L5 se­vi­ye­le­rin­de test edil­me­si, ha­ta­sız ve ser­ti­fi­ka­lı (TS EN­50600) tes­li­mat sü­re­ci.",
           },
+        ],
+      },
       {
         id: "yapay-zeka",
         num: "ÇÖZÜM ALANI 04",
@@ -368,9 +370,6 @@ export const tr = {
           },
         ],
       }
-    ,
-        ],
-      },
     ],
   },
   yetkinlikler: {
