@@ -4382,7 +4382,7 @@ p,
    ============================================================ */
 .why-us-header p,
 .why-us-header .section-lead {
-  text-align: center !important;
+  text-align: left !important;
 }
 
 /* Neden CBIT hero subtitle alignment */

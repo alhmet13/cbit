@@ -109,7 +109,7 @@ export const tr = {
       eyebrow: "NEDEN CBIT",
       baslik: "Sa­de­ce Tek­no­lo­ji Değil, Sür­dü­rü­le­bi­lir İş De­ğe­ri",
       aciklama:
-        "Sa­de­ce tek­no­lo­ji üret­mi­yor, iş he­def­le­ri­ni­ze uygun sür­dü­rü­le­bi­lir çö­züm­ler ku­ru­yo­ruz.",
+        "Sa\u00ADde\u00ADce tek\u00ADno\u00ADlo\u00ADji kur\u00ADmu\u00ADyo\u00ADruz, iş he\u00ADdef\u00ADle\u00ADri\u00ADni\u00ADze uygun sür\u00ADdü\u00ADrü\u00ADle\u00ADbi\u00ADlir çö\u00ADzüm\u00ADler ku\u00ADru\u00ADyo\u00ADruz.",
       maddeler: [
         {
           no: "01",
