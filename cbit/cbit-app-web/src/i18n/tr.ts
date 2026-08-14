@@ -57,7 +57,7 @@ export const tr = {
       baslik:
         "Her Tek­no­lo­ji Kat­ma­nın­da\nUç­tan Uca Hiz­met",
       aciklama:
-        "Altı çözüm ala­nın­da, ta­sa­rım­dan iş­let­me­ye uza­nan tam kap­sam­lı hiz­met ve­ri­yo­ruz.",
+        "Dört çözüm ala\u00ADnın\u00ADda, ta\u00ADsa\u00ADrım\u00ADdan iş\u00ADlet\u00ADme\u00ADye uza\u00ADnan tam kap\u00ADsam\u00ADlı hiz\u00ADmet ve\u00ADri\u00ADyo\u00ADruz.",
       liste: [
         {
           no: "01",
