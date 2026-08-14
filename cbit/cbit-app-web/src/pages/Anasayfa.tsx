@@ -17,10 +17,10 @@ import { useSiteAyarlari } from "../context/SiteAyarlariContext";
 
 
 const solutionIcons = [
-  Cpu,
   Cloud,
   Server,
   Shield,
+  Cpu,
   Headphones,
   ClipboardCheck,
 ];

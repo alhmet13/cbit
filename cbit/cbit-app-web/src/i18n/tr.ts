@@ -61,35 +61,35 @@ export const tr = {
       liste: [
         {
           no: "01",
-          baslik: "Yapay Zeka (YZ) Alt­ya­pı­sı",
+          baslik: "Su\u00ADnu\u00ADcu, Sa\u00ADnal\u00ADlaş\u00ADtır\u00ADma ve Bulut Çö\u00ADzüm\u00ADle\u00ADri",
           tanim:
-            "Ku­rum­sal ve­ri­le­ri­ni­zin yapay zeka ile iş­len­me­si için ge­rek­li olan yük­sek per­for­mans­lı do­na­nım mi­ma­ri­si­ni ve veri ol­gun­laş­tır­ma sü­reç­le­ri­ni tek elden su­nu­yo­ruz.",
-          link: "/co­zum­ler",
-          linkText: "De­tay­lı Bilgi",
+            "İş yük\u00ADle\u00ADri\u00ADni\u00ADze en uygun, yük\u00ADsek per\u00ADfor\u00ADmans\u00ADlı su\u00ADnu\u00ADcu do\u00ADna\u00ADnım\u00ADla\u00ADrın\u00ADdan esnek bulut st\u00ADra\u00ADte\u00ADji\u00ADle\u00ADri\u00ADne kadar uza\u00ADnan geniş ve gü\u00ADven\u00ADli bir plat\u00ADform su\u00ADnu\u00ADyo\u00ADruz.",
+          link: "/co\u00ADzum\u00ADler",
+          linkText: "De\u00ADtay\u00ADlı Bilgi",
         },
         {
           no: "02",
-          baslik: "Su­nu­cu, Sa­nal­laş­tır­ma ve Bulut Çö­züm­le­ri",
+          baslik: "De\u00ADpo\u00ADla\u00ADma ve Veri Yö\u00ADne\u00ADti\u00ADmi",
           tanim:
-            "İş yük­le­ri­ni­ze en uygun, yük­sek per­for­mans­lı su­nu­cu do­na­nım­la­rın­dan esnek bulut st­ra­te­ji­le­ri­ne kadar uza­nan geniş ve gü­ven­li bir plat­form su­nu­yo­ruz.",
-          link: "/co­zum­ler",
-          linkText: "De­tay­lı Bilgi",
+            "Ve\u00ADri\u00ADle\u00ADri\u00ADni\u00ADzin hacmi ne kadar bü\u00ADyür\u00ADse bü\u00ADyü\u00ADsün; hız, gü\u00ADven\u00ADlik ve eri\u00ADşi\u00ADle\u00ADbi\u00ADlir\u00ADlik\u00ADten taviz ver\u00ADme\u00ADyen yeni nesil de\u00ADpo\u00ADla\u00ADma mi\u00ADma\u00ADri\u00ADle\u00ADri ta\u00ADsar\u00ADlı\u00ADyo\u00ADruz.",
+          link: "/co\u00ADzum\u00ADler",
+          linkText: "De\u00ADtay\u00ADlı Bilgi",
         },
         {
           no: "03",
-          baslik: "De­po­la­ma ve Veri Yö­ne­ti­mi",
+          baslik: "Ku\u00ADrum\u00ADsal Ağ ve Veri Mer\u00ADke\u00ADzi Alt\u00ADya\u00ADpı\u00ADsı",
           tanim:
-            "Ve­ri­le­ri­ni­zin hacmi ne kadar bü­yür­se bü­yü­sün; hız, gü­ven­lik ve eri­şi­le­bi­lir­lik­ten taviz ver­me­yen yeni nesil de­po­la­ma mi­ma­ri­le­ri ta­sar­lı­yo­ruz.",
-          link: "/co­zum­ler",
-          linkText: "De­tay­lı Bilgi",
+            "Kam\u00ADpüs\u00ADten ana veri mer\u00ADke\u00ADzi\u00ADne kadar uza\u00ADnan, yük\u00ADsek eri\u00ADşi\u00ADle\u00ADbi\u00ADlir ağ mi\u00ADma\u00ADri\u00ADle\u00ADri ve anah\u00ADtar tes\u00ADlim (EPC) veri mer\u00ADke\u00ADzi ku\u00ADru\u00ADlu\u00ADmu ger\u00ADçek\u00ADleş\u00ADti\u00ADri\u00ADyo\u00ADruz.",
+          link: "/co\u00ADzum\u00ADler",
+          linkText: "De\u00ADtay\u00ADlı Bilgi",
         },
         {
           no: "04",
-          baslik: "Ku­rum­sal Ağ ve Veri Mer­ke­zi Alt­ya­pı­sı",
+          baslik: "Yapay Zeka (YZ) Alt\u00ADya\u00ADpı\u00ADsı",
           tanim:
-            "Kam­püs­ten ana veri mer­ke­zi­ne kadar uza­nan, yük­sek eri­şi­le­bi­lir ağ mi­ma­ri­le­ri ve anah­tar tes­lim (EPC) veri mer­ke­zi ku­ru­lu­mu ger­çek­leş­ti­ri­yo­ruz.",
-          link: "/co­zum­ler",
-          linkText: "De­tay­lı Bilgi",
+            "Ku\u00ADrum\u00ADsal ve\u00ADri\u00ADle\u00ADri\u00ADni\u00ADzin yapay zeka ile iş\u00ADlen\u00ADme\u00ADsi için ge\u00ADrek\u00ADli olan yük\u00ADsek per\u00ADfor\u00ADmans\u00ADlı do\u00ADna\u00ADnım mi\u00ADma\u00ADri\u00ADsi\u00ADni ve veri ol\u00ADgun\u00ADlaş\u00ADtır\u00ADma sü\u00ADreç\u00ADle\u00ADri\u00ADni tek elden su\u00ADnu\u00ADyo\u00ADruz.",
+          link: "/co\u00ADzum\u00ADler",
+          linkText: "De\u00ADtay\u00ADlı Bilgi",
         },
       ],
     },
@@ -224,50 +224,15 @@ export const tr = {
       lead: "Ağ alt­ya­pı­sın­dan veri mer­ke­zi­ne, bu­lut­tan yapay ze­ka­ya, siber gü­ven­lik­ten yö­ne­ti­len hiz­met­le­re kadar altı çözüm ala­nın­da ta­sa­rım­dan iş­let­me­ye tam kap­sam­lı hiz­met ve­ri­yo­ruz.",
     },
     chips: [
-      { id: "yapay-zeka", label: "01 · Yapay Zeka (YZ) Alt­ya­pı­sı" },
-      { id: "su­nu­cu-bulut", label: "02 · Su­nu­cu ve Bulut Çö­züm­le­ri" },
-      { id: "de­po­la­ma", label: "03 · De­po­la­ma ve Veri Yö­ne­ti­mi" },
-      { id: "veri-mer­ke­zi", label: "04 · Ağ ve Veri Mer­ke­zi" },
+      { id: "su\u00ADnu\u00ADcu-bulut", label: "01 · Su\u00ADnu\u00ADcu ve Bulut Çö\u00ADzüm\u00ADle\u00ADri" },
+      { id: "de\u00ADpo\u00ADla\u00ADma", label: "02 · De\u00ADpo\u00ADla\u00ADma ve Veri Yö\u00ADne\u00ADti\u00ADmi" },
+      { id: "veri-mer\u00ADke\u00ADzi", label: "03 · Ağ ve Veri Mer\u00ADke\u00ADzi" },
+      { id: "yapay-zeka", label: "04 · Yapay Zeka (YZ) Alt\u00ADya\u00ADpı\u00ADsı" },
     ],
     alanlar: [
       {
-        id: "yapay-zeka",
-        num: "ÇÖZÜM ALANI 01",
-        icon: "Cpu",
-        baslik: "Yapay Zeka (YZ) Alt­ya­pı­sı",
-        gorsel: "/ai_concept.jpg",
-        aciklama:
-          "Ku­rum­sal ve­ri­le­ri­ni­zin yapay zeka ile iş­len­me­si için ge­rek­li olan yük­sek per­for­mans­lı do­na­nım mi­ma­ri­si­ni ve veri ol­gun­laş­tır­ma sü­reç­le­ri­ni tek elden su­nu­yo­ruz.",
-        kpi: {
-          deger: "%40",
-          etiket: "Or­ta­la­ma Ope­ras­yo­nel Ve­rim­li­lik Ar­tı­şı",
-        },
-        maddeler: [
-          {
-            baslik: "Yük­sek Yo­ğun­luk­lu YZ Kü­me­le­ri (GPU/​​​DPU/​​​NPU)",
-            tanim:
-              "Büyük öl­çek­li yapay zeka eği­ti­mi ve çı­ka­rım (in­fe­ren­ce) gö­rev­le­ri için op­ti­mi­ze edil­miş, ke­sin­ti­siz bilgi işlem do­na­nım alt­ya­pı­sı.",
-          },
-          {
-            baslik: "Yapay Zeka Fab­ri­ka­la­rı",
-            tanim:
-              "Artan rack yo­ğun­luk­la­rı­na ve ener­ji ih­ti­yaç­la­rı­na cevap ve­re­bi­len, yapay zeka iş yük­le­ri için özel ola­rak ta­sar­lan­mış tesis mi­ma­ri­le­ri.",
-          },
-          {
-            baslik: "Agen­tic AI ve Ma­ki­ne Öğ­ren­me­si",
-            tanim:
-              "Yapay ze­ka­nın iş sü­reç­le­ri­niz için ba­ğım­sız ak­si­yon ala­bil­me­si­ni sağ­la­yan akıl­lı oto­mas­yon mi­ma­ri­le­ri.",
-          },
-          {
-            baslik: "Veri Ol­gun­laş­tır­ma Da­nış­man­lı­ğı",
-            tanim:
-              "Mev­cut ku­rum­sal ve­ri­le­ri­ni­zin yapay zeka eko­sis­te­mi­ne so­run­suz en­teg­re edil­me­si ve zen­gin­leş­ti­ril­me­si.",
-          },
-        ],
-      },
-      {
         id: "su­nu­cu-bulut",
-        num: "ÇÖZÜM ALANI 02",
+        num: "ÇÖZÜM ALANI 01",
         icon: "Cloud",
         baslik: "Su­nu­cu, Sa­nal­laş­tır­ma ve Bulut Çö­züm­le­ri",
         gorsel: "/server_cloud_concept.jpg",
@@ -302,7 +267,7 @@ export const tr = {
       },
       {
         id: "de­po­la­ma",
-        num: "ÇÖZÜM ALANI 03",
+        num: "ÇÖZÜM ALANI 02",
         icon: "Da­ta­ba­se",
         baslik: "De­po­la­ma ve Veri Yö­ne­ti­mi",
         gorsel: "/storage_data_concept.jpg",
@@ -337,7 +302,7 @@ export const tr = {
       },
       {
         id: "veri-mer­ke­zi",
-        num: "ÇÖZÜM ALANI 04",
+        num: "ÇÖZÜM ALANI 03",
         icon: "Shi­eld",
         baslik: "Ku­rum­sal Ağ ve Veri Mer­ke­zi Alt­ya­pı­sı",
         gorsel: "/network_datacenter_concept.jpg",
@@ -368,6 +333,42 @@ export const tr = {
             tanim:
               "Sis­tem­le­rin canlı or­ta­ma geç­me­den önce L1-L5 se­vi­ye­le­rin­de test edil­me­si, ha­ta­sız ve ser­ti­fi­ka­lı (TS EN­50600) tes­li­mat sü­re­ci.",
           },
+      {
+        id: "yapay-zeka",
+        num: "ÇÖZÜM ALANI 04",
+        icon: "Cpu",
+        baslik: "Yapay Zeka (YZ) Alt­ya­pı­sı",
+        gorsel: "/ai_concept.jpg",
+        aciklama:
+          "Ku­rum­sal ve­ri­le­ri­ni­zin yapay zeka ile iş­len­me­si için ge­rek­li olan yük­sek per­for­mans­lı do­na­nım mi­ma­ri­si­ni ve veri ol­gun­laş­tır­ma sü­reç­le­ri­ni tek elden su­nu­yo­ruz.",
+        kpi: {
+          deger: "%40",
+          etiket: "Or­ta­la­ma Ope­ras­yo­nel Ve­rim­li­lik Ar­tı­şı",
+        },
+        maddeler: [
+          {
+            baslik: "Yük­sek Yo­ğun­luk­lu YZ Kü­me­le­ri (GPU/​​​DPU/​​​NPU)",
+            tanim:
+              "Büyük öl­çek­li yapay zeka eği­ti­mi ve çı­ka­rım (in­fe­ren­ce) gö­rev­le­ri için op­ti­mi­ze edil­miş, ke­sin­ti­siz bilgi işlem do­na­nım alt­ya­pı­sı.",
+          },
+          {
+            baslik: "Yapay Zeka Fab­ri­ka­la­rı",
+            tanim:
+              "Artan rack yo­ğun­luk­la­rı­na ve ener­ji ih­ti­yaç­la­rı­na cevap ve­re­bi­len, yapay zeka iş yük­le­ri için özel ola­rak ta­sar­lan­mış tesis mi­ma­ri­le­ri.",
+          },
+          {
+            baslik: "Agen­tic AI ve Ma­ki­ne Öğ­ren­me­si",
+            tanim:
+              "Yapay ze­ka­nın iş sü­reç­le­ri­niz için ba­ğım­sız ak­si­yon ala­bil­me­si­ni sağ­la­yan akıl­lı oto­mas­yon mi­ma­ri­le­ri.",
+          },
+          {
+            baslik: "Veri Ol­gun­laş­tır­ma Da­nış­man­lı­ğı",
+            tanim:
+              "Mev­cut ku­rum­sal ve­ri­le­ri­ni­zin yapay zeka eko­sis­te­mi­ne so­run­suz en­teg­re edil­me­si ve zen­gin­leş­ti­ril­me­si.",
+          },
+        ],
+      }
+    ,
         ],
       },
     ],
