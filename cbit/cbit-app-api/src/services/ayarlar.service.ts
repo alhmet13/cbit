@@ -2,6 +2,8 @@ import { prisma } from '../libs';
 
 interface IAyarlarUpdateData {
   projelerAktif?: boolean;
+  haberlerAktif?: boolean;
+  isOrtaklariAktif?: boolean;
 }
 
 /**
@@ -14,6 +16,8 @@ const getOrCreateAyarlar = async () => {
   return prisma.siteAyarlari.create({
     data: {
       projelerAktif: false,
+      haberlerAktif: true,
+      isOrtaklariAktif: true,
     },
   });
 };

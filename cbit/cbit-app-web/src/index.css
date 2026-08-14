@@ -620,11 +620,9 @@ main {
 
 .neden-hero-section {
   text-align: center;
-  padding: 60px 20px;
-  background: #2c2c2c;
-  border: 1px solid #3c3c3c;
-  border-radius: 16px;
-  margin-bottom: 40px;
+  padding: 40px 20px;
+  background: transparent;
+  margin-bottom: 20px;
 }
 
 .neden-hero-title {
@@ -661,10 +659,13 @@ main {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
-.deger-icon-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
+.neden-deger-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+  margin-bottom: 24px;
 }
 
 .hero-overlay {
@@ -4169,23 +4170,27 @@ main {
   background: #2c2c2c;
   padding: 24px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   border: 1px solid #3c3c3c;
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 16px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .neden-fark-card:hover {
-  border-color: #AC0000;
-  box-shadow: 0 8px 25px rgba(172, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
-.fark-card-icon-wrapper {
-  background: #2c2c2c;
-  padding: 12px;
+.fark-card-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
   border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
 }
 
 .neden-icon {
@@ -4195,10 +4200,28 @@ main {
 }
 
 .fark-card-title {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: #cbd5e1;
-  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fark-card-desc {
+  font-size: 1.1rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  text-align: center !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  letter-spacing: -0.3px;
+  word-spacing: -1px;
 }
 
 .neden-stats-section {
@@ -4336,6 +4359,12 @@ p,
 .why-us-card p,
 .solutions-kadro-grid-card p {
   text-align: justify !important;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  letter-spacing: -0.3px;
+  word-spacing: -1px;
 }
 
 /* Kisa ve ortada kalmasi gereken baslik vb. metinler icin istisnalar eklenebilir,

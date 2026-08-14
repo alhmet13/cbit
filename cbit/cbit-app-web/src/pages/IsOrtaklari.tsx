@@ -10,15 +10,26 @@ export default function IsOrtaklari() {
         <div className="about-hero-overlay" style={{ background: "none" }}>
           <div className="global-container" style={{ display: "block" }}>
             <div className="about-hero-content" style={{ textAlign: "center", maxWidth: "900px", margin: "0 auto" }}>
-              <div className="hero-eyebrow" style={{ color: "#AC0000", fontWeight: "600", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-                {(t as any).isOrtaklariSayfasi.hero.eyebrow}
-              </div>
-              <h1 className="about-hero-title" style={{ color: "#111111", fontSize: "3rem", fontWeight: "800", marginTop: "12px" }}>
+              <h1 className="about-hero-title" style={{ 
+                color: "#FAFAFA", 
+                fontSize: "3rem", 
+                fontWeight: "800", 
+                marginTop: "12px",
+                textShadow: "0 2px 8px rgba(255, 215, 0, 0.4)" 
+              }}>
                 {(t as any).isOrtaklariSayfasi.hero.baslik}
               </h1>
-              <p className="about-hero-lead" style={{ color: "#475569", fontSize: "1.25rem", marginTop: "16px", lineHeight: "1.6" }}>
-                {(t as any).isOrtaklariSayfasi.hero.lead}
-              </p>
+              <div style={{ display: "flex", justifyContent: "center", width: "100%", marginTop: "16px" }}>
+                <span style={{ 
+                  color: "#CBD5E1", /* Açık Gri */
+                  fontSize: "1.25rem", 
+                  lineHeight: "1.6",
+                  textAlign: "center",
+                  textShadow: "0 1px 4px rgba(0, 0, 0, 0.4)" 
+                }}>
+                  {(t as any).isOrtaklariSayfasi.hero.lead}
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -46,7 +57,7 @@ export default function IsOrtaklari() {
                 <h3 className="category-title" style={{
                   fontSize: "1.25rem",
                   fontWeight: "700",
-                  color: "#1e293b",
+                  color: "#FAFAFA",
                   marginBottom: "24px",
                   textAlign: "center",
                   borderBottom: "2px solid #AC0000",

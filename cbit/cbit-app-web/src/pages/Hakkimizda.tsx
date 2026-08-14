@@ -40,8 +40,6 @@ export default function Hakkimizda() {
                 style={{
                   width: "100%",
                   height: "auto",
-                  maxHeight: "600px",
-                  objectFit: "cover",
                   display: "block",
                 }}
               />

@@ -8,6 +8,7 @@ export default function AdminLayout() {
         <nav className="admin-nav">
           <NavLink to="/admin/projeler">Projeler</NavLink>
           <NavLink to="/admin/haberler">Haberler</NavLink>
+          <NavLink to="/admin/ayarlar">Ayarlar</NavLink>
           <a href="/" target="_blank" rel="noreferrer">
             Siteyi Aç →
           </a>

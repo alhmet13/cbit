@@ -1,28 +1,15 @@
 import { useLanguage } from '../context/useLanguage';
-import { CheckCircle, FileText, TrendingDown, Clock, Globe, Settings, Building2, Server, Cog } from 'lucide-react';
 
 export default function NedenCbit() {
   const { t } = useLanguage();
   const data = t.nedenCbitSayfasi;
 
-  const getIcon = (iconName: string) => {
-    switch (iconName) {
-      case 'CheckCircle': return <CheckCircle className="neden-icon" />;
-      case 'FileText': return <FileText className="neden-icon" />;
-      case 'TrendingDown': return <TrendingDown className="neden-icon" />;
-      case 'Clock': return <Clock className="neden-icon" />;
-      case 'Globe': return <Globe className="neden-icon" />;
-      case 'Settings': return <Settings className="neden-icon" />;
-      default: return <CheckCircle className="neden-icon" />;
-    }
-  };
-
-  const getDegerIcon = (index: number) => {
+  const getDegerImage = (index: number) => {
     switch (index) {
-        case 0: return <Building2 className="deger-icon" />;
-        case 1: return <Cog className="deger-icon" />;
-        case 2: return <Server className="deger-icon" />;
-        default: return <Building2 className="deger-icon" />;
+        case 0: return "/single_contact.jpg";
+        case 1: return "/end_to_end.jpg";
+        case 2: return "/engineering_heritage.jpg";
+        default: return "/single_contact.jpg";
     }
   }
 
@@ -41,9 +28,7 @@ export default function NedenCbit() {
         <div className="neden-deger-grid">
           {data.degerOnerisi.map((item: any, idx: number) => (
             <div key={idx} className="neden-deger-card">
-              <div className="deger-icon-wrapper">
-                 {getDegerIcon(idx)}
-              </div>
+              <img src={getDegerImage(idx)} alt={item.baslik} className="neden-deger-image" />
               <h3 className="deger-card-title">{item.baslik}</h3>
               <p className="deger-card-desc">{item.tanim}</p>
             </div>
@@ -57,10 +42,9 @@ export default function NedenCbit() {
         <div className="neden-fark-grid">
           {data.farkYaratanYaklasimlarimiz.maddeler.map((item: any, idx: number) => (
             <div key={idx} className="neden-fark-card">
-               <div className="fark-card-icon-wrapper">
-                  {getIcon(item.icon)}
-               </div>
               <h4 className="fark-card-title">{item.baslik}</h4>
+              <img src={`/approach_${idx + 1}.jpg`} alt={item.baslik} className="fark-card-image" />
+              <p className="fark-card-desc">{item.tanim}</p>
             </div>
           ))}
         </div>

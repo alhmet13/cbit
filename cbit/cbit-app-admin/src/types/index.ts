@@ -1,6 +1,8 @@
 export interface SiteAyarlari {
   id: string;
   projelerAktif: boolean;
+  haberlerAktif: boolean;
+  isOrtaklariAktif: boolean;
   updatedAt: string;
 }
 

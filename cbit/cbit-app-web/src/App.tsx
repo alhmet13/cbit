@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
+import ScrollToTop from "./components/ScrollToTop";
 import { SiteAyarlariProvider, useSiteAyarlari } from "./context/SiteAyarlariContext";
 import "./index.css";
 
@@ -34,12 +35,18 @@ function AppRoutes() {
         <Route path="/neden-biz" element={<NedenCbit />} />
         <Route path="/cozumler" element={<Cozumler />} />
         <Route path="/yetkinliklerimiz" element={<Navigate to="/cozumler" replace />} />
-        <Route path="/is-ortaklari" element={<IsOrtaklari />} />
+        <Route 
+          path="/is-ortaklari" 
+          element={ayarlar.isOrtaklariAktif ? <IsOrtaklari /> : <Navigate to="/" replace />} 
+        />
         <Route
           path="/projeler"
           element={ayarlar.projelerAktif ? <Projeler /> : <Navigate to="/" replace />}
         />
-        <Route path="/haberler" element={<Haberler />} />
+        <Route
+          path="/haberler"
+          element={ayarlar.haberlerAktif ? <Haberler /> : <Navigate to="/" replace />}
+        />
         <Route path="/iletisim" element={<Iletisim />} />
         <Route path="/cerez-politikasi" element={<CerezPolitikasi />} />
         <Route path="/kisisel-verilerin-korunmasi" element={<KisiselVerilerinKorunmasi />} />
@@ -51,6 +58,7 @@ function AppRoutes() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <SiteAyarlariProvider>
         <Suspense fallback={<LoadingFallback />}>
           <AppRoutes />

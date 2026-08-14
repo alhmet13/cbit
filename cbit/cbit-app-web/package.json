@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "hyphenation.tr": "^0.2.1",
+    "hypher": "^0.2.5",
     "lucide-react": "^1.27.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",

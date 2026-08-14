@@ -28,16 +28,17 @@ export default function Ayarlar() {
     }
   }, [message]);
 
-  const handleToggle = async (field: keyof Pick<SiteAyarlari, "projelerAktif">) => {
+  const handleToggle = async (field: keyof Pick<SiteAyarlari, "projelerAktif" | "haberlerAktif" | "isOrtaklariAktif">) => {
     if (!ayarlar || saving) return;
     const newValue = !ayarlar[field];
     setSaving(true);
     try {
       const updated = await api.ayarlar.update({ [field]: newValue });
       setAyarlar(updated);
+      const pageName = field === "projelerAktif" ? "Projeler" : "Haberler";
       setMessage({
         type: "success",
-        text: `Projeler sayfası ${newValue ? "aktif edildi" : "gizlendi"}.`,
+        text: `${pageName} sayfası ${newValue ? "aktif edildi" : "gizlendi"}.`,
       });
     } catch (err) {
       setMessage({
@@ -74,68 +75,197 @@ export default function Ayarlar() {
             Yükleniyor...
           </div>
         ) : (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-between",
-              padding: "20px 0",
-              borderBottom: "1px solid var(--border)",
-            }}
-          >
-            <div>
-              <p
-                style={{
-                  fontWeight: 600,
-                  color: "var(--text-primary)",
-                  marginBottom: "4px",
-                }}
-              >
-                Projeler / Referanslar Sayfası
-              </p>
-              <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>
-                {ayarlar?.projelerAktif
-                  ? "Sitede görünüyor — ziyaretçiler erişebilir."
-                  : "Sitede gizli — ziyaretçiler erişemez."}
-              </p>
-            </div>
-
-            {/* Toggle switch */}
-            <button
-              type="button"
-              onClick={() => handleToggle("projelerAktif")}
-              disabled={saving}
-              aria-label="Projeler sayfasını aç/kapat"
+          <>
+            <div
               style={{
-                position: "relative",
-                display: "inline-flex",
+                display: "flex",
                 alignItems: "center",
-                width: "52px",
-                height: "28px",
-                borderRadius: "14px",
-                border: "none",
-                cursor: saving ? "not-allowed" : "pointer",
-                background: ayarlar?.projelerAktif ? "#AC0000" : "var(--border)",
-                transition: "background 0.25s ease",
-                flexShrink: 0,
-                opacity: saving ? 0.6 : 1,
+                justifyContent: "space-between",
+                padding: "20px 0",
+                borderBottom: "1px solid var(--border)",
               }}
             >
-              <span
+              <div>
+                <p
+                  style={{
+                    fontWeight: 600,
+                    color: "var(--text-primary)",
+                    marginBottom: "4px",
+                  }}
+                >
+                  Projeler / Referanslar Sayfası
+                </p>
+                <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+                  {ayarlar?.projelerAktif
+                    ? "Sitede görünüyor — ziyaretçiler erişebilir."
+                    : "Sitede gizli — ziyaretçiler erişemez."}
+                </p>
+              </div>
+
+              {/* Toggle switch */}
+              <button
+                type="button"
+                onClick={() => handleToggle("projelerAktif")}
+                disabled={saving}
+                aria-label="Projeler sayfasını aç/kapat"
                 style={{
-                  position: "absolute",
-                  top: "3px",
-                  left: ayarlar?.projelerAktif ? "27px" : "3px",
-                  width: "22px",
-                  height: "22px",
-                  borderRadius: "50%",
-                  background: "#fff",
-                  boxShadow: "0 1px 4px rgba(0,0,0,0.3)",
-                  transition: "left 0.25s ease",
+                  position: "relative",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  width: "52px",
+                  height: "28px",
+                  borderRadius: "14px",
+                  border: "none",
+                  cursor: saving ? "not-allowed" : "pointer",
+                  background: ayarlar?.projelerAktif ? "#AC0000" : "var(--border)",
+                  transition: "background 0.25s ease",
+                  flexShrink: 0,
+                  opacity: saving ? 0.6 : 1,
                 }}
-              />
-            </button>
-          </div>
+              >
+                <span
+                  style={{
+                    position: "absolute",
+                    top: "3px",
+                    left: ayarlar?.projelerAktif ? "27px" : "3px",
+                    width: "22px",
+                    height: "22px",
+                    borderRadius: "50%",
+                    background: "#fff",
+                    boxShadow: "0 1px 4px rgba(0,0,0,0.3)",
+                    transition: "left 0.25s ease",
+                  }}
+                />
+              </button>
+            </div>
+            
+            {/* Haberler Toggle */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                padding: "20px 0",
+                borderBottom: "1px solid var(--border)",
+              }}
+            >
+              <div>
+                <p
+                  style={{
+                    fontWeight: 600,
+                    color: "var(--text-primary)",
+                    marginBottom: "4px",
+                  }}
+                >
+                  Haberler Sayfası
+                </p>
+                <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+                  {ayarlar?.haberlerAktif
+                    ? "Sitede görünüyor — ziyaretçiler erişebilir."
+                    : "Sitede gizli — ziyaretçiler erişemez."}
+                </p>
+              </div>
+
+              {/* Toggle switch */}
+              <button
+                type="button"
+                onClick={() => handleToggle("haberlerAktif")}
+                disabled={saving}
+                aria-label="Haberler sayfasını aç/kapat"
+                style={{
+                  position: "relative",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  width: "52px",
+                  height: "28px",
+                  borderRadius: "14px",
+                  border: "none",
+                  cursor: saving ? "not-allowed" : "pointer",
+                  background: ayarlar?.haberlerAktif ? "#AC0000" : "var(--border)",
+                  transition: "background 0.25s ease",
+                  flexShrink: 0,
+                  opacity: saving ? 0.6 : 1,
+                }}
+              >
+                <span
+                  style={{
+                    position: "absolute",
+                    top: "3px",
+                    left: ayarlar?.haberlerAktif ? "27px" : "3px",
+                    width: "22px",
+                    height: "22px",
+                    borderRadius: "50%",
+                    background: "#fff",
+                    boxShadow: "0 1px 4px rgba(0,0,0,0.3)",
+                    transition: "left 0.25s ease",
+                  }}
+                />
+              </button>
+            </div>
+
+            {/* İş Ortakları Toggle */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                padding: "20px 0",
+              }}
+            >
+              <div>
+                <p
+                  style={{
+                    fontWeight: 600,
+                    color: "var(--text-primary)",
+                    marginBottom: "4px",
+                  }}
+                >
+                  İş Ortakları Sayfası
+                </p>
+                <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)" }}>
+                  {ayarlar?.isOrtaklariAktif
+                    ? "Sitede görünüyor — ziyaretçiler erişebilir."
+                    : "Sitede gizli — ziyaretçiler erişemez."}
+                </p>
+              </div>
+
+              {/* Toggle switch */}
+              <button
+                type="button"
+                onClick={() => handleToggle("isOrtaklariAktif")}
+                disabled={saving}
+                aria-label="İş Ortakları sayfasını aç/kapat"
+                style={{
+                  position: "relative",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  width: "52px",
+                  height: "28px",
+                  borderRadius: "14px",
+                  border: "none",
+                  cursor: saving ? "not-allowed" : "pointer",
+                  background: ayarlar?.isOrtaklariAktif ? "#AC0000" : "var(--border)",
+                  transition: "background 0.25s ease",
+                  flexShrink: 0,
+                  opacity: saving ? 0.6 : 1,
+                }}
+              >
+                <span
+                  style={{
+                    position: "absolute",
+                    top: "3px",
+                    left: ayarlar?.isOrtaklariAktif ? "27px" : "3px",
+                    width: "22px",
+                    height: "22px",
+                    borderRadius: "50%",
+                    background: "#fff",
+                    boxShadow: "0 1px 4px rgba(0,0,0,0.3)",
+                    transition: "left 0.25s ease",
+                  }}
+                />
+              </button>
+            </div>
+          </>
         )}
       </div>
     </div>

@@ -110,12 +110,14 @@ export default function Layout() {
             >
               {t.nav.yetkinlikler}
             </NavLink>
-            <NavLink
-              to="/is-ortaklari"
-              className={({ isActive }) => (isActive ? "active-link" : "")}
-            >
-              {(t as any).nav.isOrtaklari}
-            </NavLink>
+            {ayarlar.isOrtaklariAktif && (
+              <NavLink
+                to="/is-ortaklari"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                {(t as any).nav.isOrtaklari}
+              </NavLink>
+            )}
             {ayarlar.projelerAktif && (
               <NavLink
                 to="/projeler"
@@ -125,12 +127,14 @@ export default function Layout() {
               </NavLink>
             )}
 
-            <NavLink
-              to="/haberler"
-              className={({ isActive }) => (isActive ? "active-link" : "")}
-            >
-              {t.nav.haberler}
-            </NavLink>
+            {ayarlar.haberlerAktif && (
+              <NavLink
+                to="/haberler"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                {t.nav.haberler}
+              </NavLink>
+            )}
             <NavLink
               to="/iletisim"
               className={({ isActive }) => (isActive ? "active-link" : "")}
@@ -210,13 +214,15 @@ export default function Layout() {
           >
             {t.nav.yetkinlikler}
           </NavLink>
-          <NavLink
-            to="/is-ortaklari"
-            className={({ isActive }) => (isActive ? "active-link" : "")}
-            onClick={() => setMenuAcik(false)}
-          >
-            {(t as any).nav.isOrtaklari}
-          </NavLink>
+          {ayarlar.isOrtaklariAktif && (
+            <NavLink
+              to="/is-ortaklari"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+              onClick={() => setMenuAcik(false)}
+            >
+              {(t as any).nav.isOrtaklari}
+            </NavLink>
+          )}
           {ayarlar.projelerAktif && (
             <NavLink
               to="/projeler"
@@ -227,13 +233,15 @@ export default function Layout() {
             </NavLink>
           )}
 
-          <NavLink
-            to="/haberler"
-            className={({ isActive }) => (isActive ? "active-link" : "")}
-            onClick={() => setMenuAcik(false)}
-          >
-            {t.nav.haberler}
-          </NavLink>
+          {ayarlar.haberlerAktif && (
+            <NavLink
+              to="/haberler"
+              className={({ isActive }) => (isActive ? "active-link" : "")}
+              onClick={() => setMenuAcik(false)}
+            >
+              {t.nav.haberler}
+            </NavLink>
+          )}
           <NavLink
             to="/iletisim"
             className={({ isActive }) => (isActive ? "active-link" : "")}

@@ -2,6 +2,8 @@ import { createContext, useContext, useEffect, useState, type ReactNode } from '
 
 interface SiteAyarlari {
   projelerAktif: boolean;
+  haberlerAktif: boolean;
+  isOrtaklariAktif: boolean;
 }
 
 interface SiteAyarlariContextValue {
@@ -11,6 +13,8 @@ interface SiteAyarlariContextValue {
 
 const defaultAyarlar: SiteAyarlari = {
   projelerAktif: false,
+  haberlerAktif: true,
+  isOrtaklariAktif: true,
 };
 
 const SiteAyarlariContext = createContext<SiteAyarlariContextValue>({

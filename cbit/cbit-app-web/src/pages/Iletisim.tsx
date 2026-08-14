@@ -54,7 +54,8 @@ export default function Iletisim() {
   };
 
   return (
-    <div className="page-container iletisim-page">
+    <div style={{ backgroundColor: "#262626", minHeight: "100vh", width: "100%" }}>
+      <div className="page-container iletisim-page">
       <h1 className="page-title">{t.iletisim.baslik}</h1>
       <p className="page-subtitle">{t.iletisim.altBaslik}</p>
 
@@ -176,12 +177,19 @@ export default function Iletisim() {
         </div>
       </section>
 
-      {/* Konum / Harita - Açık Gri Arka Plan */}
-      <section className="section-block bg-light p-large border-radius-medium mt-large mb-large">
+      {/* Konum / Harita */}
+      <section className="section-block p-large border-radius-medium mt-large mb-large" style={{ backgroundColor: "#262626" }}>
         <h2 className="section-title mb-large">{t.iletisim.konum}</h2>
         <div
-          className="map-container card"
-          style={{ padding: 0, overflow: "hidden", height: "450px" }}
+          className="map-container"
+          style={{ 
+            padding: 0, 
+            overflow: "hidden", 
+            height: "450px",
+            backgroundColor: "#262626",
+            borderRadius: "12px",
+            boxShadow: "0 0 25px 8px rgba(255, 255, 255, 0.15)" /* Beyaz püskürtme/gölge efekti */
+          }}
         >
           <iframe
             title="Google Maps"
@@ -194,6 +202,7 @@ export default function Iletisim() {
           />
         </div>
       </section>
+    </div>
     </div>
   );
 }
