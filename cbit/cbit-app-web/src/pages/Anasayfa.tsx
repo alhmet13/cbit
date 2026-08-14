@@ -17,9 +17,9 @@ import { useSiteAyarlari } from "../context/SiteAyarlariContext";
 
 
 const solutionIcons = [
-  Server,
-  Cloud,
   Cpu,
+  Cloud,
+  Server,
   Shield,
   Headphones,
   ClipboardCheck,
