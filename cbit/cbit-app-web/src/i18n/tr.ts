@@ -502,12 +502,10 @@ export const tr = {
     farkYaratanYaklasimlarimiz: {
       baslik: "Fark Ya­ra­tan Yak­la­şım­la­rı­mız",
       maddeler: [
-        { baslik: "Ka­nıt­lan­mış De­ne­yim ve Ölçek Yet­kin­li­ği", tanim: "Yıl­lar süren sek­tör tec­rü­be­miz ve geniş çaplı ope­ras­yo­nel ba­şa­rı­la­rı­mız­la, en kar­ma­şık pro­je­le­ri bile sıfır hata ola­sı­lı­ğı ile gü­ven­le devir tes­lim edi­yo­ruz." },
-        { baslik: "Tek Söz­leş­me, Mi­ni­mum Risk", tanim: "Tüm bi­le­şen­le­ri ve pay­daş­la­rı tek çatı al­tın­da top­la­ya­rak hu­ku­ki ve ti­ca­ri risk­le­ri mi­ni­mu­ma in­di­ri­yor, güven dolu bir süreç yö­ne­ti­mi sağ­lı­yo­ruz." },
-        { baslik: "Ma­li­yet Avan­ta­jı", tanim: "Uçtan uca en­teg­re hiz­met ya­pı­mız sa­ye­sin­de ara ma­li­yet­le­ri or­ta­dan kal­dı­rı­yor, ya­tı­rım­la­rı­nız­da mak­si­mum geri dönüş elde et­me­ni­ze ola­nak ta­nı­yo­ruz." },
-        { baslik: "Daha Hızlı Tes­li­mat", tanim: "De­ne­yim­li mü­hen­dis­lik kad­ro­muz ve op­ti­mi­ze edil­miş ça­lış­ma pren­sip­le­ri­miz ile, pro­je­le­ri söz ve­ri­len sü­re­ler­den çok daha erken ve ek­sik­siz ta­mam­la­ma ka­pa­si­te­si­ne sa­hi­biz." },
-        { baslik: "Glo­bal Te­da­rik ve Lo­jis­tik Gücü", tanim: "Dünya ça­pın­da en gü­ve­ni­lir üre­ti­ci­ler­le kur­du­ğu­muz st­ra­te­jik bağ­lan­tı­lar ve güçlü lo­jis­tik ağı­mız­la so­run­suz mal­ze­me te­da­ri­ği sağ­lı­yo­ruz." },
-        { baslik: "7/​​24 Ke­sin­ti­siz Ope­ras­yon ve Bakım", tanim: "Proje tes­li­ma­tın­dan sonra da 7/​​24 uzak­tan iz­le­me ve sa­ha­da ke­sin­ti­siz des­tek hiz­met­le­ri su­na­rak sis­tem­le­ri­ni­zin ha­yat­ta kalma sü­re­si­ni mak­si­mi­ze edi­yo­ruz." }
+        { baslik: "Ka­nıt­lan­mış De­ne­yim ve Ölçek Yet­kin­li­ği", tanim: "Yıl­lar süren sek­tör tec­rü­be­miz ve geniş çaplı ope­ras­yo­nel ba­şa­rı­la­rı­mız­la, en kar­ma­şık pro­je­le­ri bile sıfır hata ola­sı­lı­ğı ile gü­ven­le devir tes­lim edi­yo­ruz.", img: "/approach_1.jpg" },
+        { baslik: "Tek Söz­leş­me, Mi­ni­mum Risk", tanim: "Tüm bi­le­şen­le­ri ve pay­daş­la­rı tek çatı al­tın­da top­la­ya­rak hu­ku­ki ve ti­ca­ri risk­le­ri mi­ni­mu­ma in­di­ri­yor, güven dolu bir süreç yö­ne­ti­mi sağ­lı­yo­ruz.", img: "/approach_2.jpg" },
+        { baslik: "Glo­bal Te­da­rik ve Lo­jis­tik Gücü", tanim: "Dünya ça­pın­da en gü­ve­ni­lir üre­ti­ci­ler­le kur­du­ğu­muz st­ra­te­jik bağ­lan­tı­lar ve güçlü lo­jis­tik ağı­mız­la so­run­suz mal­ze­me te­da­ri­ği sağ­lı­yo­ruz.", img: "/approach_5.jpg" },
+        { baslik: "Ma­li­yet Avan­ta­jı", tanim: "Uçtan uca en­teg­re hiz­met ya­pı­mız sa­ye­sin­de ara ma­li­yet­le­ri or­ta­dan kal­dı­rı­yor, ya­tı­rım­la­rı­nız­da mak­si­mum geri dönüş elde et­me­ni­ze ola­nak ta­nı­yo­ruz.", img: "/approach_3.jpg" }
       ]
     }
   },

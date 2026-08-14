@@ -43,7 +43,7 @@ export default function NedenCbit() {
           {data.farkYaratanYaklasimlarimiz.maddeler.map((item: any, idx: number) => (
             <div key={idx} className="neden-fark-card">
               <h4 className="fark-card-title">{item.baslik}</h4>
-              <img src={`/approach_${idx + 1}.jpg`} alt={item.baslik} className="fark-card-image" />
+              <img src={item.img} alt={item.baslik} className="fark-card-image" />
               <p className="fark-card-desc">{item.tanim}</p>
             </div>
           ))}
