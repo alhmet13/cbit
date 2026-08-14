@@ -197,7 +197,7 @@ export const tr = {
     },
     bizKimiz: {
       eyebrow: "1959'­dan bu­gü­ne",
-      baslik: "Aynı mü­hen­dis­lik di­sip­li­ni, aynı güven bugün veri mer­kez­le­ri­nin kri­tik alt­ya­pı­sın­da",
+      baslik: "Di\u00ADji\u00ADtal Alt\u00ADya\u00ADpı ve Tek\u00ADno\u00ADlo\u00ADji\u00ADde gü\u00ADve\u00ADni\u00ADlir ad\u00ADres",
       aciklama:
         "CBIT, Ce­va­hir Gru­bu­nun köklü mü­hen­dis­lik mi­ra­sı­nı ge­le­ce­ğin tek­no­lo­ji­le­ri­ne ta­şı­yan di­ji­tal alt­ya­pı ve yük­sek tek­no­lo­ji çözüm or­ta­ğı­dır. Kri­tik do­na­nım te­da­ri­ki, yük­sek yo­ğun­luk­lu yapay zeka (GPU/​​​DPU) kü­me­le­ri, bulut ya­zı­lım­la­rı ve ku­rum­sal ağ sis­tem­le­ri en­teg­ras­yo­nun­da anah­tar tes­lim çö­züm­ler su­na­rak di­ji­tal dö­nü­şü­mün ve böl­ge­sel veri ege­men­li­ği­nin gü­ve­ni­lir ad­re­si ol­ma­ya devam edi­yo­ruz.",
     },
