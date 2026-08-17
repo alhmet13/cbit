@@ -4350,13 +4350,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .about-hero-pill {
-  background: #AC0000;
-  color: white;
-  padding: 6px 16px;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 14px;
+  color: #AC0000;
+  font-weight: 700;
+  font-size: 15px;
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .about-hero-years-overlay {
