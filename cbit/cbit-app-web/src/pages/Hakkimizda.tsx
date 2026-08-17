@@ -12,7 +12,7 @@ export default function Hakkimizda() {
           <div className="global-container" style={{ display: "block" }}>
             <div className="about-hero-header">
               <div className="about-hero-title-wrap">
-                <h1 className="about-hero-title" style={{ color: "#ffffff", fontSize: "3rem", fontWeight: "800", margin: "0" }}>
+                <h1 className="about-hero-title" style={{ color: "#ffffff", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: "800", margin: "0" }}>
                   {t.hakkimizda.hero.baslik}
                 </h1>
               </div>
@@ -56,12 +56,12 @@ export default function Hakkimizda() {
       {/* 2. BİZ KİMİZ (1959'dan Bugüne) */}
       <section className="section-global">
         <div className="global-container">
-          <div className="about-bizkimiz-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px", alignItems: "center" }}>
+          <div className="about-bizkimiz-grid grid-layout two-col" style={{ gap: "60px", alignItems: "center" }}>
             <div className="about-bizkimiz-content">
               <div className="section-eyebrow" style={{ color: "#AC0000", fontWeight: "600", textTransform: "uppercase", letterSpacing: "0.1em" }}>
                 {t.hakkimizda.bizKimiz.eyebrow}
               </div>
-              <h2 className="section-title" style={{ fontSize: "2rem", fontWeight: "800", marginTop: "12px", lineHeight: "1.3" }}>
+              <h2 className="section-title" style={{ fontSize: "clamp(1.5rem, 4vw, 2rem)", fontWeight: "800", marginTop: "12px", lineHeight: "1.3" }}>
                 {t.hakkimizda.bizKimiz.baslik}
               </h2>
               <p className="section-description" style={{ marginTop: "24px", fontSize: "1.05rem", color: "#cbd5e1", lineHeight: "1.8" }}>
@@ -98,7 +98,7 @@ export default function Hakkimizda() {
             <h2 className="section-title">{t.hakkimizda.vizyonMisyon.baslik}</h2>
           </div>
 
-          <div className="grid-layout two-col gap-medium" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px" }}>
+          <div className="grid-layout two-col gap-medium" style={{ gap: "32px" }}>
             {/* Vizyon Kartı */}
             <div className="card vision-card" style={{ padding: "40px", borderRadius: "20px", borderTop: "4px solid #3b82f6" }}>
               <div className="card-icon-header" style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "20px" }}>

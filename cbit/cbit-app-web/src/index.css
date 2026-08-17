@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 html {
   overflow-x: clip; /* clip taşmayı engeller ama sticky'yi kırmaz (hidden kırar) */
 }
@@ -287,7 +292,7 @@ main {
   opacity: 0;
   overflow: hidden;
   visibility: hidden;
-  background-color: #ffffff; /* %100 okunabilirlik için koyu karbon katı arka plan */
+  background-color: #1a1a1a; /* %100 okunabilirlik için koyu karbon katı arka plan */
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   margin: 15px -20px -15px -20px; /* navbar-bg iç boşluklarını sıfırlayarak tam kenara yaslar */
   transition:
@@ -452,8 +457,14 @@ main {
   padding: 40px 60px;
 }
 
+@media (max-width: 768px) {
+  .page-container {
+    padding: 20px 16px;
+  }
+}
+
 .page-title {
-  font-size: 44px;
+  font-size: clamp(2rem, 5vw, 44px);
   color: #ffffff;
   margin: 0 0 16px 0;
   border-left: 5px solid #AC0000;
@@ -1735,12 +1746,14 @@ main {
   }
 
   .logo img {
-    height: 110px;
+    width: 160px;
+    height: auto;
   }
 
   .navbar-bg.is-shrunk .logo img {
-    height: 85px;
-    transform: scale(0.9);
+    width: 130px;
+    height: auto;
+    transform: none;
   }
 }
 
