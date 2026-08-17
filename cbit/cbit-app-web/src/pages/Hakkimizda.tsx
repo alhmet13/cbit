@@ -31,18 +31,29 @@ export default function Hakkimizda() {
                 overflow: "hidden",
                 boxShadow: "0 12px 40px rgba(0,0,0,0.06)",
                 border: "1px solid rgba(0,0,0,0.04)",
-                backgroundColor: "#111111"
+                backgroundColor: "#111111",
+                display: "flex",
+                aspectRatio: "16/9",
+                width: "100%"
               }}
             >
-              <img
-                src="/heritage-timeline-6.jpg?v=1"
-                alt="Cevahir Mirası Zaman Tüneli"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  display: "block",
-                }}
-              />
+              {/* 1960 */}
+              <div style={{ flex: 1, backgroundImage: "url(/heritage-timeline-5.jpg?v=1)", backgroundSize: "400% 100%", backgroundPosition: "0% 50%", position: "relative" }}>
+                 <div style={{position: "absolute", bottom: "40px", width: "100%", textAlign: "center", color: "white", fontSize: "2rem", fontWeight: "bold", textShadow: "0 2px 4px rgba(0,0,0,0.5)"}}>1960</div>
+              </div>
+              {/* 1980 */}
+              <div style={{ flex: 1, backgroundImage: "url(/heritage-timeline-5.jpg?v=1)", backgroundSize: "400% 100%", backgroundPosition: "33.333% 50%", position: "relative", borderLeft: "1px solid rgba(255,255,255,0.2)" }}>
+                 <div style={{position: "absolute", bottom: "40px", width: "100%", textAlign: "center", color: "white", fontSize: "2rem", fontWeight: "bold", textShadow: "0 2px 4px rgba(0,0,0,0.5)"}}>1980</div>
+              </div>
+              {/* 2000 - Exact User Photo */}
+              <div style={{ flex: 1, backgroundImage: "url(/cevahir-original.jpg)", backgroundSize: "cover", backgroundPosition: "center", position: "relative", borderLeft: "1px solid rgba(255,255,255,0.2)" }}>
+                 <div style={{position: "absolute", bottom: "40px", width: "100%", textAlign: "center", color: "white", fontSize: "2rem", fontWeight: "bold", textShadow: "0 2px 10px rgba(0,0,0,0.9)"}}>2000</div>
+              </div>
+              {/* 2020 */}
+              <div style={{ flex: 1, backgroundImage: "url(/heritage-timeline-5.jpg?v=1)", backgroundSize: "400% 100%", backgroundPosition: "100% 50%", position: "relative", borderLeft: "1px solid rgba(255,255,255,0.2)" }}>
+                 <div style={{position: "absolute", bottom: "40px", width: "100%", textAlign: "center", color: "white", fontSize: "2rem", fontWeight: "bold", textShadow: "0 2px 4px rgba(0,0,0,0.5)"}}>2020</div>
+              </div>
+              
               <div className="about-hero-bottom-band">
                 <span className="about-hero-pill">{t.hakkimizda.bizKimiz.eyebrow}</span>
                 <span style={{ fontSize: "16px", fontWeight: "500" }}>{t.hakkimizda.bizKimiz.baslik}</span>
