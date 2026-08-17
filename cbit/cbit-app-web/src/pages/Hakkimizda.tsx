@@ -100,9 +100,9 @@ export default function Hakkimizda() {
 
           <div className="grid-layout two-col gap-medium" style={{ gap: "32px" }}>
             {/* Vizyon Kartı */}
-            <div className="card vision-card" style={{ padding: "40px", borderRadius: "20px", borderTop: "4px solid #3b82f6" }}>
+            <div className="card vision-card" style={{ padding: "40px", borderRadius: "20px", borderTop: "4px solid #AC0000" }}>
               <div className="card-icon-header" style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "20px" }}>
-                <div className="icon-badge badge-blue" style={{ background: "rgba(59, 130, 246, 0.1)", color: "#3b82f6", padding: "12px", borderRadius: "12px" }}>
+                <div className="icon-badge badge-red" style={{ background: "rgba(172, 0, 0, 0.1)", color: "#AC0000", padding: "12px", borderRadius: "12px" }}>
                   <Compass size={28} />
                 </div>
                 <h3 style={{ fontSize: "1.5rem", fontWeight: "700", margin: "0" }}>{t.hakkimizda.vizyonMisyon.vizyon.baslik}</h3>
