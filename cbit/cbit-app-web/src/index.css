@@ -94,15 +94,15 @@ main {
   /* Küçülmüş durum (120px aşağı kaydırıldığında - sadece masaüstü) */
   .navbar-bg.is-shrunk,
   .navbar-bg.scrolled {
-    padding: 8px 60px;
+    padding: 4px 60px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   }
 
   .navbar-bg.is-shrunk .logo img,
   .navbar-bg.scrolled .logo img {
     height: auto;
-    width: 180px;
-    max-width: 220px;
+    width: 90px;
+    max-width: 110px;
   }
 }
 
@@ -1742,7 +1742,7 @@ main {
   }
 
   .navbar-bg.is-shrunk {
-    padding: 8px 20px;
+    padding: 4px 20px;
   }
 
   .logo img {
@@ -1751,7 +1751,7 @@ main {
   }
 
   .navbar-bg.is-shrunk .logo img {
-    width: 130px;
+    width: 65px;
     height: auto;
     transform: none;
   }
@@ -1779,20 +1779,21 @@ main {
     max-width: 100vw;
   }
 
-  /* is-shrunk sınıfı mobilde etkisiz - navbar hep aynı boyutta */
+  /* Mobilde shrink olduğunda navbar küçülür */
   .navbar-bg.is-shrunk {
-    padding: 10px 16px; /* Değişmez - mobilde shrink yok */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Varsayılan gölge korunur */
+    padding: 4px 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
   }
 
-  /* Mobilde logo boyutu - shrink olsun olmasın sabit */
+  /* Mobilde logo boyutu */
   .logo img {
     height: 80px;
+    width: auto;
   }
 
   .navbar-bg.is-shrunk .logo img {
-    height: 80px; /* Mobilde logo boyutu değişmez */
-    transform: none; /* Ölçekleme yok */
+    height: 40px;
+    transform: none;
   }
 
   /* Mobil menü margin'larını yeni padding'e uyumla */
