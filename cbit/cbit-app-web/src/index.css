@@ -4339,6 +4339,15 @@ input:focus, textarea:focus, select:focus {
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .about-hero-bottom-band {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 12px;
+  }
+}
+
 .about-hero-pill {
   background: #AC0000;
   color: white;
