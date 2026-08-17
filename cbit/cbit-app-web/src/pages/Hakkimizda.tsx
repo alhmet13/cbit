@@ -32,26 +32,28 @@ export default function Hakkimizda() {
                 boxShadow: "0 12px 40px rgba(0,0,0,0.06)",
                 border: "1px solid rgba(0,0,0,0.04)",
                 backgroundColor: "#111111",
-                display: "flex",
-                aspectRatio: "16/9",
-                width: "100%"
               }}
             >
-              {/* 1960 */}
-              <div style={{ flex: 1, backgroundImage: "url(/heritage-timeline-5.jpg?v=1)", backgroundSize: "400% 100%", backgroundPosition: "0% 50%", position: "relative" }}>
-                 <div style={{position: "absolute", bottom: "40px", width: "100%", textAlign: "center", color: "white", fontSize: "2rem", fontWeight: "bold", textShadow: "0 2px 4px rgba(0,0,0,0.5)"}}>1960</div>
-              </div>
-              {/* 1980 */}
-              <div style={{ flex: 1, backgroundImage: "url(/heritage-timeline-5.jpg?v=1)", backgroundSize: "400% 100%", backgroundPosition: "33.333% 50%", position: "relative", borderLeft: "1px solid rgba(255,255,255,0.2)" }}>
-                 <div style={{position: "absolute", bottom: "40px", width: "100%", textAlign: "center", color: "white", fontSize: "2rem", fontWeight: "bold", textShadow: "0 2px 4px rgba(0,0,0,0.5)"}}>1980</div>
-              </div>
-              {/* 2000 - Exact User Photo */}
-              <div style={{ flex: 1, backgroundImage: "url(/cevahir-original.jpg)", backgroundSize: "cover", backgroundPosition: "center", position: "relative", borderLeft: "1px solid rgba(255,255,255,0.2)" }}>
-                 <div style={{position: "absolute", bottom: "40px", width: "100%", textAlign: "center", color: "white", fontSize: "2rem", fontWeight: "bold", textShadow: "0 2px 10px rgba(0,0,0,0.9)"}}>2000</div>
-              </div>
-              {/* 2020 */}
-              <div style={{ flex: 1, backgroundImage: "url(/heritage-timeline-5.jpg?v=1)", backgroundSize: "400% 100%", backgroundPosition: "100% 50%", position: "relative", borderLeft: "1px solid rgba(255,255,255,0.2)" }}>
-                 <div style={{position: "absolute", bottom: "40px", width: "100%", textAlign: "center", color: "white", fontSize: "2rem", fontWeight: "bold", textShadow: "0 2px 4px rgba(0,0,0,0.5)"}}>2020</div>
+              <div style={{ display: "flex", width: "100%", aspectRatio: "21/9", position: "relative" }}>
+                {/* 1960 */}
+                <div style={{ flex: 1, backgroundImage: "url(/heritage-timeline-5.jpg?v=1)", backgroundSize: "400% 100%", backgroundPosition: "0% 50%", position: "relative" }}></div>
+                {/* 1980 */}
+                <div style={{ flex: 1, backgroundImage: "url(/heritage-timeline-5.jpg?v=1)", backgroundSize: "400% 100%", backgroundPosition: "33.333% 50%", position: "relative", borderLeft: "1px solid rgba(255,255,255,0.2)" }}></div>
+                {/* 2000 - Exact User Photo */}
+                <div style={{ flex: 1, backgroundImage: "url(/cevahir-original.jpg)", backgroundSize: "cover", backgroundPosition: "center", position: "relative", borderLeft: "1px solid rgba(255,255,255,0.2)" }}></div>
+                {/* 2020 */}
+                <div style={{ flex: 1, backgroundImage: "url(/heritage-timeline-5.jpg?v=1)", backgroundSize: "400% 100%", backgroundPosition: "100% 50%", position: "relative", borderLeft: "1px solid rgba(255,255,255,0.2)" }}></div>
+                
+                {/* Dark Gradient Overlay to hide AI dates and improve text readability */}
+                <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: "100px", background: "linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.8) 40%, transparent 100%)", pointerEvents: "none" }}></div>
+                
+                {/* Uniform HTML Dates */}
+                <div style={{ position: "absolute", bottom: "30px", left: 0, right: 0, display: "flex", pointerEvents: "none" }}>
+                   <div style={{ flex: 1, textAlign: "center", color: "white", fontSize: "2.4rem", fontWeight: "bold", letterSpacing: "2px", textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>1960</div>
+                   <div style={{ flex: 1, textAlign: "center", color: "white", fontSize: "2.4rem", fontWeight: "bold", letterSpacing: "2px", textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>1980</div>
+                   <div style={{ flex: 1, textAlign: "center", color: "white", fontSize: "2.4rem", fontWeight: "bold", letterSpacing: "2px", textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>2000</div>
+                   <div style={{ flex: 1, textAlign: "center", color: "white", fontSize: "2.4rem", fontWeight: "bold", letterSpacing: "2px", textShadow: "0 2px 8px rgba(0,0,0,0.8)" }}>2020</div>
+                </div>
               </div>
               
               <div className="about-hero-bottom-band">
