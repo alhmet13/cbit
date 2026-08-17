@@ -102,7 +102,7 @@ export default function Iletisim() {
                 height: "250px",
                 backgroundColor: "#262626",
                 borderRadius: "12px",
-                boxShadow: "0 0 15px 5px rgba(255, 255, 255, 0.05)"
+                boxShadow: "0 0 20px 5px #fafafa"
               }}
             >
               <iframe
