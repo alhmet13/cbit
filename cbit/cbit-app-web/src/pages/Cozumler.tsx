@@ -8,7 +8,6 @@ import {
   Headphones,
   ClipboardCheck,
   Database,
-  CheckCircle2,
   ArrowRight,
   Search,
   Ruler,
@@ -132,7 +131,6 @@ export default function Cozumler() {
                   <ul className="solution-feature-list">
                     {alan.maddeler.map((item: any, mIdx: number) => (
                       <li key={mIdx} className="solution-feature-item">
-                        <CheckCircle2 className="feature-check-icon" />
                         <div className="feature-text">
                           <h4 className="feature-title">{item.baslik}</h4>
                           <p className="feature-desc">{item.tanim}</p>
