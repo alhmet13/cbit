@@ -35,7 +35,7 @@ export default function Hakkimizda() {
               }}
             >
               <img
-                src="/heritage-timeline-5.jpg?v=1"
+                src="/heritage-timeline-6.jpg?v=1"
                 alt="Cevahir Mirası Zaman Tüneli"
                 style={{
                   width: "100%",
