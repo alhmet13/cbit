@@ -12,6 +12,7 @@ import { api } from "./api/client";
 import Dashboard from "./pages/Dashboard";
 import Projeler from "./pages/Projeler";
 import News from "./pages/News";
+import IsOrtaklari from "./pages/IsOrtaklari";
 import Messages from "./pages/Messages";
 import Login from "./pages/Login";
 import Ayarlar from "./pages/Ayarlar";
@@ -24,6 +25,7 @@ import {
   LogOut,
   KeyRound,
   Settings,
+  Users,
 } from "lucide-react";
 import ChangePassword from "./pages/ChangePassword";
 
@@ -84,6 +86,15 @@ function AdminLayout() {
             <span>Haberler</span>
           </NavLink>
           <NavLink
+            to="/is-ortaklari"
+            className={({ isActive }) =>
+              `sidebar-link ${isActive ? "active" : ""}`
+            }
+          >
+            <Users size={19} strokeWidth={2} />
+            <span>İş Ortakları</span>
+          </NavLink>
+          <NavLink
             to="/messages"
             className={({ isActive }) =>
               `sidebar-link ${isActive ? "active" : ""}`
@@ -134,6 +145,7 @@ function AdminLayout() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/projeler" element={<Projeler />} />
           <Route path="/news" element={<News />} />
+          <Route path="/is-ortaklari" element={<IsOrtaklari />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/change-password" element={<ChangePassword />} />
           <Route path="/ayarlar" element={<Ayarlar />} />

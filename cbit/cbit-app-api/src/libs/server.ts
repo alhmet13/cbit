@@ -7,7 +7,7 @@ import morgan from 'morgan';
 import { logger } from '../libs';
 import path from 'path';
 import { API_ROUTES, API_VERSION, HTTP_STATUS_CODE } from '../helpers';
-import { haberRoute, authRoute, projeRoute, messageRoute, uploadRoute, ayarlarRoute } from '../routes';
+import { haberRoute, authRoute, projeRoute, messageRoute, uploadRoute, ayarlarRoute, isOrtaklariRoute } from '../routes';
 import { Prisma } from '../generated/prisma';
 import { csrfProtection } from '../middlewares/csrf.middleware';
 import { sanitizeBody } from '../middlewares/sanitize.middleware';
@@ -80,6 +80,7 @@ const server = () => {
   app.use(`${API_VERSION.V1}/uploads`, uploadRoute);
   app.use(`${API_VERSION.V1}${API_ROUTES.PROJE}`, projeRoute);
   app.use(`${API_VERSION.V1}${API_ROUTES.AYARLAR}`, ayarlarRoute);
+  app.use(`${API_VERSION.V1}${API_ROUTES.ISORTAKLARI}`, isOrtaklariRoute);
 
   /*
   ! Eğer ki bir URL backend'de yoksa otomatik olarak 404 Not Found hatası yaratıp onu yönetim sistemine iletir.

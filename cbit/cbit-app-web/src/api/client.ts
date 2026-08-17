@@ -1,4 +1,4 @@
-import type { Haber, Proje } from "../types";
+import type { Haber, Proje, IsOrtagi } from "../types";
 
 // Eğer VITE_API_URL tanımlıysa onu kullan, yoksa yerel localhost'a düş.
 // Değer sadece "/api" ise, fetch fonksiyonu bunu otomatik olarak mevcut domainin arkasına ekler.
@@ -57,5 +57,27 @@ export const api = {
         method: "POST",
         body: data,
       }),
+  },
+  isortaklari: {
+    list: () => request<IsOrtagi[]>("/v1/isortaklari"),
+    delete: (id: string) => request<Record<string, unknown>>(`/v1/isortaklari/${id}`, { method: "DELETE" }),
+    create: async (formData: FormData) => {
+      const fullUrl = `${API_BASE.endsWith("/") ? API_BASE.slice(0, -1) : API_BASE}/v1/isortaklari`;
+      const res = await fetch(fullUrl, {
+        method: "POST",
+        body: formData,
+      });
+      if (!res.ok) throw new Error("İstek başarısız");
+      return res.json();
+    },
+    update: async (id: string, formData: FormData) => {
+      const fullUrl = `${API_BASE.endsWith("/") ? API_BASE.slice(0, -1) : API_BASE}/v1/isortaklari/${id}`;
+      const res = await fetch(fullUrl, {
+        method: "PUT",
+        body: formData,
+      });
+      if (!res.ok) throw new Error("İstek başarısız");
+      return res.json();
+    },
   },
 };

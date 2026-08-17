@@ -40,3 +40,13 @@ export interface Cozum {
 export type ProjeFormData = Omit<Proje, "id" | "createdAt">;
 
 export type HaberFormData = Omit<Haber, "id" | "createdAt">;
+
+export interface IsOrtagi {
+  id: string;
+  adi: string;
+  resim: string;
+  kategori?: string | null;
+  sira: number;
+  createdAt: string;
+}
+

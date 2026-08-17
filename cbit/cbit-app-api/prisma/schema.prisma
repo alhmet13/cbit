@@ -69,3 +69,16 @@ model SiteAyarlari {
   updatedAt        DateTime @updatedAt
 }
 
+
+
+model IsOrtagi {
+  id        String   @id @default(uuid()) @db.Uuid
+  adi       String
+  resim     String
+  kategori  String?
+  sira      Int      @default(0)
+  createdAt DateTime @default(now())
+
+  @@index([sira(sort: Asc), createdAt(sort: Desc)])
+}
+

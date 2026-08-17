@@ -1,4 +1,4 @@
-import type { SiteAyarlari, Proje, Haber, Message } from "../types";
+import type { SiteAyarlari, Proje, Haber, Message, IsOrtagi } from "../types";
 
 const API_BASE = import.meta.env.VITE_API_URL ?? "http://localhost:4101";
 
@@ -96,6 +96,21 @@ export const api = {
     list: () => request<Message[]>("/v1/messages"),
     delete: (id: string) =>
       request<void>(`/v1/messages/${id}`, { method: "DELETE" }),
+  },
+  isortaklari: {
+    list: () => request<IsOrtagi[]>("/v1/isortaklari"),
+    create: (data: Partial<IsOrtagi>) =>
+      request<void>("/v1/isortaklari", {
+        method: "POST",
+        body: JSON.stringify(data),
+      }),
+    update: (id: string, data: Partial<IsOrtagi>) =>
+      request<void>(`/v1/isortaklari/${id}`, {
+        method: "PUT",
+        body: JSON.stringify(data),
+      }),
+    delete: (id: string) =>
+      request<void>(`/v1/isortaklari/${id}`, { method: "DELETE" }),
   },
   uploads: {
     upload: (file: File) => {

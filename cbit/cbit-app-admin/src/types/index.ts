@@ -42,3 +42,13 @@ export interface Message {
   mesaj: string;
   createdAt: string;
 }
+
+export interface IsOrtagi {
+  id: string;
+  adi: string;
+  resim: string;
+  kategori?: string | null;
+  sira: number;
+  createdAt: string;
+}
+
