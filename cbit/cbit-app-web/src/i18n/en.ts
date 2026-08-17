@@ -507,7 +507,7 @@ export const en: Translations = {
       maddeler: [
         { baslik: "Proven Experience and Scale Capability", tanim: "With our years of industry experience and large-scale operational successes, we safely deliver even the most complex projects with zero margin for error.", img: "/approach_1.jpg" },
         { baslik: "Single Contract, Minimum Risk", tanim: "By gathering all components and stakeholders under a single roof, we minimize legal and commercial risks and provide a secure process management.", img: "/approach_2.jpg" },
-        { baslik: "Global Procurement and Logistics Power", tanim: "We provide seamless material supply with our strong logistics network and strategic connections established with the most reliable manufacturers worldwide.", img: "/global_logistics_network.jpg" },
+        { baslik: "Global Procurement and Logistics Power", tanim: "We provide seamless material supply with our strong logistics network and strategic connections established with the most reliable manufacturers worldwide.", img: "/it_hardware_supply.jpg" },
         { baslik: "Cost Advantage", tanim: "Thanks to our end-to-end integrated service structure, we eliminate intermediate costs and allow you to get the maximum return on your investments.", img: "/approach_3.jpg" }
       ]
     }
