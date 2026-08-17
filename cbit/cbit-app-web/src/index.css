@@ -3928,8 +3928,14 @@ main {
 .solution-block-main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 24px;
+}
+
+@media (min-width: 901px) {
+  .solution-block-main {
+    padding-top: 102px;
+  }
 }
 
 .solution-lead-text {
