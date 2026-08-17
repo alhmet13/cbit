@@ -105,8 +105,8 @@ export default function Cozumler() {
                 <h3 className="solution-sidebar-title">{alan.baslik}</h3>
 
                 {alan.gorsel ? (
-                  <div className="solution-sidebar-image-wrap" style={{ marginTop: "24px", borderRadius: "16px", overflow: "hidden", border: "1px solid #333" }}>
-                    <img src={alan.gorsel} alt={alan.baslik} style={{ width: "100%", height: "auto", display: "block" }} />
+                  <div className="solution-sidebar-image-wrap" style={{ marginTop: "24px", borderRadius: "16px", overflow: "hidden", border: "1px solid #3c3c3c" }}>
+                    <img src={alan.gorsel} alt={alan.baslik} style={{ width: "100%", height: "260px", objectFit: "cover", display: "block" }} />
                   </div>
                 ) : (
                   <>
