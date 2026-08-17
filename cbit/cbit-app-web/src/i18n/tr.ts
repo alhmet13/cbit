@@ -504,7 +504,7 @@ export const tr = {
       maddeler: [
         { baslik: "Ka­nıt­lan­mış De­ne­yim ve Ölçek Yet­kin­li­ği", tanim: "Yıl­lar süren sek­tör tec­rü­be­miz ve geniş çaplı ope­ras­yo­nel ba­şa­rı­la­rı­mız­la, en kar­ma­şık pro­je­le­ri bile sıfır hata ola­sı­lı­ğı ile gü­ven­le devir tes­lim edi­yo­ruz.", img: "/approach_1.jpg" },
         { baslik: "Tek Söz­leş­me, Mi­ni­mum Risk", tanim: "Tüm bi­le­şen­le­ri ve pay­daş­la­rı tek çatı al­tın­da top­la­ya­rak hu­ku­ki ve ti­ca­ri risk­le­ri mi­ni­mu­ma in­di­ri­yor, güven dolu bir süreç yö­ne­ti­mi sağ­lı­yo­ruz.", img: "/approach_2.jpg" },
-        { baslik: "Glo­bal Te­da­rik ve Lo­jis­tik Gücü", tanim: "Dünya ça­pın­da en gü­ve­ni­lir üre­ti­ci­ler­le kur­du­ğu­muz st­ra­te­jik bağ­lan­tı­lar ve güçlü lo­jis­tik ağı­mız­la so­run­suz mal­ze­me te­da­ri­ği sağ­lı­yo­ruz.", img: "/approach_5.jpg" },
+        { baslik: "Glo­bal Te­da­rik ve Lo­jis­tik Gücü", tanim: "Dünya ça­pın­da en gü­ve­ni­lir üre­ti­ci­ler­le kur­du­ğu­muz st­ra­te­jik bağ­lan­tı­lar ve güçlü lo­jis­tik ağı­mız­la so­run­suz mal­ze­me te­da­ri­ği sağ­lı­yo­ruz.", img: "/global_logistics_network.jpg" },
         { baslik: "Ma­li­yet Avan­ta­jı", tanim: "Uçtan uca en­teg­re hiz­met ya­pı­mız sa­ye­sin­de ara ma­li­yet­le­ri or­ta­dan kal­dı­rı­yor, ya­tı­rım­la­rı­nız­da mak­si­mum geri dönüş elde et­me­ni­ze ola­nak ta­nı­yo­ruz.", img: "/approach_3.jpg" }
       ]
     }
