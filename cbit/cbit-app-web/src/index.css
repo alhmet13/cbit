@@ -4394,3 +4394,9 @@ p,
 .spaced-cbit {
   letter-spacing: 0.1em; /* Increased letter spacing */
 }
+
+
+/* Harita Hover Efekti */
+.map-container:hover {
+  box-shadow: 0 0 7px 2px #fafafa !important;
+}
